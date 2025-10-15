@@ -1,0 +1,28 @@
+- title: Home
+  url: /
+
+- title: Projects
+  children:
+    - title: FHIR ETL on Spark → Snowflake
+      url: /projects/fhir-etl/
+    - title: Healthcare — Claims & Eligibility
+      url: /projects/healthcare-claims/
+    - title: Finance — Fraud & Risk
+      url: /projects/finance-fraud/
+    - title: Pricing & Margin Analytics
+      url: /projects/pricing-margin/
+
+- title: Analytics
+  url: /analytics/
+
+- title: Publications & Dashboards
+  url: /publications/
+
+- title: Blog
+  url: /blog/
+
+- title: About
+  url: /about/
+
+- title: Resume (PDF)
+  url: /assets/Pawan_Jadhav_Resume.pdf
