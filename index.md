@@ -1,8 +1,8 @@
 ---
-Title: Pawan Jadhav — Data Engineering & Analytics
+Title: Pawan Jadhav PMP® — Data Engineering & Analytics
 ---
 
-# Pawan Jadhav
+**Analytics Engineer Portfolio** 
 Healthcare & Finance Data Engineering, Analytics, and ETL Specialist.
 
 **Focus:** HL7/FHIR • ICD-10 CM • Snowflake • Databricks • Spark • Kafka • Airflow • SQL • Python
@@ -17,4 +17,6 @@ Healthcare & Finance Data Engineering, Analytics, and ETL Specialist.
 - Dashboard: *Utilization & LOS trends* — screenshot + short blurb
 
 ## About
-Boston-02135. STEM-OPT (through Mar 2027). Open to Data Engineer(AWS,Snowflake,Databricks,Azure)/Analytics roles in healthcare/finance.
+Boston-02135. 
+STEM-OPT (through Mar 2027). 
+Open to Data Engineer(AWS,Snowflake,Databricks,Azure)/Analytics roles in healthcare/finance.
