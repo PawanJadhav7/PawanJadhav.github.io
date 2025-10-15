@@ -2,7 +2,7 @@
 Title: Pawan Jadhav — Data Engineering & Analytics
 ---
 
-# Hi, I’m Pawan Jadhav
+# Pawan Jadhav
 Healthcare & Finance Data Engineering, Analytics, and ETL Specialist.
 
 **Focus:** HL7/FHIR • ICD-10 CM • Snowflake • Databricks • Spark • Kafka • Airflow • SQL • Python
