@@ -20,3 +20,6 @@ Healthcare & Finance Data Engineering, Analytics, and ETL Specialist.
 Boston-02135. 
 STEM-OPT (through Mar 2027). 
 Open to Data Engineer(AWS,Snowflake,Databricks,Azure)/Analytics roles in healthcare/finance.
+
+
+## BigData, Cloud Technology, DomainSpeciality (Healthcare, Finance, Ecommerce), Project Mangement, Data Governance and Security
