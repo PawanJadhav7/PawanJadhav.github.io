@@ -7,18 +7,6 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
 # Professional Summary
 **Data Engineering & Analytics — Healthcare & Finance**
 
-<p>
-  <a class="btn" href="/assets/Pawan_Jadhav_Resume.pdf" target="_blank">Resume (PDF)</a>
-  <a class="btn" href="mailto:contact@pawanjadhav.cloud">Email</a>
-  <a class="btn" href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-</p>
-
-<!-- <p>
-  <a href="https://github.com/settings/repositories" aria-label="GitHub" target="_blank" rel="noopener">
-    <img src="github.png" alt="" width="24" height="24" />
-  </a>
-</p> -->
-
 **Focus:** 
 Built batch/stream pipelines across AWS (S3/Glue/DMS) and Azure (ADLS/ADF/Synapse/Databricks); 
 Automated Snowflake Snowpipe + Streams/Tasks with Airflow/IICS; 
@@ -54,3 +42,8 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 
 ## About
 Boston-02135. STEM-OPT (through Mar 2027). Open to **Data Engineer (AWS, Snowflake, Databricks, Azure)** / **Analytics** roles in healthcare/finance.
+<p>
+  <a class="btn" href="/assets/Pawan_Jadhav_Resume.pdf" target="_blank">Resume (PDF)</a>
+  <a class="btn" href="mailto:contact@pawanjadhav7@gmail.com">Email</a>
+  <a class="btn" href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+</p>
