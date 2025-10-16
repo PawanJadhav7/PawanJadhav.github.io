@@ -1,7 +1,7 @@
 ---
 title: "Pawan Jadhav — Data Engineering & Analytics"
 layout: default
-description: "AWS & Snowflake pipelines for Healthcare & Finance."
+description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance."
 ---
 
 # Pawan Jadhav
