@@ -1,25 +1,50 @@
 ---
-Title: Pawan Jadhav PMP® — Data Engineering & Analytics
+title: "Pawan Jadhav — Data Engineering & Analytics"
+layout: default
+description: "AWS & Snowflake pipelines for Healthcare & Finance — HIPAA-ready, cost-optimized, and scalable."
 ---
 
-**Analytics Engineer Portfolio** 
-Healthcare & Finance Data Engineering, Analytics, and ETL Specialist.
+# Pawan Jadhav
+**Data Engineering & Analytics — Healthcare & Finance**
 
-**Focus:** HL7/FHIR • ICD-10 CM • Snowflake • Databricks • Spark • Kafka • Airflow • SQL • Python
+[Resume (PDF)](/assets/Pawan_Jadhav_Resume.pdf){: .btn } 
+[Email](mailto:contact@pawanjadhav.cloud){: .btn }
+[LinkedIn](https://www.linkedin.com/in/){: .btn }
+
+<p>
+  <a href="https://github.com/<your-username>" aria-label="GitHub" target="_blank" rel="noopener">
+    <img src="/assets/github.svg" alt="GitHub" width="24" height="24" />
+  </a>
+</p>
+
+**Focus:** AWS (S3, Glue, DMS), Snowflake (Snowpipe, Streams/Tasks), Databricks/Spark, Airflow/IICS, SQL, Python
+
+---
 
 ## Featured Projects
-- **FHIR ETL on Spark → Snowflake** — end-to-end pipeline with data quality checks, lineage, and dbt tests. [Repo](https://github.com/<your-repo>)
-- **Claims Anomaly Detection (Healthcare)** — ICD-10 CM profiling, fraud signals, Power BI dashboard. [Repo](https://github.com/<your-repo>)
-- **Pricing & Margin Analytics (Finance)** — Delta tables + ADF orchestration; KPI drilldowns. [Repo](https://github.com/<your-repo>)
+
+### FHIR ETL on Spark → Snowflake
+End-to-end ingestion of FHIR JSON to curated Snowflake models; SCD2 for Member, DQ checks, lineage, and dbt tests.  
+**Impact:** ~2.5× faster loads; auto-suspend savings.  
+[Code](https://github.com/<repo-fhir>) · [Architecture](/assets/diagrams/fhir_snowflake.png)
+
+### Claims Anomaly Detection (Healthcare)
+ICD-10 CM profiling, anomaly features, and dashboard for fraud/abuse signals.  
+**Impact:** ↓ false positives ~18%; near-real-time scoring.  
+[Case Study](/projects/healthcare-claims/) · [Code](https://github.com/<repo-claims>)
+
+### Pricing & Margin Analytics (Finance)
+Batch + incremental ELT; time-series marts and KPI drilldowns.  
+**Impact:** p95 report runtime 11m → 90s.  
+[Case Study](/projects/finance-fraud/) · [Code](https://github.com/<repo-pricing>)
+
+---
 
 ## Publications & Dashboards
-- Notebook: *ICD-10 CM bulk loader + profiling* — nbviewer link  
-- Dashboard: *Utilization & LOS trends* — screenshot + short blurb
+- Notebook: ICD-10 CM bulk loader + profiling — [nbviewer](https://nbviewer.org/...)  
+- Dashboard: Utilization & LOS trends — [Live](https://lookerstudio.google.com/...) · [Notes](/blog/los-trends.md)
+
+---
 
 ## About
-Boston-02135. 
-STEM-OPT (through Mar 2027). 
-Open to Data Engineer(AWS,Snowflake,Databricks,Azure)/Analytics roles in healthcare/finance.
-
-
-## BigData, Cloud Technology, DomainSpeciality (Healthcare, Finance, Ecommerce), Project Mangement, Data Governance and Security
+Boston-02135. STEM-OPT (through Mar 2027). Open to **Data Engineer (AWS, Snowflake, Databricks, Azure)** / **Analytics** roles in healthcare/finance.
