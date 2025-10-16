@@ -11,13 +11,13 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
 [Email](mailto:contact@pawanjadhav.cloud){: .btn }
 [LinkedIn](https://www.linkedin.com/in/){: .btn }
 
-<p>
+<!-- <p>
   <a href="https://github.com/settings/repositories" aria-label="GitHub" target="_blank" rel="noopener">
     <img src="github.png" alt="" width="24" height="24" />
   </a>
-</p>
+</p> -->
 
-**Focus:** AWS (S3, Glue, DMS), Snowflake (Snowpipe, Streams/Tasks), Databricks/Spark, Airflow/IICS, SQL, Python
+**Focus:** Built batch/stream pipelines across AWS (S3/Glue/DMS) and Azure (ADLS/ADF/Synapse/Databricks); automated Snowflake Snowpipe + Streams/Tasks with Airflow/IICS; optimized Spark jobs; delivered analytics in SQL/Python.
 
 ---
 
