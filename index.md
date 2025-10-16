@@ -4,7 +4,7 @@ layout: default
 description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance."
 ---
 
-# Pawan Jadhav
+# Professional Summary
 **Data Engineering & Analytics — Healthcare & Finance**
 
 [Resume (PDF)](/assets/Pawan_Jadhav_Resume.pdf){: .btn } 
