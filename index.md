@@ -13,7 +13,7 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
 
 <p>
   <a href="https://github.com/<your-username>" aria-label="GitHub" target="_blank" rel="noopener">
-    <img src="/assets/github.svg" alt="GitHub" width="24" height="24" />
+    <img src="/assets/github.svg" alt="GitHubGIT" width="24" height="24" />
   </a>
 </p>
 
