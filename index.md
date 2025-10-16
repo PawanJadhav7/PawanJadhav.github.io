@@ -1,7 +1,7 @@
 ---
 title: "Pawan Jadhav — Data Engineering & Analytics"
 layout: default
-description: "AWS & Snowflake pipelines for Healthcare & Finance — HIPAA-ready, cost-optimized, and scalable."
+description: "AWS & Snowflake pipelines for Healthcare & Finance."
 ---
 
 # Pawan Jadhav
