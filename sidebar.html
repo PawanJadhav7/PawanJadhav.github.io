@@ -1,0 +1,12 @@
+<nav id="sidebar">
+  <div class="sidebar-title">
+    <a href="{{ '/' | relative_url }}">Pawan Jadhav</a>
+    <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
+  <ul class="nav-tree">
+    {% assign current = page.url %}
+    {% for item in site.data.nav %}
+      {% include sidebar_item.html item=item current=current %}
+    {% endfor %}
+  </ul>
+</nav>
