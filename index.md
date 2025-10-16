@@ -7,9 +7,11 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
 # Professional Summary
 **Data Engineering & Analytics — Healthcare & Finance**
 
-[Resume (PDF)](/assets/Pawan_Jadhav_Resume.pdf){: .btn } 
-[Email](mailto:contact@pawanjadhav.cloud){: .btn }
-[LinkedIn](https://www.linkedin.com/in/){: .btn }
+<p>
+  <a class="btn" href="/assets/Pawan_Jadhav_Resume.pdf" target="_blank">Resume (PDF)</a>
+  <a class="btn" href="mailto:contact@pawanjadhav.cloud">Email</a>
+  <a class="btn" href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+</p>
 
 <!-- <p>
   <a href="https://github.com/settings/repositories" aria-label="GitHub" target="_blank" rel="noopener">
