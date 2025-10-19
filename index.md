@@ -1,5 +1,5 @@
 ---
-title: "Pawan Jadhav — Data Engineering & Analytics"
+title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
 layout: default
 description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance."
 ---
