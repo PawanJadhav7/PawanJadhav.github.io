@@ -4,9 +4,9 @@ layout: default
 description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance."
 ---
 
-# Professional Summary
+## Professional Summary
 **Data Engineering & Analytics — Healthcare & Finance**<br>
-**"Scalable and cost-optimized ETL pipelines for Healthcare & Finance."**
+*"Scalable and cost-optimized ETL pipelines for Healthcare & Finance."*
 
 
 **Skills:** 
