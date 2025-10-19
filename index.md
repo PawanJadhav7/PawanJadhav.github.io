@@ -5,8 +5,7 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
 ---
 
 # Professional Summary
-**Data Engineering & Analytics — Healthcare & Finance**
-
+**Data Engineering & Analytics — Healthcare & Finance**<br>
 **"Scalable and cost-optimized ETL pipelines for Healthcare & Finance."**
 
 
