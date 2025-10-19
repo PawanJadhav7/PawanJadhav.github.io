@@ -42,6 +42,12 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 
 ---
 
+## Certifications
+- Notebook: ICD-10 CM bulk loader + profiling — [nbviewer](https://nbviewer.org/...)  
+- Dashboard: Utilization & LOS trends — [Live](https://lookerstudio.google.com/...) · [Notes](/blog/los-trends.md)
+
+---
+
 ## About
 Boston-02135. STEM-OPT (through Mar 2027). Open to **Data Engineer (AWS, Snowflake, Databricks, Azure)** / **Analytics** roles in healthcare/finance.
 <p>
