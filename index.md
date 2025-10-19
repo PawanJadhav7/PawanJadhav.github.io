@@ -10,9 +10,9 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
 
 
 **Skills:** 
-Built batch/stream pipelines across AWS (S3/Glue/DMS) and Azure (ADLS/ADF/Synapse/Databricks); 
-Automated Snowflake Snowpipe + Streams/Tasks with Airflow/IICS; 
-Optimized Spark jobs; 
+Built batch/stream pipelines across AWS (S3/Glue/DMS) and Azure (ADLS/ADF/Synapse/Databricks);<br> 
+Automated Snowflake Snowpipe + Streams/Tasks with Airflow/IICS;<br>  
+Optimized Spark jobs;<br>  
 Delivered analytics in SQL/Python.
 
 ---
