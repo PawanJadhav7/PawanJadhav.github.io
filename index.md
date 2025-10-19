@@ -6,6 +6,8 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
 
 # Professional Summary
 **Data Engineering & Analytics — Healthcare & Finance**
+**"Scalable and cost-optimized ETL pipelines for Healthcare & Finance."**
+
 
 **Skills:** 
 Built batch/stream pipelines across AWS (S3/Glue/DMS) and Azure (ADLS/ADF/Synapse/Databricks); 
