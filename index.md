@@ -14,7 +14,7 @@ layout: default
     <h1 style="color:#007ACC;margin:0 0 8px;font-size:28px;line-height:1.2;">Pawan Jadhav PMP® — Data Engineering & Analytics</h1>
     <p style="margin:0;font-size:17px;line-height:1.6;color:#374151;">
       <strong>
-        Engineering trust and intelligence in <span style="color:#007ACC;">Big Data</span> — transforming healthcare and finance through secure, insight-driven innovation.
+        Engineering trust and intelligence in Big Data — transforming healthcare and finance through secure, insight-driven innovation.
       </strong>
     </p>
   </div>
