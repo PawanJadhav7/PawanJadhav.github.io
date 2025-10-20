@@ -81,7 +81,7 @@ layout: default
     <div style="flex:1;min-width:250px;">
       <h3 style="margin:0 0 8px;color:#374151;">Tools & Platforms</h3>
       <p style="margin:0;color:#374151;line-height:1.6;">
-        Git / GitHub Actions / Docker / Linux Shell / VS Code / DataGrip / Jupyter / Azure DevOps / ServiceNow / Jira
+        Git / GitHub Actions / Docker / Linux Shell / PyCharm / DataGrip / Jupyter / Azure DevOps / ServiceNow / Jira
       </p>
     </div>
 
