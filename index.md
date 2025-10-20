@@ -287,7 +287,43 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
   </div>
 </section>
 ---
+<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
+  <h2 style="color:#007ACC;margin-top:0;">About</h2>
+
+  <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
+    I’m <strong>Pawan Jadhav</strong>, a Boston-based <strong>Data Engineering and Analytics professional</strong> and 
+    <strong>Certified Project Management Professional (PMP®)</strong>. I specialize in designing modern, secure, and 
+    insight-driven data systems that empower organizations in <strong>healthcare</strong> and <strong>finance</strong> to make data-backed, compliant, and strategic decisions.
+  </p>
+
+  <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
+    With a strong foundation in <strong>ETL pipeline development, cloud data platforms, and analytics governance</strong>, 
+    I bring end-to-end expertise across <strong>Azure, AWS, Snowflake, and Databricks</strong>. My work focuses on bridging 
+    the gap between engineering precision and business strategy—translating technical complexity into measurable outcomes.
+  </p>
+
+  <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
+    Having led and delivered multiple cross-functional projects, I’m passionate about combining 
+    <strong>data architecture, automation, and project management</strong> to improve efficiency, transparency, and impact. 
+    Beyond engineering, I’m deeply interested in <strong>data governance, healthcare interoperability (FHIR/HL7), 
+    and financial analytics</strong> for organizational transformation.
+  </p>
+
+  <p style="font-size:16px;line-height:1.7;color:#374151;">
+    Based in Boston (02135) and on <strong>STEM-OPT authorization through March 2027</strong>, 
+    I’m open to opportunities in <strong>Data Engineering, Analytics, and Project Management</strong> roles that 
+    create value through data-driven innovation.
+  </p>
+
+  <p style="margin-top:20px;">
+    <a class="btn" href="/assets/Pawan_Jadhav_Resume.pdf" target="_blank">📄 Resume (PDF)</a>
+    <a class="btn" href="mailto:pawan.jadhav7@gmail.com">📧 Email</a>
+    <a class="btn" href="https://www.linkedin.com/in/yourlinkedin" target="_blank">🔗 LinkedIn</a>
+    <a class="btn" href="https://github.com/PawanJadhav" target="_blank">💻 GitHub</a>
+  </p>
+
+</section>
 ## About
 Boston-02135. STEM-OPT (through Mar 2027). Open to **Data Engineer (AWS, Snowflake, Databricks, Azure)** / **Analytics** roles in healthcare/finance.
 <p>
