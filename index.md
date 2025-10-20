@@ -265,7 +265,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
         <p>Scrum.org</p>
         <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2024</span></div>
         <div class="cert-links">
-          <a href="https://www.scrum.org/professional-scrum-certifications/psm-i-certification" target="_blank">About</a>
+          <a href="https://www.scrum.org/professional-scrum-certifications/psm-i-certification" target="_blank">Contact</a>
           <a href="#" target="_blank">Verify</a>
         </div>
       </div>
@@ -318,7 +318,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 </section>
 <section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
   👁️‍🗨️ <strong>Visitors:</strong>
-  <img src="https://visitcount.itsvg.in/api?id=PawanJadhav&label=Visitors&color=007ACC&icon=5&pretty=true" alt="Visit Counter" style="vertical-align:middle;margin-left:6px;">
+  <img src="https://visitcount.itsvg.in/api?id=PawanJadhav&label=Visitors&color=0e75b6&icon=0" alt="Visitor Counter" style="vertical-align:middle;margin-left:6px;">
   <br>
   © 2025 Pawan Jadhav — Data Engineering & Analytics Portfolio
 </section>
