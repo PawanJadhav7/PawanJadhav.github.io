@@ -46,10 +46,48 @@ layout: default
   </p>
 
 </section>
+<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
-## Professional Summary
-**Data Engineering & Analytics — Healthcare & Finance**<br>
-*"Scalable and cost-optimized ETL pipelines for Healthcare & Finance."*
+  <h2 style="color:#007ACC;margin-top:0;">Skills</h2>
+
+  <!-- Skill Categories -->
+  <div style="display:flex;flex-wrap:wrap;gap:24px;">
+
+    <!-- Data Engineering -->
+    <div style="flex:1;min-width:250px;">
+      <h3 style="margin:0 0 8px;color:#374151;">Data Engineering & ETL</h3>
+      <p style="margin:0;color:#374151;line-height:1.6;">
+        SQL / Python / PySpark / Databricks / Airflow / NiFi / Snowflake / DBT / Azure ADF / AWS Glue / ETL Design & Optimization
+      </p>
+    </div>
+
+    <!-- Data Analytics -->
+    <div style="flex:1;min-width:250px;">
+      <h3 style="margin:0 0 8px;color:#374151;">Data Analytics & Visualization</h3>
+      <p style="margin:0;color:#374151;line-height:1.6;">
+        Power BI / Tableau / Looker Studio / Advanced Excel / Statistical Analysis / Data Modeling / KPIs & Reporting Automation
+      </p>
+    </div>
+
+    <!-- Project Management -->
+    <div style="flex:1;min-width:250px;">
+      <h3 style="margin:0 0 8px;color:#374151;">Project Management & Leadership</h3>
+      <p style="margin:0;color:#374151;line-height:1.6;">
+        PMP® Certified / Agile Scrum / SDLC Lifecycle / Stakeholder Management / Risk Mitigation / Delivery Planning / Governance
+      </p>
+    </div>
+
+    <!-- Tools & Platforms -->
+    <div style="flex:1;min-width:250px;">
+      <h3 style="margin:0 0 8px;color:#374151;">Tools & Platforms</h3>
+      <p style="margin:0;color:#374151;line-height:1.6;">
+        Git / GitHub Actions / Docker / Linux Shell / VS Code / DataGrip / Jupyter / Azure DevOps / ServiceNow / Jira
+      </p>
+    </div>
+
+  </div>
+
+</section>
 
 **Skills:** 
 Built batch/stream pipelines across AWS (S3/Glue/DMS) and Azure (ADLS/ADF/Synapse/Databricks);<br> 
