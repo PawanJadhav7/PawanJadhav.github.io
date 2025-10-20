@@ -88,8 +88,57 @@ layout: default
   </div>
 
 </section>
----
 
+<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+
+  <h2 style="color:#007ACC;margin-top:0;">Featured Projects</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px;">
+
+    <!-- Project 1 -->
+    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="margin-top:0;color:#007ACC;">FHIR ETL on Spark → Snowflake</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Designed an end-to-end data pipeline for FHIR JSON ingestion into curated Snowflake models. 
+        Implemented SCD2 handling for Member/Provider data, data-quality validation, and lineage tracking with dbt.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, automated lineage, and 30% cost savings.</p>
+      <p>
+        <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank">💻 Code</a>
+        <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank">📊 Architecture</a>
+      </p>
+    </div>
+
+    <!-- Project 2 -->
+    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="margin-top:0;color:#007ACC;">Healthcare Claims Anomaly Detection</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Built a claims analytics framework using ICD-10 CM and provider data to detect fraud, waste, and abuse. 
+        Leveraged Python, Spark, and statistical models for real-time anomaly detection and scoring.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by 18%, improving integrity audits and program savings.</p>
+      <p>
+        <a class="btn" href="https://github.com/PawanJadhav/Healthcare-Claims" target="_blank">💻 Code</a>
+        <a class="btn" href="/projects/healthcare-claims/" target="_blank">📄 Case Study</a>
+      </p>
+    </div>
+
+    <!-- Project 3 -->
+    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="margin-top:0;color:#007ACC;">Finance Pricing & Margin Analytics</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Developed a pricing and margin analytics platform integrating multiple financial sources. 
+        Automated ETL with Airflow and Snowflake tasks, implemented time-series KPIs and profit forecasts.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> p95 report runtime reduced from 11 min → 90 sec; improved executive reporting speed.</p>
+      <p>
+        <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank">💻 Code</a>
+        <a class="btn" href="/projects/finance-fraud/" target="_blank">📄 Case Study</a>
+      </p>
+    </div>
+
+  </div>
+</section>
 ## Featured Projects
 
 ### FHIR ETL on Spark → Snowflake
