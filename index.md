@@ -12,7 +12,7 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
 
   <!-- Text Content on the Right -->
   <div>
-    <h1 style="color: #4da6ff;">Pawan Jadhav PMP® — Data Engineering & Analytics</h1>
+    <h1 style="color: #007ACC;">Pawan Jadhav PMP® — Data Engineering & Analytics</h1>
     <p><strong>Scalable and cost-optimized ETL pipelines for Healthcare & Finance.</strong></p>
   </div>
 
