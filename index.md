@@ -115,7 +115,7 @@ layout: default
     .fp-track::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:8px}
     /* Cards */
     .fp-card{
-      flex:0 0 360px;           /* card width */
+      flex:0 0 350px;           /* card width */
       scroll-snap-align:start;
       border:1px solid #e5e7eb;
       border-radius:12px;
