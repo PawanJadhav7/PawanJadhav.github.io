@@ -3,14 +3,13 @@ title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
 layout: default
 ---
 
-<div class="hero">
+<div class="hero" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:20px;">
 <img src="assets/images/QA_Tester.jpg" alt="Pawan Jadhav" width="160"
        style="border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.2);" />
   <div>
     <h1 style="color:#007ACC;margin:0;">Pawan Jadhav PMP® — Data Engineering & Analytics</h1>
     <p style="margin:.25rem 0 0;"><strong style="color:#374151;">Engineering trust and intelligence in Big Data — transforming healthcare and finance through secure, insight-driven innovation.</strong></p>
   </div>
-
 </div>
 
 <!-- <table style="width:100%;">
