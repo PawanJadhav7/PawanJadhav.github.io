@@ -6,6 +6,10 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
 
 ![Pawan Jadhav](assets/images/pawan_profile.jpg)
 
+<p align="center">
+  <img src="assets/images/QA Tester.png" alt="Pawan Jadhav" width="300" style="border-radius: 15px;">
+</p>
+
 ## Professional Summary
 **Data Engineering & Analytics — Healthcare & Finance**<br>
 *"Scalable and cost-optimized ETL pipelines for Healthcare & Finance."*
