@@ -249,7 +249,7 @@ layout: default
       <div class="cert-body">
         <h3>Project Management Professional (PMP®)</h3>
         <p>Project Management Institute</p>
-        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
+        <div class="cert-meta">Credential ID: <em>3787028</em> · <span>Mar 2024 - Mar 2027</span></div>
         <div class="cert-links">
           <a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">About</a>
           <a href="#" target="_blank">Verify</a>
