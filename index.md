@@ -286,10 +286,6 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 
   </div>
 </section>
-## Certifications
-- Notebook: ICD-10 CM bulk loader + profiling — [nbviewer](https://nbviewer.org/...)  
-- Dashboard: Utilization & LOS trends — [Live](https://lookerstudio.google.com/...) · [Notes](/blog/los-trends.md)
-
 ---
 
 ## About
