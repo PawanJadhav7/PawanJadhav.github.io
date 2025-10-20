@@ -26,7 +26,7 @@ layout: default
   <h2 style="color:#007ACC;margin-top:0;">Professional Summary</h2>
 
   <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
-    I am a results-driven <strong>Data Engineering and Analytics professional (PMP®)</strong> with deep experience in
+    I am a results-driven <strong>Data Engineering and Analytics professional and Certified Project Management Professional (PMP®)</strong> with deep experience in
     <strong>healthcare and financial data ecosystems</strong>. I specialize in designing secure, scalable, and
     cost-optimized <strong>Big Data pipelines</strong> that transform raw data into actionable insights for decision-making,
     compliance, and strategic growth.
