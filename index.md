@@ -88,13 +88,6 @@ layout: default
   </div>
 
 </section>
-
-**Skills:** 
-Built batch/stream pipelines across AWS (S3/Glue/DMS) and Azure (ADLS/ADF/Synapse/Databricks);<br> 
-Automated Snowflake Snowpipe + Streams/Tasks with Airflow/IICS;  
-Optimized Spark jobs; 
-Delivered analytics in SQL/Python.
-
 ---
 
 ## Featured Projects
