@@ -299,7 +299,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 
   <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
     My approach blends <strong>engineering precision</strong> with <strong>strategic execution</strong>—bridging data pipelines, 
-    analytics, and project delivery to drive measurable outcomes across healthcare and finance domains.
+    analytics, and project delivery to drive measurable outcomes across <strong>healthcare</strong>strong> and <strong>finance</strong>strong> domains.
   </p>
 
   <p style="font-size:16px;line-height:1.7;color:#374151;">
