@@ -310,10 +310,9 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
   <p style="margin-top:20px;">
     <a class="btn" href="/assets/Pawan_Jadhav_Resume.pdf" target="_blank">📄 Resume (PDF)</a>
     <a class="btn" href="mailto:pawan.jadhav7@gmail.com">📧 Email</a>
-    <a class="btn" href="https://www.linkedin.com/in/yourlinkedin" target="_blank">🔗 LinkedIn</a>
-    <a class="btn" href="https://github.com/PawanJadhav" target="_blank">💻 GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/pawan-jadhav/" target="_blank">🔗 LinkedIn</a>
+    <a class="btn" href="https://github.com/settings/repositories" target="_blank">💻 GitHub</a>
+    <a class="btn" target="_blank">📞 +1 914 267 5356</a>
   </p>
-
-</section>
 
 </section>
