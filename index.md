@@ -2,7 +2,7 @@
 title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
 layout: default
 ---
-<body>
+
 <div style="display: flex; align-items: center; gap: 20px;">
 
   <!-- Profile Image on the Left -->
@@ -15,7 +15,7 @@ layout: default
   </div>
 
 </div>
-</body>
+
 <!-- <table style="width:100%;">
   <tr>
     <td style="vertical-align:middle;">
