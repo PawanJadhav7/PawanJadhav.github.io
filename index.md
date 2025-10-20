@@ -105,7 +105,7 @@ layout: default
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, automated lineage, and 30% cost savings.</p>
      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;">
       <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank">💻 Code</a>
-      <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank">📊 Architecture</a>
+      <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank">📊 Archi</a>
       </div>
     </div>
 
