@@ -310,7 +310,8 @@ layout: default
 
       // Keyboard support (↑ ↓)
       viewport.addEvent
-
+</script>
+</section>
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
   <h2 style="color:#007ACC;margin-top:0;">Certifications</h2>
