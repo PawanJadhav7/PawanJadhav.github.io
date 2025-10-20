@@ -1,7 +1,5 @@
 ---
 title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
-layout: default
-description: ""
 ---
 <div style="display: flex; align-items: center; gap: 20px;">
 
