@@ -199,43 +199,117 @@ layout: default
   </script>
 </section>
 
-<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Publications & Dashboards">
 
-  <h2 style="color:#007ACC;margin-top:0;">Publications & Dashboards</h2>
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;justify-content:space-between;">
+    Publications & Dashboards
+    <span class="pd-nav" style="display:flex;gap:8px;">
+      <button id="pd-up" aria-label="Previous" style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▲</button>
+      <button id="pd-down" aria-label="Next" style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▼</button>
+    </span>
+  </h2>
 
-  <div style="display:flex;flex-direction:column;gap:16px;margin-top:16px;">
+  <style>
+    .pd-viewport{
+      /* fixed visible area; adjust height as you like */
+      max-height: 420px;
+      overflow-y: auto;
+      padding-right: 4px;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+    }
+    .pd-viewport::-webkit-scrollbar{ width:8px }
+    .pd-viewport::-webkit-scrollbar-thumb{ background:#e5e7eb; border-radius:8px }
 
-    <!-- Publication 1 -->
-    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
-      <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">
-        📘 ICD-10 CM Bulk Loader & Profiling
-      </h3>
-      <p style="margin:0;color:#374151;line-height:1.6;font-size:15px;">
-        Python-based notebook for bulk ICD-10 CM dataset loading, validation, and exploratory profiling 
-        to support data quality and healthcare analytics pipelines.
-      </p>
-      <p style="margin:8px 0 0;font-size:14px;">
-        🔗 <a href="https://nbviewer.org/..." target="_blank" style="color:#007ACC;text-decoration:none;">View Notebook on nbviewer</a>
-      </p>
+    .pd-stack{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pd-card{
+      scroll-snap-align: start;
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      padding:14px 18px;
+      background:#fff;
+      box-shadow:0 2px 6px rgba(0,0,0,0.03);
+    }
+    .pd-card h3{
+      margin:0 0 6px;
+      color:#007ACC;
+      font-size:17px;
+      line-height:1.3;
+    }
+    .pd-card p{
+      margin:0;
+      color:#374151;
+      line-height:1.6;
+      font-size:15px;
+    }
+    .pd-links{
+      margin-top:8px;
+      font-size:14px;
+    }
+    .pd-links a{
+      color:#007ACC; text-decoration:none; margin-right:10px;
+      border:1px solid #e5e7eb; padding:6px 10px; border-radius:8px;
+      display:inline-block;
+    }
+    .pd-links a:hover{ text-decoration:underline; background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.06); }
+  </style>
+
+  <div id="pdViewport" class="pd-viewport" tabindex="0">
+    <div id="pdStack" class="pd-stack">
+
+      <!-- Card 1 -->
+      <article class="pd-card">
+        <h3>📘 ICD-10 CM Bulk Loader & Profiling</h3>
+        <p>Python notebook for bulk ICD-10 CM loading, validation, and profiling to support DQ and healthcare analytics pipelines.</p>
+        <p class="pd-links">
+          <a href="https://nbviewer.org/..." target="_blank" rel="noopener noreferrer">View on nbviewer</a>
+        </p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="pd-card">
+        <h3>📊 Utilization & LOS Trends Dashboard</h3>
+        <p>Interactive dashboard tracking utilization, LOS, and resource efficiency using Looker Studio with healthcare claims data.</p>
+        <p class="pd-links">
+          <a href="https://lookerstudio.google.com/..." target="_blank" rel="noopener noreferrer">Live Dashboard</a>
+          <a href="/blog/los-trends.md" target="_blank" rel="noopener noreferrer">Notes</a>
+        </p>
+      </article>
+
+      <!-- Add more .pd-card blocks below as needed -->
+
     </div>
-
-    <!-- Publication 2 -->
-    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
-      <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">
-        📊 Utilization & LOS Trends Dashboard
-      </h3>
-      <p style="margin:0;color:#374151;line-height:1.6;font-size:15px;">
-        Interactive analytics dashboard tracking patient utilization, length of stay (LOS), and resource 
-        efficiency using Looker Studio and healthcare claims data.
-      </p>
-      <p style="margin:8px 0 0;font-size:14px;">
-        🔗 <a href="https://lookerstudio.google.com/..." target="_blank" style="color:#007ACC;text-decoration:none;">Live Dashboard</a> · 
-        📝 <a href="/blog/los-trends.md" target="_blank" style="color:#007ACC;text-decoration:none;">Read Notes</a>
-      </p>
-    </div>
-
   </div>
-</section>
+
+  <script>
+    (function(){
+      const viewport = document.getElementById('pdViewport');
+      const stack = document.getElementById('pdStack');
+      const up = document.getElementById('pd-up');
+      const down = document.getElementById('pd-down');
+
+      function cardHeight(){
+        const card = stack.querySelector('.pd-card');
+        if(!card) return 160;
+        const styles = getComputedStyle(stack);
+        const gap = parseInt(styles.rowGap || styles.gap || 16, 10);
+        return card.getBoundingClientRect().height + gap;
+      }
+
+      function scrollByCard(dir){
+        viewport.scrollBy({ top: dir * cardHeight(), behavior: 'smooth' });
+      }
+
+      up.addEventListener('click', () => scrollByCard(-1));
+      down.addEventListener('click', () => scrollByCard(1));
+
+      // Keyboard support (↑ ↓)
+      viewport.addEvent
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
