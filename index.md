@@ -27,6 +27,31 @@ layout: default
 <!-- <p align="center">
   <img src="assets/images/QA Tester.jpg" alt="Pawan Jadhav" width="300" style="border-radius: 15px;">
 </p> -->
+<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+
+  <h2 style="color:#007ACC;margin-top:0;">Professional Summary</h2>
+
+  <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
+    I am a results-driven <strong>Data Engineering and Analytics professional (PMP®)</strong> with deep experience in
+    <strong>healthcare and financial data ecosystems</strong>. I specialize in designing secure, scalable, and
+    cost-optimized <strong>Big Data pipelines</strong> that transform raw data into actionable insights for decision-making,
+    compliance, and strategic growth.
+  </p>
+
+  <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
+    My expertise spans <strong>ETL/ELT development</strong>, <strong>data governance</strong>, and <strong>cloud integration</strong> across
+    <strong>Azure, AWS, and Snowflake</strong>, leveraging tools such as <strong>Databricks, Airflow, and SQL</strong> to build automated
+    and auditable workflows. I apply project management principles to every stage of development — from scope definition to delivery — ensuring
+    projects meet quality, cost, and timeline objectives.
+  </p>
+
+  <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:0;">
+    Combining strong technical acumen with <strong>leadership, stakeholder management, and agile execution</strong> skills, I bridge
+    engineering precision with business strategy. Passionate about using data to improve <strong>healthcare quality, financial transparency,
+    and operational efficiency</strong>, I focus on turning complex challenges into scalable, insight-driven solutions that deliver measurable impact.
+  </p>
+
+</section>
 
 ## Professional Summary
 **Data Engineering & Analytics — Healthcare & Finance**<br>
