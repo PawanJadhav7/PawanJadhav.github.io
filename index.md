@@ -114,7 +114,178 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 - Dashboard: Utilization & LOS trends — [Live](https://lookerstudio.google.com/...) · [Notes](/blog/los-trends.md)
 
 ---
+<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
+  <h2 style="color:#007ACC;margin-top:0;">Certifications</h2>
+
+  <!-- Scoped styles for this section only -->
+  <style>
+    .cert-grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(240px,1fr));
+      gap:16px;
+    }
+    @media (max-width:700px){
+      .cert-grid{ grid-template-columns: 1fr; }
+    }
+    .cert-card{
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      padding:14px 16px;
+      background:#fff;
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+    }
+    .cert-badge{
+      flex:0 0 auto;
+      background:#007ACC;
+      color:#fff;
+      padding:6px 10px;
+      border-radius:10px;
+      font-weight:700;
+      font-size:12px;
+      letter-spacing:.3px;
+    }
+    .cert-body h3{
+      margin:0 0 4px;
+      font-size:16px;
+      line-height:1.3;
+      color:#1f2937;
+    }
+    .cert-body p{
+      margin:0;
+      font-size:14px;
+      color:#374151;
+      line-height:1.5;
+    }
+    .cert-meta{
+      margin-top:6px;
+      font-size:12px;
+      color:#6b7280;
+    }
+    .cert-links a{
+      display:inline-block;
+      margin-top:6px;
+      margin-right:10px;
+      font-size:12px;
+      color:#007ACC;
+      text-decoration:none;
+      border:1px solid #e5e7eb;
+      padding:6px 10px;
+      border-radius:8px;
+    }
+    .cert-links a:hover{ text-decoration:underline; }
+  </style>
+
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <span class="cert-badge">PMP®</span>
+      <div class="cert-body">
+        <h3>Project Management Professional (PMP®)</h3>
+        <p>Project Management Institute</p>
+        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
+        <div class="cert-links">
+          <a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">About</a>
+          <a href="#" target="_blank">Verify</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-badge">DP-203</span>
+      <div class="cert-body">
+        <h3>Microsoft Certified: Azure Data Engineer Associate (DP-203)</h3>
+        <p>Microsoft</p>
+        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
+        <div class="cert-links">
+          <a href="https://learn.microsoft.com/credentials/certifications/azure-data-engineer/" target="_blank">About</a>
+          <a href="#" target="_blank">Verify</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-badge">SnowPro</span>
+      <div class="cert-body">
+        <h3>Snowflake SnowPro Core</h3>
+        <p>Snowflake</p>
+        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
+        <div class="cert-links">
+          <a href="https://www.snowflake.com/certifications/snowpro-core/" target="_blank">About</a>
+          <a href="#" target="_blank">Verify</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-badge">DBx</span>
+      <div class="cert-body">
+        <h3>Databricks Data Engineer Associate</h3>
+        <p>Databricks</p>
+        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
+        <div class="cert-links">
+          <a href="https://www.databricks.com/learn/certification/data-engineer-associate" target="_blank">About</a>
+          <a href="#" target="_blank">Verify</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-badge">AWS</span>
+      <div class="cert-body">
+        <h3>AWS Certified Cloud Practitioner</h3>
+        <p>Amazon Web Services</p>
+        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
+        <div class="cert-links">
+          <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target="_blank">About</a>
+          <a href="#" target="_blank">Verify</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-badge">ITIL</span>
+      <div class="cert-body">
+        <h3>ITIL® 4 Foundation</h3>
+        <p>AXELOS / PeopleCert</p>
+        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2024</span></div>
+        <div class="cert-links">
+          <a href="https://www.axelos.com/certifications/itil-4-foundation" target="_blank">About</a>
+          <a href="#" target="_blank">Verify</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-badge">PSM I</span>
+      <div class="cert-body">
+        <h3>Professional Scrum Master™ I (PSM I)</h3>
+        <p>Scrum.org</p>
+        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2024</span></div>
+        <div class="cert-links">
+          <a href="https://www.scrum.org/professional-scrum-certifications/psm-i-certification" target="_blank">About</a>
+          <a href="#" target="_blank">Verify</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-badge">HIPAA</span>
+      <div class="cert-body">
+        <h3>HIPAA Privacy & Security Awareness</h3>
+        <p>Industry/Training Provider</p>
+        <div class="cert-meta">Certificate #: <em>xxxxxxx</em> · <span>Issued: 2024</span></div>
+        <div class="cert-links">
+          <a href="#" target="_blank">About</a>
+          <a href="#" target="_blank">Verify</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 ## Certifications
 - Notebook: ICD-10 CM bulk loader + profiling — [nbviewer](https://nbviewer.org/...)  
 - Dashboard: Utilization & LOS trends — [Live](https://lookerstudio.google.com/...) · [Notes](/blog/los-trends.md)
