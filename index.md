@@ -316,75 +316,12 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 </section>
 
 <section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
-  👁️‍🗨️ <strong>Visitors:</strong> <span id="visit-count">—</span>
+  👁️‍🗨️ <strong>Visitors:</strong>
+  <img
+    src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?rl=https%3A%2F%2Fpawanjadhav.cloud%2F&count_bg=%23007ACC&title_bg=%23555555&icon=github.svg&icon_color=%23ffffff&title=Visitors&edge_flat=false"
+    alt="Visitor Counter"
+    style="vertical-align:middle;margin-left:6px;"
+  >
   <br>
   © 2025 Pawan Jadhav — Data Engineering & Analytics Portfolio
 </section>
-
-<script>
-  (function(){
-    const NAMESPACE = "pawanjadhav-cloud";
-    const KEY = "portfolio";
-    const API = "https://api.countapi.xyz";
-    const COUNT_EL = document.getElementById("visit-count");
-    const STORAGE_KEY = "pj_visit_incremented_at";
-    const DAY_MS = 24 * 60 * 60 * 1000;
-
-    function display(val){
-      if (typeof val === "number" && isFinite(val)) {
-        COUNT_EL.textContent = val.toLocaleString();
-      } else if (!isNaN(parseInt(val))) {
-        COUNT_EL.textContent = parseInt(val, 10).toLocaleString();
-      } else {
-        COUNT_EL.textContent = "—";
-      }
-    }
-
-    async function ensureCounterExists(){
-      try {
-        // Create (idempotent): if it already exists, this is ignored by CountAPI
-        const url = `${API}/create?namespace=${encodeURIComponent(NAMESPACE)}&key=${encodeURIComponent(KEY)}&value=0`;
-        await fetch(url, { mode: "cors" });
-      } catch (e) {
-        // ignore; we'll still try to read/hit
-      }
-    }
-
-    async function getCurrent(){
-      try {
-        const r = await fetch(`${API}/get/${NAMESPACE}/${KEY}`, { mode: "cors" });
-        const d = await r.json();
-        display(d.value ?? d.count);
-      } catch (e) {
-        display("—");
-      }
-    }
-
-    async function incrementOncePerDay(){
-      const last = Number(localStorage.getItem(STORAGE_KEY) || 0);
-      const now = Date.now();
-
-      // If first visit or >24h since last increment → hit the counter
-      const shouldHit = !last || (now - last) > DAY_MS;
-
-      try {
-        if (shouldHit) {
-          const r = await fetch(`${API}/hit/${NAMESPACE}/${KEY}`, { mode: "cors" });
-          const d = await r.json();
-          display(d.value ?? d.count);
-          localStorage.setItem(STORAGE_KEY, String(now));
-        } else {
-          await getCurrent();
-        }
-      } catch (e) {
-        // If adblock/network blocks the hit, at least try to read current value
-        await getCurrent();
-      }
-    }
-
-    (async function init(){
-      await ensureCounterExists();
-      await incrementOncePerDay();
-    })();
-  })();
-</script>
