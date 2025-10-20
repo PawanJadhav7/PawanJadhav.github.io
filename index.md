@@ -290,8 +290,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
   <h2 style="color:#007ACC;margin-top:0;">Contact</h2>
-
-
+  
   <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
     My approach blends <strong>engineering precision</strong> with <strong>strategic execution</strong>—bridging data pipelines, 
     analytics, and project delivery to drive measurable outcomes across <strong>healthcare</strong> and <strong>finance</strong> domains.
@@ -301,7 +300,11 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
     Based in Boston (02135) and on <strong>STEM-OPT through March 2027</strong>, I’m open to opportunities in 
     <strong>Data Engineering, Analytics, and Project Management</strong> where data can create meaningful impact.
   </p>
-
+   <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
+    Thank you for visiting my portfolio – I appreciate your time and interest in my work.
+    Let's Stay in touch. 
+    I would like to hear your thoughts and answer any questions you might have about my work and experience..
+  </p>
   <p style="margin-top:20px;">
     <a class="btn" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer" >📄 Resume (PDF)</a>
     <a class="btn" href="mailto:pawan.jadhav7@gmail.com">📧 pawan.jadhav7@gmail.com</a>
