@@ -3,10 +3,21 @@ title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
 layout: default
 description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance."
 ---
-
-<p align="center">
+<table style="width:100%;">
+  <tr>
+    <td style="vertical-align:middle;">
+      <h1>Pawan Jadhav</h1>
+      <h3>Data Engineering & Analytics — Healthcare & Finance</h3>
+      <p>Scalable and cost-optimized ETL pipelines for Healthcare & Finance.</p>
+    </td>
+    <td style="text-align:right; vertical-align:middle;">
+      <img src="assets/images/pawan_profile.png" alt="Pawan Jadhav" width="180" style="border-radius: 10px;">
+    </td>
+  </tr>
+</table>
+<!-- <p align="center">
   <img src="assets/images/QA Tester.jpg" alt="Pawan Jadhav" width="300" style="border-radius: 15px;">
-</p>
+</p> -->
 
 ## Professional Summary
 **Data Engineering & Analytics — Healthcare & Finance**<br>
