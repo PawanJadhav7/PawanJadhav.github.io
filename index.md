@@ -3,13 +3,22 @@ title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
 layout: default
 ---
 
-<div class="hero" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:20px;">
-<img src="assets/images/QA_Tester.jpg" alt="Pawan Jadhav" width="160"
-       style="border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.2);" />
-  <div>
-    <h1 style="color:#007ACC;margin:0;">Pawan Jadhav PMP® — Data Engineering & Analytics</h1>
-    <p style="margin:.25rem 0 0;"><strong style="color:#374151;">Engineering trust and intelligence in Big Data—transforming healthcare and finance through secure, insight-driven innovation.</strong></p>
+<div class="hero" style="display:flex;align-items:center;justify-content:flex-start;gap:24px;flex-wrap:nowrap;margin-top:20px;">
+
+  <!-- Profile Image on the Left -->
+  <img src="assets/images/qa-tester.jpg" alt="Pawan Jadhav" width="160"
+       style="border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.2);flex-shrink:0;">
+
+  <!-- Text Content on the Right -->
+  <div style="max-width:700px;">
+    <h1 style="color:#007ACC;margin:0 0 8px;font-size:28px;line-height:1.2;">Pawan Jadhav PMP® — Data Engineering & Analytics</h1>
+    <p style="margin:0;font-size:17px;line-height:1.6;color:#374151;">
+      <strong>
+        Engineering trust and intelligence in <span style="color:#007ACC;">Big Data</span> — transforming healthcare and finance through secure, insight-driven innovation.
+      </strong>
+    </p>
   </div>
+
 </div>
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
