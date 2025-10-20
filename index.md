@@ -26,7 +26,7 @@ layout: default
   <h2 style="color:#007ACC;margin-top:0;">Professional Summary</h2>
 
   <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
-    I am a results-driven <strong>Data Engineering and Analytics professional and Certified Project Management Professional (PMP®)</strong> with deep experience in
+    I am a results-driven <strong>Data Engineering and Analytics professional</strong> and <strong>Certified Project Management Professional (PMP®)</strong> with deep experience in
     <strong>healthcare and financial data ecosystems</strong>. I specialize in designing secure, scalable, and
     cost-optimized <strong>Big Data pipelines</strong> that transform raw data into actionable insights for decision-making,
     compliance, and strategic growth.
@@ -469,13 +469,13 @@ layout: default
   </p>
 
   <p style="font-size:16px;line-height:1.7;color:#374151;">
-    Based in Boston (02135) and on <strong>STEM-OPT through March 2027</strong>, I’m open to opportunities in 
+    Based in Boston MA.(02135) and on <strong>STEM-OPT through March 2027</strong>, I’m open to opportunities in 
     <strong>Data Engineering, Analytics, and Project Management</strong> where data can create meaningful impact.
   </p>
    <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
     Thank you for visiting my portfolio – I appreciate your time and interest in my work.
-    Let's Stay in touch. 
-    I would like to hear your thoughts and answer any questions you might have about my work and experience..
+    Let's stay in touch. 
+    I would like to hear your thoughts and answer any questions you might have about my work and experience.
   </p>
   <p style="margin-top:20px;">
     <a class="btn" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer" >📄 Resume (PDF)</a>
