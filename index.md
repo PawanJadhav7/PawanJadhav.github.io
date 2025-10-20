@@ -4,10 +4,8 @@ layout: default
 description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance."
 ---
 
-![Pawan Jadhav](assets/images/pawan_profile.jpg)
-
 <p align="center">
-  <img src="assets/images/QA Tester.png" alt="Pawan Jadhav" width="300" style="border-radius: 15px;">
+  <img src="assets/images/QA Tester.jpg" alt="Pawan Jadhav" width="300" style="border-radius: 15px;">
 </p>
 
 ## Professional Summary
