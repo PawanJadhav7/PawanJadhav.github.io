@@ -299,7 +299,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 
   <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
     My approach blends <strong>engineering precision</strong> with <strong>strategic execution</strong>—bridging data pipelines, 
-    analytics, and project delivery to drive measurable outcomes across <strong>healthcare</strong>strong> and <strong>finance</strong>strong> domains.
+    analytics, and project delivery to drive measurable outcomes across <strong>healthcare</strong> and <strong>finance</strong> domains.
   </p>
 
   <p style="font-size:16px;line-height:1.7;color:#374151;">
@@ -318,7 +318,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 </section>
 <section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
   👁️‍🗨️ <strong>Visitors:</strong>
-  <img src="https://visitcount.itsvg.in/api?id=PawanJadhav&label=Visitors&color=0e75b6&icon=0" alt="Visitor Counter" style="vertical-align:middle;margin-left:6px;">
+  <img src="https://img.shields.io/badge/Visitors-Counting-blue?style=flat&logo=github" alt="Visitor Counter" style="vertical-align:middle;margin-left:6px;">
   <br>
   © 2025 Pawan Jadhav — Data Engineering & Analytics Portfolio
 </section>
