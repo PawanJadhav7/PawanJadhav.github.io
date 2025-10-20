@@ -102,7 +102,8 @@ layout: default
         Designed an end-to-end data pipeline for FHIR JSON ingestion into curated Snowflake models. 
         Implemented SCD2 handling for Member/Provider data, data-quality validation, and lineage tracking with dbt.
       </p>
-      <p style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;">
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, automated lineage, and 30% cost savings.</p>
+      <p>
         <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank">💻 Code</a>
         <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank">📊 Architecture</a>
       </p>
