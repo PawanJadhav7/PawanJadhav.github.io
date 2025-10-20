@@ -4,11 +4,13 @@
   <meta charset="utf-8">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- comment -%}
-  If you use the Cayman theme, it provides its own styles. If you have a custom CSS, uncomment the next line and create /assets/css/style.css
-  {%- endcomment -%}
-  {# <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}"> #}
+
+  {% comment %}
+  If you add your own CSS later, uncomment the line below:
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  {% endcomment %}
 </head>
+
 <body>
   <main class="main-content" role="main">
     {{ content }}
