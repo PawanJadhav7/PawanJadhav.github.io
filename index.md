@@ -444,32 +444,6 @@ layout: default
     </div>
 
     <div class="cert-card">
-      <span class="cert-badge">ITIL</span>
-      <div class="cert-body">
-        <h3>ITIL® 4 Foundation</h3>
-        <p>AXELOS / PeopleCert</p>
-        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2024</span></div>
-        <div class="cert-links">
-          <a href="https://www.axelos.com/certifications/itil-4-foundation" target="_blank">About</a>
-          <a href="#" target="_blank">Verify</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cert-card">
-      <span class="cert-badge">PSM I</span>
-      <div class="cert-body">
-        <h3>Professional Scrum Master™ I (PSM I)</h3>
-        <p>Scrum.org</p>
-        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2024</span></div>
-        <div class="cert-links">
-          <a href="https://www.scrum.org/professional-scrum-certifications/psm-i-certification" target="_blank">About</a>
-          <a href="#" target="_blank">Verify</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cert-card">
       <span class="cert-badge">HIPAA</span>
       <div class="cert-body">
         <h3>HIPAA Privacy & Security Awareness</h3>
