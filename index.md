@@ -314,9 +314,9 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
   </p>
 
 </section>
+
 <section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
-  👁️‍🗨️ <strong>Visitors:</strong>
-  <img src="https://img.shields.io/badge/Visitors-Counting-blue?style=flat&logo=github" alt="Visitor Counter" style="vertical-align:middle;margin-left:6px;">
+  👁️‍🗨️ <strong>Visitors:</strong> <span id="visit-count">—</span>
   <br>
   © 2025 Pawan Jadhav — Data Engineering & Analytics Portfolio
 </section>
