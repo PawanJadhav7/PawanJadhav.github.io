@@ -1,7 +1,3 @@
----
-title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
-layout: default
----
 <div style="display: flex; align-items: center; gap: 20px;">
 
   <!-- Profile Image on the Left -->
