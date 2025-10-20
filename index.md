@@ -89,55 +89,114 @@ layout: default
 
 </section>
 
-<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Featured Projects">
 
-  <h2 style="color:#007ACC;margin-top:0;">Featured Projects</h2>
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;justify-content:space-between;">
+    Featured Projects
+    <span class="fp-nav" style="display:flex;gap:8px;">
+      <button id="fp-prev" aria-label="Previous" style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">◀</button>
+      <button id="fp-next" aria-label="Next" style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▶</button>
+    </span>
+  </h2>
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px;">
+  <style>
+    /* Carousel track */
+    .fp-track{
+      display:flex;
+      gap:20px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      scroll-behavior:smooth;
+      padding:4px 2px 10px;
+      -webkit-overflow-scrolling:touch;
+    }
+    /* Hide scrollbar (keeps accessible scrolling) */
+    .fp-track::-webkit-scrollbar{height:8px}
+    .fp-track::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:8px}
+    /* Cards */
+    .fp-card{
+      flex:0 0 320px;           /* card width */
+      scroll-snap-align:start;
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      padding:18px;
+      background:#fff;
+      box-shadow:0 4px 8px rgba(0,0,0,0.03);
+    }
+    .fp-card h3{ margin:0 0 8px; color:#007ACC; font-size:18px; }
+    .fp-card p{ margin:0 0 10px; color:#374151; line-height:1.6; font-size:15px; }
+    .fp-impact{ font-size:14px; color:#6b7280; margin:0 0 10px; }
+    .fp-btns{ display:flex; gap:10px; flex-wrap:wrap; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:10px 16px; border-radius:10px; border:1px solid #e5e7eb; background:#f8fafc; color:#111827; text-decoration:none; font-weight:500; transition:all .2s; }
+    .btn:hover{ background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.08); text-decoration:none; }
+    @media (max-width:420px){ .fp-card{flex-basis:280px} }
+  </style>
 
+  <div id="fpTrack" class="fp-track" tabindex="0">
     <!-- Project 1 -->
-    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
-      <h3 style="margin-top:0;color:#007ACC;">FHIR ETL on Spark → Snowflake</h3>
-      <p style="color:#374151;line-height:1.6;font-size:15px;">
-        Designed an end-to-end data pipeline for FHIR JSON ingestion into curated Snowflake models. 
-        Implemented SCD2 handling for Member/Provider data, data-quality validation, and lineage tracking with dbt.
-      </p>
-      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, automated lineage, and 30% cost savings.</p>
-     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;">
-      <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank">💻 Code</a>
-      <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank">📊 Archi</a>
+    <article class="fp-card">
+      <h3>FHIR ETL on Spark → Snowflake</h3>
+      <p>End-to-end pipeline for FHIR JSON into curated Snowflake models. SCD2 for Member/Provider, DQ checks, lineage with dbt.</p>
+      <p class="fp-impact"><strong>Impact:</strong> 2.5× faster loads; ~30% cost savings.</p>
+      <div class="fp-btns">
+        <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank" rel="noopener noreferrer">💻 Code</a>
+        <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank" rel="noopener noreferrer">📊 Architecture</a>
       </div>
-    </div>
+    </article>
 
     <!-- Project 2 -->
-    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
-      <h3 style="margin-top:0;color:#007ACC;">Healthcare Claims Anomaly Detection</h3>
-      <p style="color:#374151;line-height:1.6;font-size:15px;">
-        Built a claims analytics framework using ICD-10 CM and provider data to detect fraud, waste, and abuse. 
-        Leveraged Python, Spark, and statistical models for real-time anomaly detection and scoring.
-      </p>
-      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by 18%, improving integrity audits and program savings.</p>
-      <p>
-        <a class="btn" href="https://github.com/PawanJadhav/Healthcare-Claims" target="_blank">💻 Code</a>
-        <a class="btn" href="/projects/healthcare-claims/" target="_blank">📄 Case</a>
-      </p>
-    </div>
+    <article class="fp-card">
+      <h3>Healthcare Claims Anomaly Detection</h3>
+      <p>ICD-10 CM + provider signals with Python/Spark for real-time anomaly scoring across fraud, waste, abuse.</p>
+      <p class="fp-impact"><strong>Impact:</strong> ↓ false positives ~18%; faster integrity reviews.</p>
+      <div class="fp-btns">
+        <a class="btn" href="https://github.com/PawanJadhav/Healthcare-Claims" target="_blank" rel="noopener noreferrer">💻 Code</a>
+        <a class="btn" href="/projects/healthcare-claims/" target="_blank" rel="noopener noreferrer">📄 Case Study</a>
+      </div>
+    </article>
 
     <!-- Project 3 -->
-    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
-      <h3 style="margin-top:0;color:#007ACC;">Finance Pricing & Margin Analytics</h3>
-      <p style="color:#374151;line-height:1.6;font-size:15px;">
-        Developed a pricing and margin analytics platform integrating multiple financial sources. 
-        Automated ETL with Airflow and Snowflake tasks, implemented time-series KPIs and profit forecasts.
-      </p>
-      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> p95 report runtime reduced from 11 min → 90 sec; improved executive reporting speed.</p>
-      <p>
-        <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank">💻 Code</a>
-        <a class="btn" href="/projects/finance-fraud/" target="_blank">📄 Case</a>
-      </p>
-    </div>
+    <article class="fp-card">
+      <h3>Finance Pricing & Margin Analytics</h3>
+      <p>Airflow + Snowflake ELT; time-series KPIs & margin forecasts; exec dashboards for decision speed.</p>
+      <p class="fp-impact"><strong>Impact:</strong> p95 report time 11m → 90s.</p>
+      <div class="fp-btns">
+        <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer">💻 Code</a>
+        <a class="btn" href="/projects/finance-fraud/" target="_blank" rel="noopener noreferrer">📄 Case Study</a>
+      </div>
+    </article>
 
+    <!-- Copy/paste more .fp-card blocks here for additional projects -->
   </div>
+
+  <script>
+    (function(){
+      const track = document.getElementById('fpTrack');
+      const prev = document.getElementById('fp-prev');
+      const next = document.getElementById('fp-next');
+
+      function cardWidth(){
+        const card = track.querySelector('.fp-card');
+        if(!card) return 340;
+        const styles = getComputedStyle(track);
+        const gap = parseInt(styles.columnGap || styles.gap || 20, 10);
+        return card.getBoundingClientRect().width + gap;
+      }
+
+      function scrollByCard(dir){
+        track.scrollBy({ left: dir * cardWidth(), behavior: 'smooth' });
+      }
+
+      prev.addEventListener('click', () => scrollByCard(-1));
+      next.addEventListener('click', () => scrollByCard(1));
+
+      // Keyboard support (← →)
+      track.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') { e.preventDefault(); scrollByCard(1); }
+        if (e.key === 'ArrowLeft')  { e.preventDefault(); scrollByCard(-1); }
+      });
+    })();
+  </script>
 </section>
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
