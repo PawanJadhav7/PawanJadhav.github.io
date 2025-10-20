@@ -1,4 +1,3 @@
-title: "Pawan"
 <div style="display: flex; align-items: center; gap: 20px;">
 
   <!-- Profile Image on the Left -->
