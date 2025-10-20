@@ -185,8 +185,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
       <div class="cert-body">
         <h3>Project Management Professional (PMP®)</h3>
         <p>Project Management Institute</p>
-        <div class="cert-meta">Credential ID: <em>3787028</em><br><span>Issued: 11 March 2024</span>·<span>Expiration: 11 March 2027</span></div>
-        <div class="cert-links">
+        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
         <div class="cert-links">
           <a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">About</a>
           <a href="#" target="_blank">Verify</a>
@@ -287,6 +286,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 
   </div>
 </section>
+
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
   <h2 style="color:#007ACC;margin-top:0;">About</h2>
