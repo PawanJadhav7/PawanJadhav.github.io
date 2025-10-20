@@ -3,7 +3,7 @@ title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
 layout: default
 ---
 
-<div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+<div class="hero"">
 <img src="assets/images/QA_Tester.jpg" alt="Pawan Jadhav" width="160"
        style="border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.2);" />
   <div>
