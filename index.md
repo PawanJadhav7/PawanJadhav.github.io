@@ -3,7 +3,21 @@ title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
 layout: default
 description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance."
 ---
-<table style="width:100%;">
+
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <!-- Profile Image on the Left -->
+  <img src="assets/images/QA Tester.jpg" alt="Pawan Jadhav" width="160" style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+
+  <!-- Text Content on the Right -->
+  <div>
+    <h1>Pawan Jadhav PMP® — Data Engineering & Analytics</h1>
+    <p><strong>Scalable and cost-optimized ETL pipelines for Healthcare & Finance.</strong></p>
+  </div>
+
+</div>
+<!-- <table style="width:100%;">
   <tr>
     <td style="vertical-align:middle;">
       <h1>Pawan Jadhav</h1>
@@ -14,7 +28,7 @@ description: "Scalable and cost-optimized ETL pipelines for Healthcare & Finance
       <img src="assets/images/pawan_profile.png" alt="Pawan Jadhav" width="180" style="border-radius: 10px;">
     </td>
   </tr>
-</table>
+</table> -->
 <!-- <p align="center">
   <img src="assets/images/QA Tester.jpg" alt="Pawan Jadhav" width="300" style="border-radius: 15px;">
 </p> -->
