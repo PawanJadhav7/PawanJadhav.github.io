@@ -320,3 +320,44 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
   <br>
   © 2025 Pawan Jadhav — Data Engineering & Analytics Portfolio
 </section>
+<script>
+  // --- Live visitor counter using CountAPI ---
+  const NAMESPACE = "pawanjadhav-cloud";
+  const KEY = "portfolio";
+  const API = "https://api.countapi.xyz";
+  const COUNT_EL = document.getElementById("visit-count");
+  const STORAGE_KEY = "pj_visit_incremented_at";
+  const DAY_MS = 24 * 60 * 60 * 1000;
+
+  function setCount(val) {
+    if (COUNT_EL) COUNT_EL.textContent = Number(val).toLocaleString();
+  }
+
+  function getCurrent() {
+    fetch(`${API}/get/${NAMESPACE}/${KEY}`)
+      .then(r => r.json())
+      .then(d => setCount(d.value ?? d?.count ?? "—"))
+      .catch(() => setCount("—"));
+  }
+
+  function incrementOncePerDay() {
+    const last = Number(localStorage.getItem(STORAGE_KEY) || 0);
+    const now = Date.now();
+
+    // If first visit or more than 24h since last increment
+    if (!last || (now - last) > DAY_MS) {
+      fetch(`${API}/hit/${NAMESPACE}/${KEY}`)
+        .then(r => r.json())
+        .then(d => {
+          setCount(d.value ?? d?.count ?? "—");
+          localStorage.setItem(STORAGE_KEY, String(now));
+        })
+        .catch(() => getCurrent());
+    } else {
+      // Already incremented recently → just read current value
+      getCurrent();
+    }
+  }
+
+  incrementOncePerDay();
+</script>
