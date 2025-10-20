@@ -31,8 +31,7 @@ layout: default
 ## Professional Summary
 **Data Engineering & Analytics — Healthcare & Finance**<br>
 *"Scalable and cost-optimized ETL pipelines for Healthcare & Finance."*
----
-##
+
 **Skills:**<br> 
 Built batch/stream pipelines across AWS (S3/Glue/DMS) and Azure (ADLS/ADF/Synapse/Databricks);<br> 
 Automated Snowflake Snowpipe + Streams/Tasks with Airflow/IICS;  
