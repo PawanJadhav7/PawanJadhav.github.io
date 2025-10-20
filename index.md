@@ -139,30 +139,45 @@ layout: default
 
   </div>
 </section>
-## Featured Projects
 
-### FHIR ETL on Spark → Snowflake
-End-to-end ingestion of FHIR JSON to curated Snowflake models; SCD2 for Member, DQ checks, lineage, and dbt tests.  
-**Impact:** ~2.5× faster loads; auto-suspend savings.  
-[Code](https://github.com/<repo-fhir>) · [Architecture](/assets/diagrams/fhir_snowflake.png)
+<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
-### Claims Anomaly Detection (Healthcare)
-ICD-10 CM profiling, anomaly features, and dashboard for fraud/abuse signals.  
-**Impact:** ↓ false positives ~18%; near-real-time scoring.  
-[Case Study](/projects/healthcare-claims/) · [Code](https://github.com/<repo-claims>)
+  <h2 style="color:#007ACC;margin-top:0;">Publications & Dashboards</h2>
 
-### Pricing & Margin Analytics (Finance)
-Batch + incremental ELT; time-series marts and KPI drilldowns.  
-**Impact:** p95 report runtime 11m → 90s.  
-[Case Study](/projects/finance-fraud/) · [Code](https://github.com/<repo-pricing>)
+  <div style="display:flex;flex-direction:column;gap:16px;margin-top:16px;">
 
----
+    <!-- Publication 1 -->
+    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+      <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">
+        📘 ICD-10 CM Bulk Loader & Profiling
+      </h3>
+      <p style="margin:0;color:#374151;line-height:1.6;font-size:15px;">
+        Python-based notebook for bulk ICD-10 CM dataset loading, validation, and exploratory profiling 
+        to support data quality and healthcare analytics pipelines.
+      </p>
+      <p style="margin:8px 0 0;font-size:14px;">
+        🔗 <a href="https://nbviewer.org/..." target="_blank" style="color:#007ACC;text-decoration:none;">View Notebook on nbviewer</a>
+      </p>
+    </div>
 
-## Publications & Dashboards
-- Notebook: ICD-10 CM bulk loader + profiling — [nbviewer](https://nbviewer.org/...)  
-- Dashboard: Utilization & LOS trends — [Live](https://lookerstudio.google.com/...) · [Notes](/blog/los-trends.md)
+    <!-- Publication 2 -->
+    <div style="border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+      <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">
+        📊 Utilization & LOS Trends Dashboard
+      </h3>
+      <p style="margin:0;color:#374151;line-height:1.6;font-size:15px;">
+        Interactive analytics dashboard tracking patient utilization, length of stay (LOS), and resource 
+        efficiency using Looker Studio and healthcare claims data.
+      </p>
+      <p style="margin:8px 0 0;font-size:14px;">
+        🔗 <a href="https://lookerstudio.google.com/..." target="_blank" style="color:#007ACC;text-decoration:none;">Live Dashboard</a> · 
+        📝 <a href="/blog/los-trends.md" target="_blank" style="color:#007ACC;text-decoration:none;">Read Notes</a>
+      </p>
+    </div>
 
----
+  </div>
+</section>
+
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
   <h2 style="color:#007ACC;margin-top:0;">Certifications</h2>
