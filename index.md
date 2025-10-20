@@ -318,7 +318,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 <section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
   👁️‍🗨️ <strong>Visitors:</strong>
   <img
-    src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?rl=https%3A%2F%2Fpawanjadhav.cloud%2F&count_bg=%23007ACC&title_bg=%23555555&icon=github.svg&icon_color=%23ffffff&title=Visitors&edge_flat=false"
+    src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpawanjadhav.cloud%2F&count_bg=%23007ACC&title_bg=%23555555&icon=github.svg&icon_color=%23ffffff&title=Visitors&edge_flat=false"
     alt="Visitor Counter"
     style="vertical-align:middle;margin-left:6px;"
   >
