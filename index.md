@@ -291,11 +291,6 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 
   <h2 style="color:#007ACC;margin-top:0;">Contact</h2>
 
-  <!-- <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
-    I’m <strong>Pawan Jadhav</strong>, a Boston-based <strong>Data Engineering and Analytics professional</strong> and 
-    <strong>Certified Project Management Professional (PMP®)</strong>. I focus on building reliable, secure, and 
-    insight-driven data systems that help organizations make smarter, evidence-based decisions.
-  </p> -->
 
   <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
     My approach blends <strong>engineering precision</strong> with <strong>strategic execution</strong>—bridging data pipelines, 
@@ -308,7 +303,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
   </p>
 
   <p style="margin-top:20px;">
-    <a class="btn" href="/assets/Pawan_Jadhav_Resume.pdf" target="_blank">📄 Resume (PDF)</a>
+    <a class="btn" href="/assets/Pawan_Jadhav_Resume.pdf" target="_blank" rel="noopener noreferrer" >📄 Resume (PDF)</a>
     <a class="btn" href="mailto:pawan.jadhav7@gmail.com">📧 pawan.jadhav7@gmail.com</a>
     <a class="btn" href="https://www.linkedin.com/in/pawan-jadhav/" target="_blank">🔗 LinkedIn</a>
     <a class="btn" href="https://github.com/PawanJadhav7" target="https://github.com/settings/repositories" rel="noopener noreferrer" >💻 GitHub</a>
