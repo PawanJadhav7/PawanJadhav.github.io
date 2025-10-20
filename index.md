@@ -6,7 +6,7 @@ layout: default
 <div class="hero" style="display:flex;align-items:center;justify-content:flex-start;gap:24px;flex-wrap:nowrap;margin-top:20px;">
 
   <!-- Profile Image on the Left -->
-  <img src="assets/images/qa-tester.jpg" alt="Pawan Jadhav" width="160"
+  <img src="assets/images/QA_Tester.jpg" alt="Pawan Jadhav" width="160"
        style="border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.2);flex-shrink:0;">
 
   <!-- Text Content on the Right -->
