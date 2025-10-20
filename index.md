@@ -262,7 +262,7 @@ layout: default
       <div class="cert-body">
         <h3>Microsoft Certified: Azure Data Engineer Associate (DP-203)</h3>
         <p>Microsoft</p>
-        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
+        <div class="cert-meta">Credential ID: <em>2211773CB6CBA50F</em> · <span>Mar 2024 - Mar 2025</span></div>
         <div class="cert-links">
           <a href="https://learn.microsoft.com/credentials/certifications/azure-data-engineer/" target="_blank">About</a>
           <a href="#" target="_blank">Verify</a>
