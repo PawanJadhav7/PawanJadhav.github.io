@@ -8,25 +8,10 @@ layout: default
        style="border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.2);" />
   <div>
     <h1 style="color:#007ACC;margin:0;">Pawan Jadhav PMP® — Data Engineering & Analytics</h1>
-    <p style="margin:.25rem 0 0;"><strong style="color:#374151;">Engineering trust and intelligence in Big Data — transforming healthcare and finance through secure, insight-driven innovation.</strong></p>
+    <p style="margin:.25rem 0 0;"><strong style="color:#374151;">Engineering trust and intelligence in Big Data—transforming healthcare and finance through secure, insight-driven innovation.</strong></p>
   </div>
 </div>
 
-<!-- <table style="width:100%;">
-  <tr>
-    <td style="vertical-align:middle;">
-      <h1>Pawan Jadhav</h1>
-      <h3>Data Engineering & Analytics — Healthcare & Finance</h3>
-      <p>Scalable and cost-optimized ETL pipelines for Healthcare & Finance.</p>
-    </td>
-    <td style="text-align:right; vertical-align:middle;">
-      <img src="assets/images/pawan_profile.png" alt="Pawan Jadhav" width="180" style="border-radius: 10px;">
-    </td>
-  </tr>
-</table> -->
-<!-- <p align="center">
-  <img src="assets/images/QA Tester.jpg" alt="Pawan Jadhav" width="300" style="border-radius: 15px;">
-</p> -->
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
   <h2 style="color:#007ACC;margin-top:0;">Professional Summary</h2>
