@@ -119,7 +119,7 @@ layout: default
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by 18%, improving integrity audits and program savings.</p>
       <p>
         <a class="btn" href="https://github.com/PawanJadhav/Healthcare-Claims" target="_blank">💻 Code</a>
-        <a class="btn" href="/projects/healthcare-claims/" target="_blank">📄 Case Study</a>
+        <a class="btn" href="/projects/healthcare-claims/" target="_blank">📄 Case</a>
       </p>
     </div>
 
@@ -133,7 +133,7 @@ layout: default
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> p95 report runtime reduced from 11 min → 90 sec; improved executive reporting speed.</p>
       <p>
         <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank">💻 Code</a>
-        <a class="btn" href="/projects/finance-fraud/" target="_blank">📄 Case Study</a>
+        <a class="btn" href="/projects/finance-fraud/" target="_blank">📄 Case</a>
       </p>
     </div>
 
