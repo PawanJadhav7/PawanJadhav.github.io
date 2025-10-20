@@ -265,7 +265,7 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
         <p>Scrum.org</p>
         <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2024</span></div>
         <div class="cert-links">
-          <a href="https://www.scrum.org/professional-scrum-certifications/psm-i-certification" target="_blank">Contact</a>
+          <a href="https://www.scrum.org/professional-scrum-certifications/psm-i-certification" target="_blank">About</a>
           <a href="#" target="_blank">Verify</a>
         </div>
       </div>
@@ -289,13 +289,13 @@ Batch + incremental ELT; time-series marts and KPI drilldowns.
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
-  <h2 style="color:#007ACC;margin-top:0;">About</h2>
+  <h2 style="color:#007ACC;margin-top:0;">Contact</h2>
 
-  <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
+  <!-- <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
     I’m <strong>Pawan Jadhav</strong>, a Boston-based <strong>Data Engineering and Analytics professional</strong> and 
     <strong>Certified Project Management Professional (PMP®)</strong>. I focus on building reliable, secure, and 
     insight-driven data systems that help organizations make smarter, evidence-based decisions.
-  </p>
+  </p> -->
 
   <p style="font-size:16px;line-height:1.7;color:#374151;margin-bottom:1em;">
     My approach blends <strong>engineering precision</strong> with <strong>strategic execution</strong>—bridging data pipelines, 
