@@ -340,7 +340,7 @@ layout: default
       <div class="cert-body">
         <h3>HIPAA Privacy & Security Awareness</h3>
         <p>Accountable</p>
-        <div class="cert-meta">Certificate #: <em>7a473b29-7fce-4813-a462-b7207e139c46</em> · <span>Aug 2025 - Aug 2026</span></div>
+        <div class="cert-meta">Credential ID: <em>7a473b29-7fce-4813-a462-b7207e139c46</em> · <span>Aug 2025 - Aug 2026</span></div>
         <div class="cert-links">
           <a href="#" target="_blank">About</a>
           <a href="#" target="_blank">Verify</a>
