@@ -371,150 +371,66 @@ layout: default
       viewport.addEvent
 </script>
 </section>
-<section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<section id="certifications" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Certifications">
 
-  <h2 style="color:#007ACC;margin-top:0;">Certifications</h2>
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;justify-content:space-between;">
+    Certifications
+    <span style="display:flex;gap:8px;">
+      <button type="button"
+              aria-label="Previous"
+              onclick="document.getElementById('certViewport').scrollBy({top:-300,behavior:'smooth'})"
+              style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▲</button>
+      <button type="button"
+              aria-label="Next"
+              onclick="document.getElementById('certViewport').scrollBy({top:300,behavior:'smooth'})"
+              style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▼</button>
+    </span>
+  </h2>
 
-  <!-- Scoped styles for this section only -->
-  <style>
-    .cert-grid{
-      display:grid;
-      grid-template-columns: repeat(2, minmax(240px,1fr));
-      gap:16px;
-    }
-    @media (max-width:700px){
-      .cert-grid{ grid-template-columns: 1fr; }
-    }
-    .cert-card{
-      border:1px solid #e5e7eb;
-      border-radius:12px;
-      padding:14px 16px;
-      background:#fff;
-      display:flex;
-      align-items:flex-start;
-      gap:12px;
-    }
-    .cert-badge{
-      flex:0 0 auto;
-      background:#007ACC;
-      color:#fff;
-      padding:6px 10px;
-      border-radius:10px;
-      font-weight:700;
-      font-size:12px;
-      letter-spacing:.3px;
-    }
-    .cert-body h3{
-      margin:0 0 4px;
-      font-size:16px;
-      line-height:1.3;
-      color:#1f2937;
-    }
-    .cert-body p{
-      margin:0;
-      font-size:14px;
-      color:#374151;
-      line-height:1.5;
-    }
-    .cert-meta{
-      margin-top:6px;
-      font-size:12px;
-      color:#6b7280;
-    }
-    .cert-links a{
-      display:inline-block;
-      margin-top:6px;
-      margin-right:10px;
-      font-size:12px;
-      color:#007ACC;
-      text-decoration:none;
-      border:1px solid #e5e7eb;
-      padding:6px 10px;
-      border-radius:8px;
-    }
-    .cert-links a:hover{ text-decoration:underline; }
-  </style>
+  <!-- Scrollable Viewport -->
+  <div id="certViewport" tabindex="0" 
+       style="max-height:460px;overflow-y:auto;padding-right:4px;scroll-snap-type:y mandatory;scroll-behavior:smooth;">
+    
+    <div style="display:flex;flex-direction:column;gap:16px;">
 
-  <div class="cert-grid">
+      <!-- Certification Card 1 -->
+      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+        <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">PMP® — Project Management Professional</h3>
+        <p style="margin:0;color:#374151;font-size:15px;">Project Management Institute</p>
+        <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: 3787028<br>Issued: Mar 2024 · Expires: Mar 2027</p>
+        <p style="margin-top:8px;">
+          <a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank" rel="noopener noreferrer"
+             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">About</a>
+          <a href="#" target="_blank" style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;margin-left:8px;">Verify</a>
+        </p>
+      </article>
 
-    <div class="cert-card">
-      <span class="cert-badge">PMP®</span>
-      <div class="cert-body">
-        <h3>Project Management Professional (PMP®)</h3>
-        <p>Project Management Institute</p>
-        <div class="cert-meta">Credential ID: <em>3787028</em> · <span>Mar 2024 - Mar 2027</span></div>
-        <div class="cert-links">
-          <a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">About</a>
-          <a href="#" target="_blank">Verify</a>
-        </div>
-      </div>
+      <!-- Certification Card 2 -->
+      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+        <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">DP-203 — Azure Data Engineer Associate</h3>
+        <p style="margin:0;color:#374151;font-size:15px;">Microsoft</p>
+        <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: 2211773CB6CBA50F<br>Issued: Mar 2024 · Expires: Mar 2025</p>
+        <p style="margin-top:8px;">
+          <a href="https://learn.microsoft.com/credentials/certifications/azure-data-engineer/" target="_blank" rel="noopener noreferrer"
+             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">About</a>
+          <a href="#" target="_blank" style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;margin-left:8px;">Verify</a>
+        </p>
+      </article>
+
+      <!-- Certification Card 3 -->
+      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+        <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">SnowPro Core Certification</h3>
+        <p style="margin:0;color:#374151;font-size:15px;">Snowflake</p>
+        <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2025</p>
+        <p style="margin-top:8px;">
+          <a href="https://www.snowflake.com/certifications/snowpro-core/" target="_blank" rel="noopener noreferrer"
+             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">About</a>
+        </p>
+      </article>
+
+      <!-- Add more certification cards here following the same pattern -->
+
     </div>
-
-    <div class="cert-card">
-      <span class="cert-badge">DP-203</span>
-      <div class="cert-body">
-        <h3>Microsoft Certified: Azure Data Engineer Associate (DP-203)</h3>
-        <p>Microsoft</p>
-        <div class="cert-meta">Credential ID: <em>2211773CB6CBA50F</em> · <span>Mar 2024 - Mar 2025</span></div>
-        <div class="cert-links">
-          <a href="https://learn.microsoft.com/credentials/certifications/azure-data-engineer/" target="_blank">About</a>
-          <a href="#" target="_blank">Verify</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cert-card">
-      <span class="cert-badge">SnowPro</span>
-      <div class="cert-body">
-        <h3>Snowflake SnowPro Core</h3>
-        <p>Snowflake</p>
-        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
-        <div class="cert-links">
-          <a href="https://www.snowflake.com/certifications/snowpro-core/" target="_blank">About</a>
-          <a href="#" target="_blank">Verify</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cert-card">
-      <span class="cert-badge">DBx</span>
-      <div class="cert-body">
-        <h3>Databricks Data Engineer Associate</h3>
-        <p>Databricks</p>
-        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
-        <div class="cert-links">
-          <a href="https://www.databricks.com/learn/certification/data-engineer-associate" target="_blank">About</a>
-          <a href="#" target="_blank">Verify</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cert-card">
-      <span class="cert-badge">AWS</span>
-      <div class="cert-body">
-        <h3>AWS Certified Cloud Practitioner</h3>
-        <p>Amazon Web Services</p>
-        <div class="cert-meta">Credential ID: <em>xxxxxxx</em> · <span>Issued: 2025</span></div>
-        <div class="cert-links">
-          <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target="_blank">About</a>
-          <a href="#" target="_blank">Verify</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cert-card">
-      <span class="cert-badge">HIPAA</span>
-      <div class="cert-body">
-        <h3>HIPAA Privacy & Security Awareness</h3>
-        <p>Accountable</p>
-        <div class="cert-meta">Credential ID: <em>7a473b29-7fce-4813-a462-b7207e139c46</em> · <span>Aug 2025 - Aug 2026</span></div>
-        <div class="cert-links">
-          <a href="#" target="_blank">About</a>
-          <a href="#" target="_blank">Verify</a>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
