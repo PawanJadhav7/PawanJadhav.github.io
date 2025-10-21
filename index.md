@@ -7,7 +7,7 @@ layout: default
   <div style="max-width:1100px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;">
     
     <!-- Logo / Name -->
-    <a href="#home" style="font-weight:700;font-size:18px;color:#007ACC;text-decoration:none;">Pawan Jadhav</a>
+    <a href="#home" class="nav-link" style="font-weight:700;font-size:18px;color:#007ACC;text-decoration:none;">Pawan Jadhav</a>
 
     <!-- Navigation Links -->
     <div id="nav-links" style="display:flex;gap:20px;flex-wrap:wrap;">
