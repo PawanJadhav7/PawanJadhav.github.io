@@ -266,13 +266,9 @@ layout: default
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Publications & Dashboards">
 
-  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;justify-content:space-between;">
-    Publications & Dashboards
-    <span class="pd-nav" style="display:flex;gap:8px;">
-      <button id="pd-up" aria-label="Previous" style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▲</button>
-      <button id="pd-down" aria-label="Next" style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▼</button>
-    </span>
-  </h2>
+ <h2 style="color:#007ACC;margin-top:0;">
+  📂 Publications & Dashboards
+</h2>
 
   <style>
     .pd-viewport{
@@ -380,19 +376,9 @@ layout: default
 
 <section id="certifications" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Certifications">
 
-  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;justify-content:space-between;">
-    Certifications
-    <span style="display:flex;gap:8px;">
-      <button type="button"
-              aria-label="Previous"
-              onclick="document.getElementById('certViewport').scrollBy({top:-360,behavior:'smooth'})"
-              style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▲</button>
-      <button type="button"
-              aria-label="Next"
-              onclick="document.getElementById('certViewport').scrollBy({top:360,behavior:'smooth'})"
-              style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▼</button>
-    </span>
-  </h2>
+ <h2 style="color:#007ACC;margin-top:0;">
+  📋 Certifications
+</h2>
 
   <!-- Scrollable Viewport (increase height if you want) -->
   <div id="certViewport" tabindex="0"
