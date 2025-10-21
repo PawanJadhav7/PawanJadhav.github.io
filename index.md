@@ -483,7 +483,29 @@ layout: default
     </div>
   </div>
 </section>
+<section id="projectmanagement" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Project Management Leadership">
 
+  <h2 style="color:#007ACC;margin-top:0;">🧩 Project Management Leadership</h2>
+  <p style="color:#374151;margin:6px 0 18px;">
+    Certified <strong>Project Management Professional (PMP®)</strong> with hands-on leadership in agile and hybrid delivery models for <strong>healthcare and finance data programs</strong>. Skilled at aligning technical execution with strategic objectives, cross-functional coordination, and continuous delivery.
+  </p>
+
+  <ul style="margin:0;padding-left:20px;color:#374151;line-height:1.6;font-size:15px;">
+    <li><strong>Program Governance:</strong> Oversaw 6+ concurrent data initiatives (Azure, Snowflake, Airflow) under HIPAA & SOC2 compliance frameworks.</li>
+    <li><strong>Agile Delivery:</strong> Directed sprint planning, backlog prioritization, and burndown tracking with distributed teams (US/India).</li>
+    <li><strong>Stakeholder Engagement:</strong> Translated business needs into data pipeline requirements and measurable KPIs.</li>
+    <li><strong>Risk & Change Control:</strong> Implemented issue triage, dependency tracking, and risk mitigation strategies reducing project delays by 25%.</li>
+    <li><strong>Budget & Reporting:</strong> Managed $1.2M program scope and delivered consistent reporting to executive sponsors using Power BI dashboards.</li>
+  </ul>
+
+  <p style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;">
+    <a class="btn" href="/assets/Pawan_Jadhav_Resume.pdf" target="_blank" rel="noopener noreferrer"
+       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Resume</a>
+    <a class="btn" href="https://www.pmi.org/certifications/project-management-pmp" target="_blank" rel="noopener noreferrer"
+       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">🎓 PMP® Details</a>
+  </p>
+
+</section>
 
 
 <section id="cloud" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Cloud Technologies">
@@ -691,7 +713,6 @@ layout: default
 
 </section>
 
-<section id="projectmanagement" style="display:None;background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Project Management"></section>
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
