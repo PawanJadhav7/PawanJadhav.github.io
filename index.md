@@ -56,6 +56,13 @@ layout: default
     window.addEventListener("scroll", activateLink);
   });
 </script>
+
+<section id="home">...</section>
+<section id="cloud">...</section>
+<section id="healthcare">...</section>
+<section id="finance">...</section>
+
+
 <div class="hero" style="display:flex;align-items:center;justify-content:flex-start;gap:24px;flex-wrap:nowrap;margin-top:20px;">
 
   <!-- Profile Image on the Left -->
@@ -73,6 +80,9 @@ layout: default
   </div>
 
 </div>
+
+
+
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
