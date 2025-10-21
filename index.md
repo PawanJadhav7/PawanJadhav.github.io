@@ -519,7 +519,6 @@ layout: default
   </div>
 </section>
 
-<section id="home">Home </section>
 <section id="cloud">Cloud</section>
 <section id="healthcare">Healthcare</section>
 <section id="finance">Finance</section>
