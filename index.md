@@ -684,13 +684,24 @@ layout: default
     Let's stay in touch. 
     I would like to hear your thoughts and answer any questions you might have about my work and experience.
   </p>
-  <p style="margin-top:20px;">
-    <a class="btn" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer" >📄 Resume (PDF)</a>
-    <a class="btn" href="mailto:pawan.jadhav7@gmail.com">📧 pawan.jadhav7@gmail.com</a>
-    <a class="btn" href="https://www.linkedin.com/in/pawan-jadhav/" target="_blank">🔗 LinkedIn</a>
-    <a class="btn" href="https://github.com/PawanJadhav7" target="https://github.com/settings/repositories" rel="noopener noreferrer" >💻 GitHub</a>
-    <a class="btn" target="_blank">📞 +1 914 267 5356</a>
-  </p>
+<p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+
+  <a class="btn" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Resume</a>
+
+  <a class="btn" href="mailto:pawan.jadhav7@gmail.com"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📧 Email</a>
+
+  <a class="btn" href="https://www.linkedin.com/in/pawan-jadhav/" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">🔗 LinkedIn</a>
+
+  <a class="btn" href="https://github.com/PawanJadhav7" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 GitHub</a>
+
+  <a class="btn" href="tel:+19142675356"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📞 +1 914-267-5356</a>
+
+</p>
 
 </section>
 
