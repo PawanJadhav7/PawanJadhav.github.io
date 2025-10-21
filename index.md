@@ -496,7 +496,10 @@ layout: default
 
 <section id="cloud" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Cloud Technologies">
 
-  <h2 style="color:#007ACC;margin-top:0;">☁️ Cloud</h2>
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
+  <img src="/assets/images/cloud.gif" alt="Cloud Computing" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
+  Cloud
+</h2>
   <p style="color:#374151;margin:6px 0 18px;">Platforms and tooling used to build secure, scalable data platforms.</p>
 
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
