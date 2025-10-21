@@ -57,10 +57,7 @@ layout: default
   });
 </script>
 
-<section id="home">...</section>
-<section id="cloud">...</section>
-<section id="healthcare">...</section>
-<section id="finance">...</section>
+
 
 
 <div class="hero" style="display:flex;align-items:center;justify-content:flex-start;gap:24px;flex-wrap:nowrap;margin-top:20px;">
