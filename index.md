@@ -421,7 +421,7 @@ layout: default
       </article>
 
       <!-- 3. SnowPro Core -->
-      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+      <article style="display:none;scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
         <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">SnowPro Core Certification</h3>
         <p style="margin:0;color:#374151;font-size:15px;">Snowflake</p>
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2025</p>
@@ -432,7 +432,7 @@ layout: default
       </article>
 
       <!-- 4. Databricks DEA -->
-      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+      <article style="display:none;scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
         <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">Databricks Data Engineer Associate</h3>
         <p style="margin:0;color:#374151;font-size:15px;">Databricks</p>
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2025</p>
@@ -443,7 +443,7 @@ layout: default
       </article>
 
       <!-- 5. AWS CCP -->
-      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+      <article style="display:none;scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
         <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">AWS Certified Cloud Practitioner</h3>
         <p style="margin:0;color:#374151;font-size:15px;">Amazon Web Services</p>
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2025</p>
@@ -454,7 +454,7 @@ layout: default
       </article>
 
       <!-- 6. ITIL 4 Foundation -->
-      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+      <article style="display:none;scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
         <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">ITIL® 4 Foundation</h3>
         <p style="margin:0;color:#374151;font-size:15px;">AXELOS / PeopleCert</p>
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2024</p>
@@ -465,7 +465,7 @@ layout: default
       </article>
 
       <!-- 7. PSM I -->
-      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+      <article style="display:none;scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
         <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">Professional Scrum Master™ I (PSM I)</h3>
         <p style="margin:0;color:#374151;font-size:15px;">Scrum.org</p>
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2024</p>
