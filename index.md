@@ -678,7 +678,7 @@ layout: default
 
 </section>
 
-<section id="projectmanagement" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Project Management"></section>
+<section id="projectmanagement" style="display:None;background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Project Management"></section>
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
