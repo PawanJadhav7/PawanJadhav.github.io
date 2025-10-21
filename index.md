@@ -623,9 +623,12 @@ layout: default
         Built time-series marts in Snowflake and automated reports via Airflow.
       </p>
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Report runtime improved from 11m → 90s; 40% faster KPI analysis.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;">
-        <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer">💻 Code</a>
-        <a class="btn" href="/projects/finance-fraud/" target="_blank" rel="noopener noreferrer">📄 Case Study</a>
+
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+      <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">      💻 Code</a>
+      <a class="btn" href="/projects/finance-fraud/" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">      📄 Case Study</a>
       </div>
     </article>
 
@@ -637,10 +640,12 @@ layout: default
         Integrated outputs into Power BI dashboards for business planning.
       </p>
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Improved forecast accuracy by 22%, supporting strategic pricing decisions.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;">
-        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">💻 Code</a>
-        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">📊 Model Overview</a>
-      </div>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+    <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">  💻 Code</a>
+    <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">  📊 Model Overview</a>
+    </div>
     </article>
 
     <!-- Project 3 -->
@@ -651,10 +656,17 @@ layout: default
         Integrated dashboards to flag anomalies with root-cause drilldowns.
       </p>
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced investigation time by 35%, improved detection recall by 15%.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;">
-        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">💻 Code</a>
-        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">📊 Dashboard</a>
-      </div>
+
+      
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+     <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+    <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">  📊 Dashboard</a>
+    </div>
+
+
+      
     </article>
 
   </div>
