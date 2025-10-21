@@ -3,23 +3,59 @@ title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
 layout: default
 ---
 <!-- ====== NAVIGATION BAR ====== -->
-<nav style="background:#ffffff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(0,0,0,0.05);position:sticky;top:0;z-index:1000;">
+<nav id="navbar" style="background:#ffffff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(0,0,0,0.05);position:sticky;top:0;z-index:1000;">
   <div style="max-width:1100px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;">
     
     <!-- Logo / Name -->
-    <a href="/" style="font-weight:700;font-size:18px;color:#007ACC;text-decoration:none;">
-      Pawan Jadhav
-    </a>
+    <a href="#home" style="font-weight:700;font-size:18px;color:#007ACC;text-decoration:none;">Pawan Jadhav</a>
 
     <!-- Navigation Links -->
-    <div style="display:flex;gap:20px;flex-wrap:wrap;">
-      <a href="#home" style="color:#374151;text-decoration:none;font-weight:500;">Home</a>
-      <a href="#cloud" style="color:#374151;text-decoration:none;font-weight:500;">Cloud</a>
-      <a href="#healthcare" style="color:#374151;text-decoration:none;font-weight:500;">Healthcare</a>
-      <a href="#finance" style="color:#374151;text-decoration:none;font-weight:500;">Finance</a>
+    <div id="nav-links" style="display:flex;gap:20px;flex-wrap:wrap;">
+      <a href="#home" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Home</a>
+      <a href="#cloud" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Cloud</a>
+      <a href="#healthcare" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Healthcare</a>
+      <a href="#finance" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Finance</a>
     </div>
   </div>
 </nav>
+
+<style>
+  html{scroll-behavior:smooth;}
+  .nav-link.active {
+    color:#007ACC !important;
+    font-weight:600;
+    text-decoration:underline;
+  }
+</style>
+
+<script>
+  // --- Active link highlight on scroll ---
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    function activateLink() {
+      let scrollPos = window.scrollY + 120; // offset for sticky navbar height
+
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute("id");
+
+        if (scrollPos >= top && scrollPos < top + height) {
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + id) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    }
+
+    window.addEventListener("scroll", activateLink);
+  });
+</script>
 <div class="hero" style="display:flex;align-items:center;justify-content:flex-start;gap:24px;flex-wrap:nowrap;margin-top:20px;">
 
   <!-- Profile Image on the Left -->
