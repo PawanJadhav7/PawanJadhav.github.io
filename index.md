@@ -7,7 +7,7 @@ layout: default
   <div style="max-width:1100px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;">
     
     <!-- Logo / Name -->
-    <a href="#home" class="nav-link" style="font-weight:700;font-size:18px;color:#007ACC;text-decoration:none;">Pawan Jadhav</a>
+    <a href="#home" style="font-weight:700;font-size:18px;color:#007ACC;text-decoration:none;">Pawan Jadhav</a>
 
     <!-- Navigation Links -->
     <div id="nav-links" style="display:flex;gap:20px;flex-wrap:wrap;">
@@ -80,7 +80,7 @@ layout: default
 
 
 
-<section id="cloud" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<section id="home" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
 
   <h2 style="color:#007ACC;margin-top:0;">Professional Summary</h2>
 
