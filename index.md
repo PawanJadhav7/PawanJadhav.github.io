@@ -544,7 +544,7 @@ layout: default
 <section id="healthcare" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Healthcare Data Engineering & Analytics">
 
   <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
-    <img src="/assets/images/healthcare.gif" alt="Healthcare Analytics" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
+    <img src="/assets/images/healthcare.jpg" alt="" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
     Healthcare Data Engineering & Analytics
   </h2>
   <p style="color:#374151;margin:6px 0 18px;">
