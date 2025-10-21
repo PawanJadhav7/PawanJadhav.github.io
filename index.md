@@ -492,18 +492,11 @@ layout: default
 
   <ul style="margin:0;padding-left:20px;color:#374151;line-height:1.6;font-size:15px;">
     <li><strong>Program Governance:</strong> Oversaw 6+ concurrent data initiatives (Azure, Snowflake, Airflow) under HIPAA & SOC2 compliance frameworks.</li>
-    <li><strong>Agile Delivery:</strong> Directed sprint planning, backlog prioritization, and burndown tracking with distributed teams (US/India).</li>
+    <li><strong>Agile Delivery:</strong> Directed sprint planning, backlog prioritization, and burndown tracking with distributed teams.</li>
     <li><strong>Stakeholder Engagement:</strong> Translated business needs into data pipeline requirements and measurable KPIs.</li>
     <li><strong>Risk & Change Control:</strong> Implemented issue triage, dependency tracking, and risk mitigation strategies reducing project delays by 25%.</li>
     <li><strong>Budget & Reporting:</strong> Managed $1.2M program scope and delivered consistent reporting to executive sponsors using Power BI dashboards.</li>
   </ul>
-
-  <p style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;">
-    <a class="btn" href="/assets/Pawan_Jadhav_Resume.pdf" target="_blank" rel="noopener noreferrer"
-       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Resume</a>
-    <a class="btn" href="https://www.pmi.org/certifications/project-management-pmp" target="_blank" rel="noopener noreferrer"
-       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">🎓 PMP® Details</a>
-  </p>
 
 </section>
 
