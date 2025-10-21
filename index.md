@@ -328,7 +328,8 @@ layout: default
         <h3>📘 ICD-10 CM Bulk Loader & Profiling</h3>
         <p>Python notebook for bulk ICD-10 CM loading, validation, and profiling to support DQ and healthcare analytics pipelines.</p>
         <p class="pd-links">
-          <a href="https://nbviewer.org/..." target="_blank" rel="noopener noreferrer">View on nbviewer</a>
+          <!--<a href="https://nbviewer.org/..." target="_blank" rel="noopener noreferrer">View on nbviewer</a>-->
+          <a href="http://localhost:8890/notebooks/Python%20for%20Finance.ipynb?" target="_blank" rel="noopener noreferrer">View on nbviewer</a>
         </p>
       </article>
 
