@@ -2,7 +2,24 @@
 title: "Pawan Jadhav PMP® — Data Engineering & Analytics"
 layout: default
 ---
+<!-- ====== NAVIGATION BAR ====== -->
+<nav style="background:#ffffff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(0,0,0,0.05);position:sticky;top:0;z-index:1000;">
+  <div style="max-width:1100px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+    
+    <!-- Logo / Name -->
+    <a href="/" style="font-weight:700;font-size:18px;color:#007ACC;text-decoration:none;">
+      Pawan Jadhav
+    </a>
 
+    <!-- Navigation Links -->
+    <div style="display:flex;gap:20px;flex-wrap:wrap;">
+      <a href="#home" style="color:#374151;text-decoration:none;font-weight:500;">Home</a>
+      <a href="#cloud" style="color:#374151;text-decoration:none;font-weight:500;">Cloud</a>
+      <a href="#healthcare" style="color:#374151;text-decoration:none;font-weight:500;">Healthcare</a>
+      <a href="#finance" style="color:#374151;text-decoration:none;font-weight:500;">Finance</a>
+    </div>
+  </div>
+</nav>
 <div class="hero" style="display:flex;align-items:center;justify-content:flex-start;gap:24px;flex-wrap:nowrap;margin-top:20px;">
 
   <!-- Profile Image on the Left -->
