@@ -15,6 +15,7 @@ layout: default
       <a href="#cloud" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Cloud</a>
       <a href="#healthcare" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Healthcare</a>
       <a href="#finance" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Finance</a>
+      <a href="#projectmanagement" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Project Management</a>
     </div>
   </div>
 </nav>
@@ -601,7 +602,7 @@ layout: default
   </p>
 
 </section>
-
+<section id="projectmanagement" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Project Management">
 <section id="finance" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Finance Data Engineering & Analytics">
 
   <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
