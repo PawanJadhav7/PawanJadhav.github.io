@@ -151,13 +151,9 @@ layout: default
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Featured Projects">
 
-  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;justify-content:space-between;">
-    Featured Projects
-    <span class="fp-nav" style="display:flex;gap:8px;">
-      <button id="fp-prev" aria-label="Previous" style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">◀</button>
-      <button id="fp-next" aria-label="Next" style="border:1px solid #e5e7eb;background:#f8fafc;border-radius:10px;padding:8px 10px;cursor:pointer;">▶</button>
-    </span>
-  </h2>
+ <h2 style="color:#007ACC;margin-top:0;">
+  🌟 Featured Projects
+</h2>
 
   <style>
     /* Carousel track */
