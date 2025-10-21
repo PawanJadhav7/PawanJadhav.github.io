@@ -540,8 +540,129 @@ layout: default
 
   </div>
 </section>
-<section id="healthcare">Healthcare</section>
-<section id="finance">Finance</section>
+<section id="healthcare" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Healthcare Data Engineering & Analytics">
+
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
+    <img src="/assets/images/healthcare.gif" alt="Healthcare Analytics" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
+    Healthcare Data Engineering & Analytics
+  </h2>
+  <p style="color:#374151;margin:6px 0 18px;">
+    Data pipelines and analytics designed for clinical, claims, and regulatory ecosystems — ensuring interoperability, integrity, and actionable intelligence.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+
+    <!-- Project 1 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">FHIR ETL — Spark to Snowflake</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Built an automated ETL framework for ingesting <strong>FHIR-compliant JSON</strong> data using PySpark and Snowflake Streams/Tasks.  
+        Implemented SCD2 for Member/Provider tables, dbt tests, and lineage tracking.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, improved auditability, and 30% cost optimization.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank" rel="noopener noreferrer">💻 Code</a>
+        <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank" rel="noopener noreferrer">📊 Architecture</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Claims Anomaly Detection</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Developed an anomaly detection pipeline using <strong>ICD-10 CM</strong> data to detect potential fraud, waste, and abuse in claims.  
+        Integrated PySpark feature engineering, statistical modeling, and BI dashboards.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by 18%; enabled near real-time integrity review.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn" href="https://github.com/PawanJadhav/Healthcare-Claims" target="_blank" rel="noopener noreferrer">💻 Code</a>
+        <a class="btn" href="/projects/healthcare-claims/" target="_blank" rel="noopener noreferrer">📄 Case Study</a>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Patient Utilization & LOS Dashboard</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Designed a <strong>Looker Studio</strong> dashboard integrating EHR and claims data for patient utilization, LOS, and provider performance.  
+        Created semantic models and data marts on Snowflake for interactive insights.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Streamlined operational decision-making across ACO partner networks.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn" href="https://lookerstudio.google.com/..." target="_blank" rel="noopener noreferrer">📊 Dashboard</a>
+        <a class="btn" href="/blog/los-trends.md" target="_blank" rel="noopener noreferrer">📝 Notes</a>
+      </div>
+    </article>
+
+  </div>
+
+  <p style="text-align:right;margin-top:20px;">
+    <a class="btn" href="/healthcare.html" target="_blank" rel="noopener noreferrer">📄 View More Healthcare Projects</a>
+  </p>
+
+</section>
+
+<section id="finance" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Finance Data Engineering & Analytics">
+
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
+    <img src="/assets/images/finance.gif" alt="Finance Analytics" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
+    Finance Data Engineering & Analytics
+  </h2>
+  <p style="color:#374151;margin:6px 0 18px;">
+    Scalable data systems for financial insights — integrating multi-source data for pricing, profitability, and performance intelligence.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+
+    <!-- Project 1 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Pricing & Margin Analytics</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Designed ETL pipelines for integrating product, sales, and cost data to calculate margins and KPIs.  
+        Built time-series marts in Snowflake and automated reports via Airflow.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Report runtime improved from 11m → 90s; 40% faster KPI analysis.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer">💻 Code</a>
+        <a class="btn" href="/projects/finance-fraud/" target="_blank" rel="noopener noreferrer">📄 Case Study</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Financial Forecasting Pipelines</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Developed automated data ingestion and forecasting models using Snowflake Tasks and Python ARIMA for sales trend prediction.  
+        Integrated outputs into Power BI dashboards for business planning.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Improved forecast accuracy by 22%, supporting strategic pricing decisions.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">💻 Code</a>
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">📊 Model Overview</a>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Transaction Fraud Analytics</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Built near-real-time fraud detection workflows leveraging event streams and anomaly detection in Snowflake with ML-based thresholds.  
+        Integrated dashboards to flag anomalies with root-cause drilldowns.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced investigation time by 35%, improved detection recall by 15%.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">💻 Code</a>
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">📊 Dashboard</a>
+      </div>
+    </article>
+
+  </div>
+
+  <p style="text-align:right;margin-top:20px;">
+    <a class="btn" href="/finance.html" target="_blank" rel="noopener noreferrer">📄 View More Finance Projects</a>
+  </p>
+
+</section>
 
 
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
