@@ -701,7 +701,7 @@ layout: default
   </div>
 
 <p style="text-align:right;margin-top:16px;display:flex;justify-content:flex-end;">
-  <a class="btn" href="/finance.html" target="_blank" rel="noopener noreferrer"
+  <a class="btn" href="/finance.html" rel="noopener noreferrer"
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 View More Finance Projects</a>
 </p>
 
