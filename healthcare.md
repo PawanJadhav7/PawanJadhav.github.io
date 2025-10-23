@@ -4,7 +4,13 @@ layout: default
 permalink: /healthcare.html
 description: "Portfolio projects in healthcare data engineering, FHIR, and analytics."
 ---
-
+<p style="margin:16px 0;">
+  <a href="/" class="btn" style="display:inline-flex;align-items:center;gap:6px;
+      padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
+      background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+    ← Back to Home
+  </a>
+</p>
 <section style="background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:24px 0;box-shadow:0 4px 10px rgba(0,0,0,.05);">
   <h1 style="color:#007ACC;margin:0 0 8px;">Healthcare — Data Engineering & Analytics</h1>
   <p style="color:#374151;margin:0;">
