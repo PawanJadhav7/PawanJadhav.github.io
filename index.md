@@ -394,9 +394,7 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: 3787028<br>Issued: Mar 2024 · Expires: Mar 2027</p>
         <p style="margin-top:8px;">
           <a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank" rel="noopener noreferrer"
-             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">About</a>
-          <a href="#" target="_blank" rel="noopener noreferrer"
-             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;margin-left:8px;">Verify</a>
+             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
 
