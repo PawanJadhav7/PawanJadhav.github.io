@@ -722,6 +722,7 @@ layout: default
     Let's stay in touch. 
     I would like to hear your thoughts and answer any questions you might have about my work and experience.
   </p>
+  </section>
   <!-- ====== FIXED BOTTOM CONTACT BAR ====== -->
   <section style="margin-bottom:70px;">
   <div id="contact-bar">
@@ -777,7 +778,8 @@ layout: default
   }
   </style>
 </section>
-<!-- <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+<section style="margin-bottom:70px;">
+<p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
 
   <a class="btn" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Resume</a>
@@ -794,7 +796,7 @@ layout: default
   <a class="btn" href="tel:+19142675356"
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📞 +1 914-267-5356</a>
 
-</p> -->
+</p> 
 
 </section>
 
