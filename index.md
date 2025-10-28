@@ -775,6 +775,7 @@ layout: default
     }
   }
 </style>
+<section style="margin-bottom:70px;"></section>
 <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
 
   <a class="btn" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"
