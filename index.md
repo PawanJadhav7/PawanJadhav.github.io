@@ -730,7 +730,51 @@ layout: default
   <a href="https://github.com/PawanJadhav7" target="_blank" rel="noopener noreferrer" class="contact-btn">💻 GitHub</a>
   <a href="tel:+19142675356" class="contact-btn">📞 +1&nbsp;914-267-5356</a>
 </div>
+<style>
+  /* ===== BOTTOM CONTACT BAR ===== */
+  #contact-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 8px 12px;
+    z-index: 9999;
+  }
 
+  #contact-bar .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background: #f8fafc;
+    color: #111827;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all .2s;
+  }
+
+  #contact-bar .contact-btn:hover {
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    #contact-bar {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 6px;
+    }
+  }
+</style>
 <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
 
   <a class="btn" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"
