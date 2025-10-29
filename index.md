@@ -731,34 +731,57 @@ layout: default
   <a href="tel:+19142675356" class="contact-btn">📞 +1&nbsp;914-267-5356</a>
 </div>
 <style>
-  /* ===== BOTTOM CONTACT BAR (matches top banner aesthetic) ===== */
+  :root { --contact-bar-h: 56px; } /* same feel as top nav */
+
+  /* Fixed bottom shell */
   #contact-bar{
     position: fixed;
-    bottom: 0; left: 0; right: 0;
-    background:#ffffff;
-    border-top:1px solid #e5e7eb;
-    box-shadow:0 -2px 6px rgba(0,0,0,0.05);
-    display:flex; align-items:center; justify-content:center;
-    gap:10px; padding:8px 12px;
-    z-index:9999;
+    left: 0; right: 0; bottom: 0;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+    z-index: 9999;
   }
+
+  /* Centered inner container (syncs width/spacing with header) */
+  #contact-bar .contact-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px 24px;                 /* same horizontal padding as header */
+    min-height: var(--contact-bar-h);  /* consistent height */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;         /* or center if you prefer */
+    gap: 10px;
+    flex-wrap: wrap;                   /* wrap on small screens */
+  }
+
+  /* Buttons (same visual language as site) */
   #contact-bar .contact-btn{
-    display:inline-flex; align-items:center; justify-content:center;
-    padding:8px 14px; border-radius:10px;
-    border:1px solid #e5e7eb; background:#f8fafc; color:#111827;
-    text-decoration:none; font-weight:500; font-size:14px;
-    transition:all .2s;
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background: #f8fafc; color: #111827;
+    text-decoration: none; font-weight: 500; font-size: 14px;
+    transition: all .2s;
+    white-space: nowrap;
   }
   #contact-bar .contact-btn:hover{
-    background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.08);
-    text-decoration:none;
+    background: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    text-decoration: none;
   }
-  /* Mobile stacking */
-  @media (max-width:640px){
-    #contact-bar{ flex-wrap:wrap; gap:6px; }
+
+  /* Keep last section visible (no overlap) */
+  body{ padding-bottom: calc(var(--contact-bar-h) + env(safe-area-inset-bottom)); }
+
+  /* Mobile tweaks: allow taller bar and extra bottom padding */
+  @media (max-width: 640px){
+    :root { --contact-bar-h: 70px; }
+    #contact-bar .contact-inner{ justify-content: center; gap: 8px; }
   }
 </style>
-<div style="height:70px;"></div>
+<div style="height:10px;"></div>
 <section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
   👁️‍🗨️ <strong>Visitors:</strong>
   <!-- Visitor badge (increments on view) -->
