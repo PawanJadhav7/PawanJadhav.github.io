@@ -738,56 +738,49 @@ layout: default
   :root { --contact-bar-h: 56px; } /* same feel as top nav */
 
   /* Fixed bottom shell */
-#contact-bar {
-  position: fixed;
-  bottom: 0;
-  left: 50%;                      /* start from middle of screen */
-  transform: translateX(-50%);    /* shift back half its width */
-  width: 900px;                   /* fixed width */
-  
-  background: #ffffff;
-  border-top: 1px solid #e5e7eb;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
-  z-index: 1000;
+:root { --contact-bar-h: 56px; }  /* keep bar height consistent */
+
+#contact-bar .contact-inner{
+  /* fixed height like the top nav */
+  height: var(--contact-bar-h);
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* spacing and single row */
+  column-gap: 24px;          /* use 18–24 for nice balance */
+  flex-wrap: nowrap;         /* prevent wrapping (no extra height) */
+  overflow-x: auto;          /* if it gets tight, allow horizontal scroll */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
-  /* Centered inner container (syncs width/spacing with header) */
+#contact-bar .contact-btn{
+  padding: 8px 12px;         /* slightly tighter to fit in 900px */
+  white-space: nowrap;       /* keep each button on one line */
+}
+
+/* keep content from being covered */
+body{
+  padding-bottom: calc(var(--contact-bar-h) + 8px);
+}
+
+/* On small screens, let it be full-width and a bit taller if needed */
+@media (max-width: 960px){
+  #contact-bar{
+    width: 100%;
+    left: 0; transform: none;
+  }
+}
+@media (max-width: 640px){
+  :root { --contact-bar-h: 70px; }
   #contact-bar .contact-inner{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 8px 24px;                 /* same horizontal padding as header */
-    min-height: var(--contact-bar-h);  /* consistent height */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;         /* or center if you prefer */
-    gap: 80px;
-    flex-wrap: wrap;                   /* wrap on small screens */
+    justify-content: center;
+    column-gap: 16px;
   }
-
-  /* Buttons (same visual language as site) */
-  #contact-bar .contact-btn{
-    display: inline-flex; align-items: center; justify-content: center;
-    padding: 9px 16px;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
-    background: #f8fafc; color: #111827;
-    text-decoration: none; font-weight: 500; font-size: 14px;
-    transition: all .2s;
-    white-space: nowrap;
-  }
-  #contact-bar .contact-btn:hover{
-    background: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.08);
-    text-decoration: none;
-  }
-
-  /* Keep last section visible (no overlap) */
-  body{ padding-bottom: calc(var(--contact-bar-h) + env(safe-area-inset-bottom)); }
-
-  /* Mobile tweaks: allow taller bar and extra bottom padding */
-  @media (max-width: 640px){
-    :root { --contact-bar-h: 70px; }
-    #contact-bar .contact-inner{ justify-content: center; gap: 8px; }
-  }
+}
 </style>
 
 <div style="height:10px;"></div>
