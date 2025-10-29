@@ -756,7 +756,7 @@ layout: default
     display: flex;
     align-items: center;
     justify-content: flex-end;         /* or center if you prefer */
-    gap: 10px;
+    gap: 18px;
     flex-wrap: wrap;                   /* wrap on small screens */
   }
 
