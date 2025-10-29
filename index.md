@@ -753,7 +753,7 @@ layout: default
   bottom: 0;
   left: 50%;                       /* center horizontally */
   transform: translateX(-50%);     /* center the 1100px container */
-  width: 950px;                   /* same width as your top nav */
+  width: 1000px;                   /* same width as your top nav */
   height: var(--contact-bar-h);
   background: #ffffff;             /* solid white bar */
   border: 1px solid #e5e7eb;       /* subtle border for separation */
