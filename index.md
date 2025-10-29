@@ -753,7 +753,7 @@ layout: default
   bottom: 0;
   left: 50%;                       /* center horizontally */
   transform: translateX(-50%);     /* center the 1100px container */
-  width: 1100px;                   /* same width as your top nav */
+  width: 1050px;                   /* same width as your top nav */
   height: var(--contact-bar-h);
   background: #ffffff;             /* solid white bar */
   border: 1px solid #e5e7eb;       /* subtle border for separation */
@@ -763,6 +763,7 @@ layout: default
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
   /* Inner container matches header container exactly */
@@ -785,10 +786,10 @@ layout: default
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 22px;
   flex-wrap: nowrap;
   width: 100%;
-  padding: 0 24px;
+  padding: 0 16px;
   box-sizing: border-box;
 }
 
