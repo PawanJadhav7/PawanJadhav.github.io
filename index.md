@@ -745,21 +745,18 @@ layout: default
 </div>
 
 <style>
-  :root { --contact-bar-h: 56px; } /* same height as header */
+  :root { --contact-bar-h: 56px; --contact-bar-vpad: 8px;} /* same height as header */
 
-  /* Full-width bar (like the header <nav>) */
-  #contact-bar{
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: var(--contact-bar-h);   /* <-- key: fix the shell height */
-    background: #ffffff;
-    border-top: 1px solid #e5e7eb;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
-    z-index: 1000;
-    box-sizing: border-box;         /* include border in height */
-  }
+  /* Fixed shell: full-width but transparent */
+#contact-bar{
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  height: calc(var(--contact-bar-h) + (var(--contact-bar-vpad) * 2));
+  background: transparent;      /* <-- no full-width background now */
+  border: 0;
+  box-shadow: none;
+  z-index: 1000;
+}
 
   /* Inner container matches header container exactly */
   #contact-bar .contact-inner{
