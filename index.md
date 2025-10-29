@@ -723,7 +723,15 @@ layout: default
     I would like to hear your thoughts and answer any questions you might have about my work and experience.
   </p>
   </section>
-
+<section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
+  👁️‍🗨️ <strong>Visitors:</strong>
+  <!-- Visitor badge (increments on view) -->
+<img src="https://visitor-badge.laobi.icu/badge?page_id=PawanJadhav.portfolio"
+     alt="Visitors"
+     style="vertical-align:middle;margin-left:6px;">
+  <br>
+  © 2025 Pawan Jadhav — Data Engineering & Analytics Portfolio
+</section>
 <!-- ====== FIXED BOTTOM CONTACT BAR ====== -->
 <div id="contact-bar" role="contentinfo" aria-label="Quick contact">
   <div class="contact-inner">
@@ -782,14 +790,3 @@ body{
   }
 }
 </style>
-
-<div style="height:10px;"></div>
-<section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
-  👁️‍🗨️ <strong>Visitors:</strong>
-  <!-- Visitor badge (increments on view) -->
-<img src="https://visitor-badge.laobi.icu/badge?page_id=PawanJadhav.portfolio"
-     alt="Visitors"
-     style="vertical-align:middle;margin-left:6px;">
-  <br>
-  © 2025 Pawan Jadhav — Data Engineering & Analytics Portfolio
-</section>
