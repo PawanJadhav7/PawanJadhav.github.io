@@ -745,17 +745,24 @@ layout: default
 </div>
 
 <style>
-  :root { --contact-bar-h: 56px; --contact-bar-vpad: 8px;} /* same height as header */
+  :root { --contact-bar-h: 56px; } /* same height as header */
 
-  /* Fixed shell: full-width but transparent */
+  /* Fixed bottom bar, same width feel as top nav */
 #contact-bar{
   position: fixed;
-  left: 0; right: 0; bottom: 0;
-  height: calc(var(--contact-bar-h) + (var(--contact-bar-vpad) * 2));
-  background: transparent;      /* <-- no full-width background now */
-  border: 0;
-  box-shadow: none;
+  bottom: 0;
+  left: 50%;                       /* center horizontally */
+  transform: translateX(-50%);     /* center the 1100px container */
+  width: 1100px;                   /* same width as your top nav */
+  height: var(--contact-bar-h);
+  background: #ffffff;             /* solid white bar */
+  border: 1px solid #e5e7eb;       /* subtle border for separation */
+  border-radius: 12px 12px 0 0;    /* rounded top corners */
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   /* Inner container matches header container exactly */
@@ -773,36 +780,55 @@ layout: default
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
   }
-
-  /* Buttons */
-  #contact-bar .contact-btn{
-    display:inline-flex; align-items:center; justify-content:center;
-    padding:8px 12px; border-radius:10px;
-    border:1px solid #e5e7eb; background:#f8fafc; color:#111827;
-    text-decoration:none; font-weight:500; font-size:14px; white-space:nowrap;
-    transition:all .2s;
-  }
-  #contact-bar .contact-btn:hover{ background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.08); }
-
-  /* Keep content visible (no overlap) */
-  body{ padding-bottom: calc(var(--contact-bar-h) + 12px); } /* a tad more breathing room */
-
-  /* Small screens */
-  @media (max-width: 960px){
-    #contact-bar .contact-inner{ padding: 0 16px; column-gap: 16px; }
-  }
-  @media (max-width: 640px){
-    :root { --contact-bar-h: 70px; }
-  }
-
-  /* Make anchor jumps and bottom content clear the fixed bars */
-section[id]{
-  scroll-margin-top: 90px; /* clears sticky header */
-  scroll-margin-bottom: calc(var(--contact-bar-h) + 12px);
+  /* Inner content (links) */
+#contact-bar .contact-inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
-/* Respect iOS safe areas and ensure content never sits under the contact bar */
+/* Buttons */
+#contact-bar .contact-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid #e5e7eb;
+  background:#f8fafc;
+  color:#111827;
+  text-decoration:none;
+  font-weight:500;
+  font-size:14px;
+  white-space:nowrap;
+  transition:all .2s;
+}
+  #contact-bar .contact-btn:hover{
+  background:#fff;
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+  /* Prevent overlap with content */
+html, body { margin: 0; }
 body{
-  padding-bottom: calc(var(--contact-bar-h) + env(safe-area-inset-bottom) + 12px);
+  padding-bottom: calc(var(--contact-bar-h) + 16px);
 }
-</style>
+/* Anchor links clear the sticky header and bottom bar */
+section[id]{
+  scroll-margin-top: 90px;
+  scroll-margin-bottom: calc(var(--contact-bar-h) + 16px);
+}
+
+/* Mobile: revert to full-width for usability */
+@media (max-width: 960px){
+  #contact-bar{
+    width: 100%;
+    left: 0;
+    transform: none;
+    border-radius: 0;
+ }
+}
+ </style>
