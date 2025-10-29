@@ -767,7 +767,7 @@ layout: default
   /* Buttons (same visual language as site) */
   #contact-bar .contact-btn{
     display: inline-flex; align-items: center; justify-content: center;
-    padding: 8px 14px;
+    padding: 9px 16px;
     border-radius: 10px;
     border: 1px solid #e5e7eb;
     background: #f8fafc; color: #111827;
