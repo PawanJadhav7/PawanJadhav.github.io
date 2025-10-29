@@ -728,6 +728,7 @@ layout: default
   <a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-btn">📄 Resume</a>
   <a href="mailto:pawan.jadhav7@gmail.com" class="contact-btn">📧 Email</a>
   <a href="https://github.com/PawanJadhav7" target="_blank" rel="noopener noreferrer" class="contact-btn">💻 GitHub</a>
+  <a href="tel:+19142675356" class="contact-btn">📞 +1&nbsp;914-267-5356</a>
 </div>
 <style>
   /* ===== BOTTOM CONTACT BAR (matches top banner aesthetic) ===== */
