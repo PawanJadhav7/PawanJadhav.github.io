@@ -743,6 +743,7 @@ layout: default
     <a href="tel:+19142675356" class="contact-btn">📞 +1&nbsp;914-267-5356</a>
   </div>
 </div>
+
 <style>
   :root { --contact-bar-h: 56px; } /* same height as before */
 
@@ -795,3 +796,4 @@ body{ padding-bottom: calc(var(--contact-bar-h) + 8px); }
 @media (max-width: 640px){
   :root { --contact-bar-h: 70px; }
 }
+</style>
