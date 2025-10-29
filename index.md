@@ -723,7 +723,7 @@ layout: default
     I would like to hear your thoughts and answer any questions you might have about my work and experience.
   </p>
   </section>
-
+<section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
   <nav id="navbar" style="background:#ffffff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(0,0,0,0.05);position:sticky;top:0;z-index:1000;">
   <div id="" style="max-width:1100px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;">
       <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
@@ -747,7 +747,7 @@ layout: default
 </div>
  
 </nav>
-
+</section>
 
  
 
