@@ -753,7 +753,7 @@ layout: default
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 900px;              /* change to 1100px if you want full content width */
+  max-width:1100px;              /* change to 1100px if you want full content width */
   background: #ffffff;
   border-top: 1px solid #e5e7eb;
   box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
