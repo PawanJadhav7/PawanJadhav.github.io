@@ -349,29 +349,29 @@ layout: default
   </div>
 
   <script>
-    (function(){
-      const viewport = document.getElementById('pdViewport');
-      const stack = document.getElementById('pdStack');
-      const up = document.getElementById('pd-up');
-      const down = document.getElementById('pd-down');
+(() => {
+  const viewport = document.getElementById('pdViewport');
+  const stack = document.getElementById('pdStack');
+  if (!viewport || !stack) return;
 
-      function cardHeight(){
-        const card = stack.querySelector('.pd-card');
-        if(!card) return 160;
-        const styles = getComputedStyle(stack);
-        const gap = parseInt(styles.rowGap || styles.gap || 16, 10);
-        return card.getBoundingClientRect().height + gap;
-      }
+  const cardHeight = () => {
+    const card = stack.querySelector('.pd-card');
+    if (!card) return 160;
+    const styles = getComputedStyle(stack);
+    const gap = parseInt(styles.rowGap || styles.gap || 16, 10);
+    return card.getBoundingClientRect().height + gap;
+  };
 
-      function scrollByCard(dir){
-        viewport.scrollBy({ top: dir * cardHeight(), behavior: 'smooth' });
-      }
+  viewport.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') { e.preventDefault(); viewport.scrollBy({ top:  cardHeight(), behavior: 'smooth' }); }
+    if (e.key === 'ArrowUp')   { e.preventDefault(); viewport.scrollBy({ top: -cardHeight(), behavior: 'smooth' }); }
+  });
 
-      up.addEventListener('click', () => scrollByCard(-1));
-      down.addEventListener('click', () => scrollByCard(1));
-
-      // Keyboard support (↑ ↓)
-      viewport.addEvent
+  const upBtn = document.getElementById('pd-up');
+  const downBtn = document.getElementById('pd-down');
+  if (upBtn)   upBtn.addEventListener('click',  () => viewport.scrollBy({ top: -cardHeight(), behavior: 'smooth' }));
+  if (downBtn) downBtn.addEventListener('click',() => viewport.scrollBy({ top:  cardHeight(), behavior: 'smooth' }));
+})();
 </script>
 </section>
 
@@ -745,55 +745,67 @@ layout: default
 </div>
 
 <style>
-  :root { --contact-bar-h: 56px; } /* same height as before */
+  :root { --contact-bar-h: 56px; } /* same height as header */
 
-/* Full-width bar (like the header <nav>) */
-#contact-bar{
-  position: fixed;
-  bottom: 0;
-  left: 0; 
-  right: 0;                     /* stretch edge-to-edge */
-  background: #ffffff;
-  border-top: 1px solid #e5e7eb;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
-  z-index: 1000;
+  /* Full-width bar (like the header <nav>) */
+  #contact-bar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--contact-bar-h);   /* <-- key: fix the shell height */
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+    z-index: 1000;
+    box-sizing: border-box;         /* include border in height */
+  }
+
+  /* Inner container matches header container exactly */
+  #contact-bar .contact-inner{
+    max-width: 1100px;              /* same as header */
+    margin: 0 auto;
+    padding: 0 24px;                /* same horizontal padding as header */
+    height: 100%;                   /* fill the shell’s height */
+    display: flex;
+    align-items: center;
+    justify-content: center;        /* or space-between */
+    column-gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;               /* scroll if tight */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  /* Buttons */
+  #contact-bar .contact-btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:8px 12px; border-radius:10px;
+    border:1px solid #e5e7eb; background:#f8fafc; color:#111827;
+    text-decoration:none; font-weight:500; font-size:14px; white-space:nowrap;
+    transition:all .2s;
+  }
+  #contact-bar .contact-btn:hover{ background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.08); }
+
+  /* Keep content visible (no overlap) */
+  body{ padding-bottom: calc(var(--contact-bar-h) + 12px); } /* a tad more breathing room */
+
+  /* Small screens */
+  @media (max-width: 960px){
+    #contact-bar .contact-inner{ padding: 0 16px; column-gap: 16px; }
+  }
+  @media (max-width: 640px){
+    :root { --contact-bar-h: 70px; }
+  }
+
+  /* Make anchor jumps and bottom content clear the fixed bars */
+section[id]{
+  scroll-margin-top: 90px; /* clears sticky header */
+  scroll-margin-bottom: calc(var(--contact-bar-h) + 12px);
 }
 
-/* Inner container matches header container exactly */
-#contact-bar .contact-inner{
-  max-width: 1100px;            /* same as header */
-  margin: 0 auto;               /* center it */
-  padding: 0 24px;              /* same horizontal padding as header */
-  height: var(--contact-bar-h); /* consistent height */
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;      /* or space-between if you prefer */
-  column-gap: 20px;             /* tweak to 16–24 to taste */
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-}
-
-/* Buttons (unchanged) */
-#contact-bar .contact-btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:8px 12px; border-radius:10px;
-  border:1px solid #e5e7eb; background:#f8fafc; color:#111827;
-  text-decoration:none; font-weight:500; font-size:14px; white-space:nowrap;
-  transition:all .2s;
-}
-#contact-bar .contact-btn:hover{ background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.08); }
-
-/* Keep content visible (no overlap) */
-body{ padding-bottom: calc(var(--contact-bar-h) + 8px); }
-
-/* Small screens: keep full-width; reduce gaps */
-@media (max-width: 960px){
-  #contact-bar .contact-inner{ padding: 0 16px; column-gap: 16px; }
-}
-@media (max-width: 640px){
-  :root { --contact-bar-h: 70px; }
+/* Respect iOS safe areas and ensure content never sits under the contact bar */
+body{
+  padding-bottom: calc(var(--contact-bar-h) + env(safe-area-inset-bottom) + 12px);
 }
 </style>
