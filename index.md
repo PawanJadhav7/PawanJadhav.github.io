@@ -740,7 +740,7 @@ layout: default
   /* Fixed bottom shell */
   #contact-bar{
     position: fixed;
-    left: 100; right: 0; bottom: 0;
+    left: 100; right: 100; bottom: 0;
     background: #ffffff;
     border-top: 1px solid #e5e7eb;
     box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
