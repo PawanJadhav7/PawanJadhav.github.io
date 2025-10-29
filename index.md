@@ -723,8 +723,10 @@ layout: default
     I would like to hear your thoughts and answer any questions you might have about my work and experience.
   </p>
   </section>
-<div id="contact-bar">
-<p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+
+  <nav id="navbar" style="background:#ffffff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(0,0,0,0.05);position:sticky;top:0;z-index:1000;">
+  <div id="" style="max-width:1100px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+      <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
 
   <a class="btn" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Resume</a>
@@ -743,51 +745,11 @@ layout: default
 
 </p> 
 </div>
-  <style>
-  /* ===== BOTTOM CONTACT BAR ===== */
-  #contact-bar {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    background: #ffffff;
-    border-top: 1px solid #e5e7eb;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 8px 12px;
-    z-index: 9999;
-  }
+ 
+</nav>
 
-  #contact-bar .contact-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 14px;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
-    background: #f8fafc;
-    color: #111827;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    transition: all .2s;
-  }
 
-  #contact-bar .contact-btn:hover {
-    background: #fff;
-    box-shadow: 0 4px 14px rgba(0,0,0,.08);
-    text-decoration: none;
-  }
-
-  @media (max-width: 640px) {
-    #contact-bar {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 6px;
-    }
-  }
-  </style>
+ 
 
 <section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
   👁️‍🗨️ <strong>Visitors:</strong>
