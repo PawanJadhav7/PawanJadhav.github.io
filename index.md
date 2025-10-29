@@ -723,10 +723,7 @@ layout: default
     I would like to hear your thoughts and answer any questions you might have about my work and experience.
   </p>
   </section>
-  
-
-
-<section style="margin-bottom:70px;">
+<div id="contact-bar">
 <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
 
   <a class="btn" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"
@@ -745,7 +742,7 @@ layout: default
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📞 +1 914-267-5356</a>
 
 </p> 
-
+</div>
   <style>
   /* ===== BOTTOM CONTACT BAR ===== */
   #contact-bar {
@@ -791,8 +788,6 @@ layout: default
     }
   }
   </style>
-
-</section>
 
 <section style="text-align:center;margin:40px 0 20px;padding-top:10px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px;">
   👁️‍🗨️ <strong>Visitors:</strong>
