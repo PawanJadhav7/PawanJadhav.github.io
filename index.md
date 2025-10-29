@@ -744,60 +744,53 @@ layout: default
   </div>
 </div>
 <style>
-  :root { --contact-bar-h: 56px; } /* bar height like top nav */
+  :root { --contact-bar-h: 56px; } /* same height as before */
 
-/* Bar shell — fixed, centered (max 900px) */
+/* Full-width bar (like the header <nav>) */
 #contact-bar{
   position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width:1100px;              /* change to 1100px if you want full content width */
+  left: 0; 
+  right: 0;                     /* stretch edge-to-edge */
   background: #ffffff;
   border-top: 1px solid #e5e7eb;
   box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
   z-index: 1000;
 }
 
-/* Inner row — single line, compact spacing */
+/* Inner container matches header container exactly */
 #contact-bar .contact-inner{
-  height: var(--contact-bar-h);
-  padding: 0 16px;
+  max-width: 1100px;            /* same as header */
+  margin: 0 auto;               /* center it */
+  padding: 0 24px;              /* same horizontal padding as header */
+  height: var(--contact-bar-h); /* consistent height */
+  
   display: flex;
   align-items: center;
-  justify-content: center;
-  column-gap: 20px;              /* adjust 16–24 to taste */
-  flex-wrap: nowrap;             /* keep one row */
-  overflow-x: auto;              /* scroll if too tight */
+  justify-content: center;      /* or space-between if you prefer */
+  column-gap: 20px;             /* tweak to 16–24 to taste */
+  flex-wrap: nowrap;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
 }
 
-/* Buttons */
+/* Buttons (unchanged) */
 #contact-bar .contact-btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 12px;
-  border-radius: 10px;
-  border: 1px solid #e5e7eb;
-  background: #f8fafc; color: #111827;
-  text-decoration: none; font-weight: 500; font-size: 14px;
-  white-space: nowrap;
-  transition: all .2s;
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:8px 12px; border-radius:10px;
+  border:1px solid #e5e7eb; background:#f8fafc; color:#111827;
+  text-decoration:none; font-weight:500; font-size:14px; white-space:nowrap;
+  transition:all .2s;
 }
-#contact-bar .contact-btn:hover{
-  background: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.08);
-}
+#contact-bar .contact-btn:hover{ background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.08); }
 
 /* Keep content visible (no overlap) */
 body{ padding-bottom: calc(var(--contact-bar-h) + 8px); }
 
-/* Small screens: span full width automatically */
+/* Small screens: keep full-width; reduce gaps */
 @media (max-width: 960px){
-  #contact-bar{ left: 0; transform: none; max-width: none; }
-  #contact-bar .contact-inner{ column-gap: 16px; }
+  #contact-bar .contact-inner{ padding: 0 16px; column-gap: 16px; }
 }
 @media (max-width: 640px){
   :root { --contact-bar-h: 70px; }
