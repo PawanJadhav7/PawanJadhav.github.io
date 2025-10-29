@@ -733,6 +733,7 @@ layout: default
   © 2025 Pawan Jadhav — Data Engineering & Analytics Portfolio
 </section>
 <!-- ====== FIXED BOTTOM CONTACT BAR ====== -->
+<!-- ====== FIXED BOTTOM CONTACT BAR ====== -->
 <div id="contact-bar" role="contentinfo" aria-label="Quick contact">
   <div class="contact-inner">
     <a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-btn">📄 Resume</a>
@@ -743,50 +744,61 @@ layout: default
   </div>
 </div>
 <style>
-  :root { --contact-bar-h: 56px; } /* same feel as top nav */
+  :root { --contact-bar-h: 56px; } /* bar height like top nav */
 
-  /* Fixed bottom shell */
-:root { --contact-bar-h: 56px; }  /* keep bar height consistent */
+/* Bar shell — fixed, centered (max 900px) */
+#contact-bar{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 900px;              /* change to 1100px if you want full content width */
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
 
+/* Inner row — single line, compact spacing */
 #contact-bar .contact-inner{
-  /* fixed height like the top nav */
   height: var(--contact-bar-h);
   padding: 0 16px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* spacing and single row */
-  column-gap: 24px;          /* use 18–24 for nice balance */
-  flex-wrap: nowrap;         /* prevent wrapping (no extra height) */
-  overflow-x: auto;          /* if it gets tight, allow horizontal scroll */
+  column-gap: 20px;              /* adjust 16–24 to taste */
+  flex-wrap: nowrap;             /* keep one row */
+  overflow-x: auto;              /* scroll if too tight */
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
 }
 
+/* Buttons */
 #contact-bar .contact-btn{
-  padding: 8px 12px;         /* slightly tighter to fit in 900px */
-  white-space: nowrap;       /* keep each button on one line */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc; color: #111827;
+  text-decoration: none; font-weight: 500; font-size: 14px;
+  white-space: nowrap;
+  transition: all .2s;
+}
+#contact-bar .contact-btn:hover{
+  background: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.08);
 }
 
-/* keep content from being covered */
-body{
-  padding-bottom: calc(var(--contact-bar-h) + 8px);
-}
+/* Keep content visible (no overlap) */
+body{ padding-bottom: calc(var(--contact-bar-h) + 8px); }
 
-/* On small screens, let it be full-width and a bit taller if needed */
+/* Small screens: span full width automatically */
 @media (max-width: 960px){
-  #contact-bar{
-    width: 100%;
-    left: 0; transform: none;
-  }
+  #contact-bar{ left: 0; transform: none; max-width: none; }
+  #contact-bar .contact-inner{ column-gap: 16px; }
 }
 @media (max-width: 640px){
   :root { --contact-bar-h: 70px; }
-  #contact-bar .contact-inner{
-    justify-content: center;
-    column-gap: 16px;
-  }
 }
-</style>
