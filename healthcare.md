@@ -45,7 +45,7 @@ description: "Portfolio projects in healthcare data engineering, FHIR, and analy
       </p>
       <p>
         <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline" target="_blank" rel="noopener">💻 Code</a>
-        <a class="btn" href="assets/diagrams/fhir_enrichment_arch.png" target="_blank" rel="noopener">📊 Architecture</a>
+        <a class="btn" href="assets/images/fhir_enrichment_arch.png" target="_blank" rel="noopener">📊 Architecture</a>
         <a class="btn" href="/projects/healthcare-fhir-etl/" target="_blank" rel="noopener">📄 Case Study</a>
       </p>
     </article>
