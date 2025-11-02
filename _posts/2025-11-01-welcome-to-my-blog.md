@@ -21,17 +21,18 @@ The legacy setup at most payer organizations looks similar: ...
 A modern healthcare data platform needs to capture changes from source systems (Oracle), land them securely on AWS, and transform them into analytics-ready data in Snowflake — all while maintaining PHI compliance and auditability.
 
 ![Healthcare CDC Architecture Diagram](/assets/images/Architecture_Overview.png)
-### 🏗️ Components and Roles
-| Layer | Tool | Purpose |
-|-------|------|----------|
-| **Source (OLTP)** | Oracle | Stores raw claims, member, provider data.  CDC extracts every change. |
-| **Ingestion** | **AWS DMS (CDC)** | Streams inserts/updates/deletes from Oracle to S3 in near real time. |
-| **Landing Zone** | **Amazon S3** | Raw JSON/Parquet files with CDC metadata; fully encrypted (KMS). |
-| **Processing Zone** | **AWS Glue (PySpark)** | Cleanses and flattens nested structures; handles schema evolution automatically via Glue Catalog. |
-| **Transform / Curated Zone** | **dbt + Snowflake** | Builds incremental models (staging → dimensions/facts), applies SCD2 logic, and enforces DQ tests. |
-| **Orchestration** | **MWAA (Airflow)** or **EventBridge** | Automates CDC → Glue → dbt workflow; includes retries and SLAs. |
-| **Governance** | **Glue Catalog + Great Expectations + OpenLineage** | Provides lineage, schema registry, and DQ validation. |
-| **Analytics / BI** | **Snowflake + Power BI / Looker Studio** | Serves curated data for actuaries, analysts, and business teams. |
+## 🏗️ Components and Roles
+
+| Layer                     | Tool                                  | Purpose                                                                 |
+|---------------------------|---------------------------------------|-------------------------------------------------------------------------|
+| Source (OLTP)             | Oracle                                | Stores raw claims, member, provider data. CDC extracts every change.    |
+| Ingestion                 | AWS DMS (CDC)                         | Streams inserts/updates/deletes from Oracle to S3 in near real time.    |
+| Landing Zone              | Amazon S3                             | Raw JSON/Parquet with CDC metadata; encrypted with KMS.                 |
+| Processing Zone           | AWS Glue (PySpark)                    | Cleans/ﬂattens; handles schema evolution via Glue Catalog.              |
+| Transform / Curated Zone  | dbt + Snowflake                       | Incremental models; SCD2 for dims; DQ tests enforced.                   |
+| Orchestration             | MWAA (Airflow) or EventBridge         | Automates CDC → Glue → dbt workflow with retries and SLAs.              |
+| Governance                | Glue Catalog, Great Expectations, OpenLineage | Lineage, schema registry, and data-quality validation.          |
+| Analytics / BI            | Snowflake + Power BI / Looker Studio  | Curated data for actuaries, analysts, and business teams.               |
 
 ### 🔐 Security & Compliance Highlights
 - End-to-end encryption (KMS + Snowflake masking policies).  
