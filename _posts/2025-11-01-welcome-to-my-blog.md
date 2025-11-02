@@ -20,8 +20,8 @@ The legacy setup at most payer organizations looks similar: ...
 
 A modern healthcare data platform needs to capture changes from source systems (Oracle), land them securely on AWS, and transform them into analytics-ready data in Snowflake — all while maintaining PHI compliance and auditability.
 
-### 🏗️ Components and Roles
 ![Healthcare CDC Architecture Diagram](assets/images/Architecture_Overview.png)
+### 🏗️ Components and Roles
 | Layer | Tool | Purpose |
 |-------|------|----------|
 | **Source (OLTP)** | Oracle | Stores raw claims, member, provider data.  CDC extracts every change. |
