@@ -93,3 +93,168 @@ and writes partitioned Parquet to `processing` zone.
 df = spark.read.json("s3://landing/claims/")
 df_clean = df.dropDuplicates().withColumn("load_dt", current_date())
 df_clean.write.mode("overwrite").parquet("s3://processing/claims/")
+
+COPY INTO raw.claims
+FROM @aws_stage/claims/
+FILE_FORMAT = (TYPE = PARQUET)
+PATTERN='.*parquet'
+ON_ERROR='CONTINUE';
+
+MERGE INTO dim_member AS tgt
+USING stg_member AS src
+ON tgt.member_id = src.member_id
+WHEN MATCHED AND tgt.hash != src.hash THEN
+  UPDATE SET valid_to = CURRENT_TIMESTAMP()
+WHEN NOT MATCHED THEN
+  INSERT (...columns...) VALUES (...);
+
+---
+
+## 🧮 Snippets & SQL Examples
+
+### 1️⃣ Snowflake `COPY INTO` from S3
+A tuned version of the load step.  
+We use compressed Parquet, pattern filters, and an idempotent metadata table to track what was loaded.
+
+```sql
+-- Stage creation (points to AWS S3 landing bucket)
+CREATE OR REPLACE STAGE aws_stage
+  URL='s3://healthcare-data-landing/claims/'
+  STORAGE_INTEGRATION = aws_snowflake_integration
+  FILE_FORMAT = (TYPE = PARQUET);
+
+-- Load new files only (skip previously loaded files)
+COPY INTO raw.claims
+FROM @aws_stage
+PATTERN='.*parquet'
+ON_ERROR='CONTINUE'
+PURGE=FALSE
+MATCH_BY_COLUMN_NAME=CASE_INSENSITIVE;
+
+{{ config(materialized='incremental', unique_key='claim_id') }}
+
+SELECT
+    claim_id,
+    member_id,
+    provider_id,
+    service_date,
+    billed_amount,
+    load_dt
+FROM {{ source('raw', 'claims') }}
+{% if is_incremental() %}
+WHERE load_dt > (SELECT max(load_dt) FROM {{ this }})
+{% endif %}
+dbt run --models stg_claims
+name: ge_claims_checkpoint
+expectation_suite_name: claims_suite
+validations:
+  - batch_request:
+      datasource_name: snowflake_ds
+      data_asset_name: raw.claims
+expectation_suite:
+  - expect_column_values_to_not_be_null:
+      column: claim_id
+  - expect_column_values_to_be_in_set:
+      column: claim_status
+      value_set: ["PENDING", "APPROVED", "DENIED"]
+from airflow import DAG
+from airflow.operators.bash import BashOperator
+from datetime import datetime
+
+with DAG("healthcare_cdc_pipeline",
+         start_date=datetime(2025, 11, 1),
+         schedule_interval="@daily",
+         catchup=False) as dag:
+
+    dms_sync = BashOperator(
+        task_id="dms_sync",
+        bash_command="aws dms start-replication-task --replication-task-arn $TASK_ARN --start-replication-task-type resume-processing"
+    )
+
+    glue_transform = BashOperator(
+        task_id="glue_transform",
+        bash_command="aws glue start-job-run --job-name claims_transform"
+    )
+
+    dbt_run = BashOperator(
+        task_id="dbt_run",
+        bash_command="cd /usr/local/airflow/dbt && dbt run"
+    )
+
+    dq_check = BashOperator(
+        task_id="dq_check",
+        bash_command="great_expectations checkpoint run ge_claims_checkpoint"
+    )
+
+    dms_sync >> glue_transform >> dbt_run >> dq_check
+## 📊 Results & Learnings
+
+### ✅ Quantitative Results
+| Metric | Before (Legacy Full Reload) | After (CDC + Glue + dbt) | Improvement |
+|--------|------------------------------|---------------------------|--------------|
+| Data load duration | ~5 hrs nightly | ~90 min initial, <15 min incremental | ⬇ 70 % |
+| Compute cost (avg/day) | \$120 | \$75 | ⬇ 37 % |
+| SLA adherence | 60 % of days met | 100 % | 🚀 |
+| Schema change failures | Frequent manual fixes | Auto-handled via Glue Catalog | ✅ |
+| Data Quality (DQ tests) | Ad-hoc SQL checks | Automated via Great Expectations | 🔁 |
+
+---
+
+### 💡 Key Learnings
+1. **Design for evolution, not stability.**  
+   Schema drift is inevitable—using Glue Crawlers + dbt macros keeps pipelines resilient.
+
+2. **CDC is a mindset, not just a tool.**  
+   Building for idempotency and audit trails ensures predictable, replayable loads.
+
+3. **Governance early saves rework later.**  
+   Column-level PHI tagging and lineage mapping made HIPAA audits straightforward.
+
+4. **Optimize for cost visibility.**  
+   Monitoring Snowflake warehouse credit usage and DMS replication lag revealed easy wins.
+
+5. **Automation drives trust.**  
+   Airflow notifications + DQ checkpoints created transparency with business teams.
+
+---
+
+### 🧠 Business Impact
+- **Actuaries** received near-real-time claim data for risk scoring.  
+- **Finance teams** could reconcile payments faster, reducing outstanding claims backlog.  
+- **Executives** gained a single source of truth with verifiable lineage and cost metrics.
+
+---
+
+### 🚀 Next Steps
+1. Extend CDC to **Provider & Eligibility** domains.  
+2. Add **FHIR/HL7 parsing** for unstructured EHR ingestion.  
+3. Integrate **dbt tests + GE alerts** into a shared Slack channel.  
+4. Publish **dashboard metrics** (DQ, cost, latency) in Snowflake + Power BI.  
+
+> *This pipeline became the foundation for a scalable, auditable, and cost-optimized healthcare data lakehouse.*
+## 🏁 Conclusion
+
+Building a scalable, compliant data pipeline in healthcare and finance isn’t only about tools — it’s about architecture discipline, incremental delivery, and governance mindset.  
+This CDC-driven design proved that modernization and compliance can go hand-in-hand when data engineering is approached strategically.
+
+By combining **AWS DMS, Glue, and dbt with Snowflake**, we achieved:
+- **Faster refresh cycles** without data loss  
+- **Automatic schema evolution** across complex source systems  
+- **Full lineage and PHI traceability** for audit-readiness  
+- **Consistent SLAs** and lower operational costs  
+
+These principles extend beyond healthcare — they apply to **insurance**, **banking**, and **supply chain** systems that face similar challenges with data trust and timeliness.
+
+---
+
+## 💬 Next in the Series
+
+I’ll continue this series with:
+- 🧾 **Part 2:** *Designing a dbt-driven Claims Star Schema for EDI 837 data*  
+- 📊 **Part 3:** *Integrating Great Expectations and OpenLineage for Real-Time DQ*  
+
+If you enjoyed this article, explore my projects and visuals on  
+👉 **[pawanjadhav.cloud](https://pawanjadhav.cloud)** or my GitHub  
+👉 **[PawanJadhav7](https://github.com/PawanJadhav7)**  
+
+> 💡 *Stay tuned — new posts drop every few weeks on cloud, data, and applied analytics.*
