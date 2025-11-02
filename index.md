@@ -734,6 +734,7 @@ layout: default
 <!-- ====== FIXED BOTTOM CONTACT BAR ====== -->
 <div id="contact-bar" role="contentinfo" aria-label="Quick contact">
   <div class="contact-inner">
+    <a href="/blog/" class="contact-btn">📝 Blog</a>
     <a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-btn">📄 Resume</a>
     <a href="mailto:pawan.jadhav7@gmail.com" class="contact-btn">📧 Email</a>
     <a href="https://github.com/PawanJadhav7" target="_blank" rel="noopener noreferrer" class="contact-btn">💻 GitHub</a>
