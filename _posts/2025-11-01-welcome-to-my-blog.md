@@ -60,4 +60,36 @@ A modern healthcare data platform needs to capture changes from source systems (
 - Automated audit logs in CloudWatch and Snowflake query history.
 
 > This architecture follows the *Medallion Lakehouse* concept — raw (bronze), validated (silver), and curated (gold) — ensuring scalability and traceability for healthcare workloads.
-> 
+
+## 🧱 Build Guide: 10 Steps
+
+Below is the simplified 10-step path we followed to design a HIPAA-compliant,
+incremental pipeline from Oracle → AWS → Snowflake → dbt.
+
+### 1️⃣ Provision Secure Landing & Processing Zones
+Create three S3 buckets — `landing`, `processing`, `curated` — all
+encrypted with AWS KMS and versioned for audit.
+Attach least-privilege IAM roles for DMS and Glue.
+
+### 2️⃣ Configure AWS DMS for CDC
+Set up Oracle source & S3 target endpoints.
+Enable full load + ongoing replication.
+Tune task settings for batch apply and LOB handling.
+
+### 3️⃣ Create Change Table Structure
+DMS writes JSON/Parquet files containing `before_image`, `after_image`,
+and operation type.  
+We store them in S3 `landing` with partition folders (`year/month/day`).
+
+### 4️⃣ Automate Schema Registration
+Glue Crawler registers new objects in Glue Catalog daily.
+This allows automatic schema evolution when new columns appear in Oracle.
+
+### 5️⃣ Normalize and Flatten with Glue (PySpark)
+Glue job reads landing data, cleans metadata, flattens nested records,
+and writes partitioned Parquet to `processing` zone.
+
+```python
+df = spark.read.json("s3://landing/claims/")
+df_clean = df.dropDuplicates().withColumn("load_dt", current_date())
+df_clean.write.mode("overwrite").parquet("s3://processing/claims/")
