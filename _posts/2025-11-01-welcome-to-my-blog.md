@@ -8,6 +8,13 @@ hero_image: /assets/headers/claims-pipeline.jpg
 
 > **TL;DR:** We replaced fragile full reloads with a CDC-driven pipeline:
 > Oracle → (DMS) → S3 → (Glue) → Snowflake → (dbt). Result: faster loads, lower cost, audit-ready.
+>
+> ## 🪝 Hook
+In healthcare analytics, data freshness and compliance often pull in opposite directions...
+...
+## 🩺 Context & Problem
+The legacy setup at most payer organizations looks similar: ...
+...
 
 ## Context & Problem
 <!-- 3–5 sentences -->
