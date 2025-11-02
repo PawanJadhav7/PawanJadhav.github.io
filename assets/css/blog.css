@@ -8,3 +8,25 @@
 .post-card-excerpt{margin:0;color:#4b5563;font-size:.95rem;line-height:1.6}
 .post-card-meta{margin-top:10px;color:#6b7280;font-size:.85rem}
 .tag{background:#f3f4f6;border:1px solid #e5e7eb;border-radius:999px;padding:2px 8px;margin-left:6px}
+/* Post page */
+.post-article{max-width:780px;margin:0 auto;padding:24px}
+.post-header h1{font-size:2rem;margin:0 0 .25rem}
+.post-meta{color:#6b7280;font-size:.95rem;margin-bottom:18px}
+.post-tags .tag-link{background:#f3f4f6;border:1px solid #e5e7eb;border-radius:999px;padding:2px 8px;margin-left:6px;text-decoration:none;color:#374151}
+.post-tags .tag-link:hover{background:#fff}
+.post-body p{line-height:1.75}
+.post-footer{margin-top:28px}
+.post-share{margin:12px 0;color:#6b7280}
+.post-share a{text-decoration:none}
+.post-nav{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-top:14px}
+.post-nav .back{opacity:.85}
+
+/* Tags page */
+.tag-cloud{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.tag-cloud li{display:flex;align-items:center;gap:6px;border:1px solid #e5e7eb;border-radius:999px;padding:4px 10px;background:#fff}
+.tag-cloud a{text-decoration:none;color:#111827}
+.tag-count{font-size:.85rem;color:#6b7280}
+.tag-section{max-width:980px;margin:22px auto;padding:0 24px}
+.tag-posts{list-style:none;padding:0}
+.tag-posts li{padding:10px 0;border-bottom:1px dashed #e5e7eb}
+.tag-excerpt{color:#6b7280;margin-top:4px}
