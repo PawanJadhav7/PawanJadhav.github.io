@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="blog-wrap">
+  <h1 class="blog-title">{{ page.title | default: "Blog" }}</h1>
+
+  <div class="post-grid">
+    {% assign posts_list = site.posts %}
+    {% for post in posts_list %}
+      <article class="post-card">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <h2 class="post-card-title">{{ post.title }}</h2>
+          <p class="post-card-excerpt">
+            {{ post.excerpt | strip_html | truncate: 160 }}
+          </p>
+          <div class="post-card-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%b %d, %Y" }}
+            </time>
+            {% if post.tags and post.tags.size > 0 %}
+              ·
+              {% for t in post.tags %}
+                <span class="tag">#{{ t }}</span>{% unless forloop.last %} {% endunless %}
+              {% endfor %}
+            {% endif %}
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</div>
