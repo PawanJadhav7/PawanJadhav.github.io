@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Welcome — Data Engineering in Healthcare & Finance"
 date: 2025-11-01 10:00:00 -0500
 tags: [healthcare, finance, snowflake, aws, dbt]
