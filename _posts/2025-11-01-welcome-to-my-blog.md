@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Data Engineering in Healthcare & Finance"
+title: "Data Engineering in Healthcare"
 date: 2025-11-01 10:00:00 -0500
 tags: [healthcare, finance, snowflake, aws, dbt]
 hero_image: /assets/headers/claims-pipeline.jpg
