@@ -741,7 +741,8 @@ layout: default
     <a href="mailto:pawan.jadhav7@gmail.com" class="contact-btn">📧 Email</a>
     <a href="https://github.com/PawanJadhav7" target="_blank" rel="noopener noreferrer" class="contact-btn">💻 GitHub</a>
     <a href="https://www.linkedin.com/in/pawan-jadhav/" target="_blank" rel="noopener noreferrer" class="contact-btn">🔗 LinkedIn</a>
-    <a href="tel:+19142675356" class="contact-btn">📞 +1&nbsp;914-267-5356</a>
+    <a href="tel:+19142675356" class="contact-btn">📞🇺🇸 +1&nbsp;914-267-5356</a>
+    <a href="tel:+919969974429" class="contact-btn">📞🇮🇳 +91&nbsp;996-997-4429</a>
   </div>
 </div>
 
