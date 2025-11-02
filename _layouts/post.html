@@ -62,5 +62,21 @@ layout: default
       {% endif %}
     </nav>
   </footer>
-
+<!-- ===== Related / Read Next Section ===== -->
+{% if site.related_posts or site.posts %}
+  <section class="related-posts">
+    <h2 class="related-title">📚 Read Next</h2>
+    <div class="related-grid">
+      {% assign current_post = page %}
+      {% assign related = site.posts | where_exp: "post", "post.url != current_post.url" | slice: 0, 3 %}
+      {% for post in related %}
+        <a href="{{ post.url | relative_url }}" class="related-card">
+          <h3 class="related-post-title">{{ post.title }}</h3>
+          <p class="related-post-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+          <span class="related-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
 </article>
