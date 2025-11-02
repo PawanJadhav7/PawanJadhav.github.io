@@ -7,44 +7,30 @@ hero_image: /assets/headers/claims-pipeline.jpg
 ---
 
 > **TL;DR:** We replaced fragile full reloads with a CDC-driven pipeline:
-> Oracle → (DMS) → S3 → (Glue) → Snowflake → (dbt). Result: faster loads, lower cost, audit-ready.
->
-> ## 🪝 Hook
-In healthcare analytics, data freshness and compliance often pull in opposite directions...
-...
+> Oracle → (DMS) → S3 → (Glue) → Snowflake → (dbt).  
+> **Result:** Faster loads, lower cost, audit-ready.
+
+## 🪝 Hook
+In healthcare analytics, data freshness and compliance often pull in opposite directions.  
+Our claims warehouse was always a day behind because we reloaded everything from Oracle each night.  
+As claims volumes grew, that nightly job became a six-hour bottleneck and a security headache.  
+
+We rebuilt it as a near–real-time CDC pipeline using **AWS DMS, Glue, and dbt** — reducing load times from hours to minutes, improving auditability, and aligning perfectly with HIPAA and CMS traceability requirements.
+
 ## 🩺 Context & Problem
-The legacy setup at most payer organizations looks similar: ...
-...
+The legacy setup at most payer organizations looks similar:
+- An **Oracle OLTP** database stores claim, member, and provider data.  
+- Data engineers run full extracts to a warehouse for analytics.  
+- Any schema change or large claim cycle causes a complete reload.  
+- The ETL scripts are brittle, slow, and impossible to audit end-to-end.  
 
-## 🧩 Architecture Overview
+In our case, the daily claim extracts (~50M rows) took over 5 hours and frequently missed the SLA.  
+Because we lacked incremental logic, even small updates triggered full refreshes — wasting compute and increasing risk of PHI exposure during intermediate loads.
 
-A modern healthcare data platform needs to capture changes from source systems (Oracle), land them securely on AWS, and transform them into analytics-ready data in Snowflake — all while maintaining PHI compliance and auditability.
+We needed a **streaming-style, schema-aware, auditable** data movement pattern:
+- **Change Data Capture (CDC)** from Oracle → S3 → Snowflake  
+- **Schema evolution handling** for new claim fields  
+- **Automated transformations** via dbt (dim/fact/star schema)  
+- **End-to-end lineage and data quality validation**  
 
-![Healthcare CDC Architecture Diagram](/assets/images/Architecture_Overview.png)
-## 🏗️ Components and Roles
-
-| Layer                     | Tool                                  | Purpose                                                                 |
-|---------------------------|---------------------------------------|-------------------------------------------------------------------------|
-| Source (OLTP)             | Oracle                                | Stores raw claims, member, provider data. CDC extracts every change.    |
-| Ingestion                 | AWS DMS (CDC)                         | Streams inserts/updates/deletes from Oracle to S3 in near real time.    |
-| Landing Zone              | Amazon S3                             | Raw JSON/Parquet with CDC metadata; encrypted with KMS.                 |
-| Processing Zone           | AWS Glue (PySpark)                    | Cleans/ﬂattens; handles schema evolution via Glue Catalog.              |
-| Transform / Curated Zone  | dbt + Snowflake                       | Incremental models; SCD2 for dims; DQ tests enforced.                   |
-| Orchestration             | MWAA (Airflow) or EventBridge         | Automates CDC → Glue → dbt workflow with retries and SLAs.              |
-| Governance                | Glue Catalog, Great Expectations, OpenLineage | Lineage, schema registry, and data-quality validation.          |
-| Analytics / BI            | Snowflake + Power BI / Looker Studio  | Curated data for actuaries, analysts, and business teams.               |
-
-### 🔐 Security & Compliance Highlights
-- End-to-end encryption (KMS + Snowflake masking policies).  
-- IAM least-privilege roles for DMS, Glue, and Snowflake.  
-- PHI tagging for column-level access control.  
-- Automated audit logs in CloudWatch and Snowflake query history.
-
-> This architecture follows the *Medallion Lakehouse* concept — raw (bronze), validated (silver), and curated (gold) — ensuring scalability and traceability for healthcare workloads.
-
-## Build Guide: 10 Steps
-<!-- Use the outline above, turn bullets into short paragraphs -->
-
-## Snippets
-```sql
--- Example Snowflake MERGE for SCD2
+That’s where **AWS DMS** and **Glue** came together as a cost-efficient, HIPAA-compliant bridge.
