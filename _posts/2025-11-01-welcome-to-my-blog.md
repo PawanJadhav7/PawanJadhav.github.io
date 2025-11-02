@@ -6,9 +6,9 @@ tags: [healthcare, finance, snowflake, aws, dbt]
 hero_image: /assets/headers/claims-pipeline.jpg
 ---
 
-> **TL;DR:** We replaced fragile full reloads with a CDC-driven pipeline:
-> Oracle → (DMS) → S3 → (Glue) → Snowflake → (dbt).  
-> **Result:** Faster loads, lower cost, audit-ready.
+**TL;DR:** We replaced fragile full reloads with a CDC-driven pipeline:
+Oracle → (DMS) → S3 → (Glue) → Snowflake → (dbt).  
+**Result:** Faster loads, lower cost, audit-ready.
 
 ## 🪝 Hook
 In healthcare analytics, data freshness and compliance often pull in opposite directions.  
