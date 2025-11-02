@@ -65,3 +65,55 @@
   .post-hero{padding:16px}
   .post-article{padding:16px}
 }
+/* --- Related / Read Next --- */
+.related-posts {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.related-title {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.related-card {
+  display: block;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+
+.related-post-title {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.related-post-excerpt {
+  margin: 0 0 12px 0;
+  color: #374151;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.related-date {
+  font-size: .8rem;
+  color: #6b7280;
+}
