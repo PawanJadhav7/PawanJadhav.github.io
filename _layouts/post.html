@@ -1,26 +1,18 @@
 ---
 layout: default
 ---
-{% comment %}
-Derive base path for the posts hub (Insights/Blog) from _config.yml.
-Fallback to /blog/ if not set.
-{% endcomment %}
-{% assign posts_base = site.posts_base | default: '/blog/' %}
-
 <article class="post-article">
 
   <!-- Breadcrumb -->
   <nav class="post-breadcrumb" aria-label="Breadcrumb">
     <ol>
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
-      <li><a href="{{ posts_base | relative_url }}">
-        {% if site.posts_base == '/insights/' %}Insights{% else %}Blog{% endif %}
-      </a></li>
+      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
       <li aria-current="page">{{ page.title }}</li>
     </ol>
   </nav>
 
-  <!-- Hero header (supports optional hero_image) -->
+  <!-- Hero header (optional hero_image in front matter) -->
   <header class="post-hero{% if page.hero_image %} has-image{% endif %}">
     {% if page.hero_image %}
       <div class="post-hero-bg" style="background-image:url('{{ page.hero_image | relative_url }}')"></div>
@@ -33,12 +25,9 @@ Fallback to /blog/ if not set.
         <time datetime="{{ page.date | date_to_xmlschema }}">
           {{ page.date | date: "%B %d, %Y" }}
         </time>
-
-        {% comment %} Simple reading-time calc: words/200 (rounded up) {% endcomment %}
         {% assign words = content | strip_html | split: ' ' | size %}
         {% assign mins = words | plus:199 | divided_by:200 %}
         • {{ mins }} min read
-
         {% if page.tags and page.tags.size > 0 %}
           • <span class="post-tags">
             {% for t in page.tags %}
@@ -50,12 +39,10 @@ Fallback to /blog/ if not set.
     </div>
   </header>
 
-  <!-- Body -->
   <div class="post-body">
     {{ content }}
   </div>
 
-  <!-- Footer: share + nav -->
   <footer class="post-footer">
     <hr/>
     <div class="post-share">
@@ -69,11 +56,7 @@ Fallback to /blog/ if not set.
       {% if page.previous %}
         <a class="prev" href="{{ page.previous.url | relative_url }}">← {{ page.previous.title }}</a>
       {% endif %}
-
-      <a class="back" href="{{ posts_base | relative_url }}">
-        {% if site.posts_base == '/insights/' %}Back to Insights{% else %}Back to Blog{% endif %}
-      </a>
-
+      <a class="back" href="{{ '/blog/' | relative_url }}">Back to Blog</a>
       {% if page.next %}
         <a class="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>
       {% endif %}
