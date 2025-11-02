@@ -254,7 +254,5 @@ I’ll continue this series with:
 - 📊 **Part 3:** *Integrating Great Expectations and OpenLineage for Real-Time DQ*  
 
 If you enjoyed this article, explore my projects and visuals on  
-👉 **[pawanjadhav.cloud](https://pawanjadhav.cloud)** or my GitHub  
-👉 **[PawanJadhav7](https://github.com/PawanJadhav7)**  
-
+👉 **[pawanjadhav.cloud](https://pawanjadhav.cloud)** or my GitHub **[PawanJadhav7](https://github.com/PawanJadhav7)**  
 > 💡 *Stay tuned — new posts drop every few weeks on cloud, data, and applied analytics.*
