@@ -788,7 +788,7 @@ layout: default
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 11px;
   flex-wrap: nowrap;
   width: 100%;
   padding: 0 16px;
