@@ -17,8 +17,8 @@ seo:
    style="display:inline-flex;align-items:center;justify-content:center;
           padding:8px 14px;border-radius:10px;border:1px solid #e5e7eb;
           background:#f8fafc;color:#111827;text-decoration:none;
-          font-size:14px;margin-bottom:10px;">
-   ⬅️ Back to Home
+          font-size:14px;margin-bottom:12px;">
+   ⬅️ Go Back
 </a>
   <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" 
    target="_blank" rel="noopener noreferrer"
