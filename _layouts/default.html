@@ -107,7 +107,12 @@
     }
   </style>
 </head>
-<script>
+
+<body>
+  <main class="container">
+    {{ content }}
+  </main>
+  <script>
 document.addEventListener('DOMContentLoaded', () => {
   const origin = window.location.origin;
   document.querySelectorAll('a[href]').forEach(a => {
@@ -125,9 +130,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-<body>
-  <main class="container">
-    {{ content }}
-  </main>
 </body>
 </html>
