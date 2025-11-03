@@ -107,7 +107,24 @@
     }
   </style>
 </head>
-
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const origin = window.location.origin;
+  document.querySelectorAll('a[href]').forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href) return;
+    const isAbsolute = /^(https?:)?\/\//i.test(href) || href.startsWith('mailto:') || href.startsWith('tel:');
+    const isExternal = isAbsolute && !href.startsWith(origin);
+    if (isExternal) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    } else {
+      a.setAttribute('target', '_self');
+      a.removeAttribute('rel');
+    }
+  });
+});
+</script>
 <body>
   <main class="container">
     {{ content }}
