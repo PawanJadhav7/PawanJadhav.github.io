@@ -151,7 +151,7 @@ Decision makers need a transparent view of **how price leaks** from **List** to 
 ---
 
 ## 10) How to Run
-```bash
+
 # 1) Generate sample data
 python src/generator/make_dataset.py
 
@@ -164,3 +164,20 @@ dbt run --select gold.mart_margin_waterfall
 python src/elasticity/fit_elasticity.py
 
 # 5) Point Tableau/Power BI to PRICING_DB.GOLD
+
+## 11) Dashboard (Screens) {#dashboard}
+
+### Executive Overview
+![Executive Overview](/assets/screens/pricing-overview.png)
+
+### Leakage Explorer
+![Leakage Explorer](/assets/screens/leakage-explorer.png)
+
+### Elasticity & What-if
+![Elasticity Simulation](/assets/screens/elasticity-whatif.png)
+
+### Customer Profitability
+![Customer Profitability](/assets/screens/customer-profitability.png)
+
+If you enjoyed this, explore my projects and visuals on  
+👉 **[pawanjadhav.cloud](https://pawanjadhav.cloud)** or my GitHub **[PawanJadhav7](https://github.com/PawanJadhav7)**
