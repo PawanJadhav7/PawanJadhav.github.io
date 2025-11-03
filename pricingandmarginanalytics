@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 title: "Pricing & Margin Analytics — AWS • Snowflake • dbt • Airflow • Tableau"
 permalink: /pricingandmarginanalytics/
 date: 2025-11-02 10:00:00 -0500
