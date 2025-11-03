@@ -152,18 +152,18 @@ Decision makers need a transparent view of **how price leaks** from **List** to 
 
 ## 10) How to Run
 
-** 1) Generate sample data
+**1) Generate sample data
 python src/generator/make_dataset.py
 
-** 2) Load CSVs to Snowflake (via COPY INTO or DataGrip)
+**2) Load CSVs to Snowflake (via COPY INTO or DataGrip)
 
-** 3) Build marts
+**3) Build marts
 dbt run --select gold.mart_margin_waterfall
 
-** 4) (Optional) Run elasticity job
+**4) (Optional) Run elasticity job
 python src/elasticity/fit_elasticity.py
 
-** 5) Point Tableau/Power BI to PRICING_DB.GOLD
+**5) Point Tableau/Power BI to PRICING_DB.GOLD
 
 ## 11) Dashboard (Screens) {#dashboard}
 
