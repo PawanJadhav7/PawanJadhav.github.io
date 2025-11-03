@@ -19,13 +19,14 @@ seo:
       background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
     ← Back to Home
   </a>
-</p>
+
   <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer"
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
   <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}#dashboard" 
      style="display:inline-flex;align-items:center;justify-content:center;padding:8px 14px;border-radius:10px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
      📊 Dashboard (screens)
   </a>
+  </p>
 </div>
 
 > **TL;DR**  
