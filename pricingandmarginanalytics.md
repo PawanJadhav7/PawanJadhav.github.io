@@ -221,4 +221,4 @@ python src/elasticity/fit_elasticity.py
   </div>
 </div>
 
-If you enjoyed this, explore my projects and visuals on  👉 **[pawanjadhav.cloud](https://pawanjadhav.cloud)** or my GitHub **[PawanJadhav7](https://github.com/PawanJadhav7)**
+If you enjoyed this, explore my projects and visuals on  👉 **[pawanjadhav.cloud](https://pawanjadhav.cloud)** or GitHub **[PawanJadhav7](https://github.com/PawanJadhav7)**
