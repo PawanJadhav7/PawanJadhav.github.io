@@ -13,17 +13,16 @@ seo:
 
 <!-- ===== HERO / QUICK ACTIONS ===== -->
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0 18px;">
-  <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer"
-     style="display:inline-flex;align-items:center;justify-content:center;padding:8px 14px;border-radius:10px;border:1px solid #e5e7eb;background:#111827;color:#fff;text-decoration:none;font-size:14px;">
-     💻 View Code
-  </a>
+  <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" 
+   target="_blank" rel="noopener noreferrer"
+   style="display:inline-flex;align-items:center;justify-content:center;
+          padding:8px 14px;border-radius:10px;border:1px solid #e5e7eb;
+          background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+   💻 View Code
+</a>
   <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}#dashboard" 
      style="display:inline-flex;align-items:center;justify-content:center;padding:8px 14px;border-radius:10px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
      📊 Dashboard (screens)
-  </a>
-  <a class="btn" href="{{ '/case-study/pricing-margin-analytics.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"
-     style="display:inline-flex;align-items:center;justify-content:center;padding:8px 14px;border-radius:10px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
-     📄 Download Case Study (PDF)
   </a>
 </div>
 
