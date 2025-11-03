@@ -13,13 +13,13 @@ seo:
 
 <!-- ===== HERO / QUICK ACTIONS ===== -->
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0 18px;">
-  <a class="btn" href="{{ '/' | relative_url }}" 
-   style="display:inline-flex;align-items:center;justify-content:center;
-          padding:8px 14px;border-radius:10px;border:1px solid #e5e7eb;
-          background:#f8fafc;color:#111827;text-decoration:none;
-          font-size:14px;margin-bottom:12px;">
-   Back To Home
-</a>
+<p style="margin:16px 0;">
+  <a href="/" class="btn" style="display:inline-flex;align-items:center;gap:6px;
+      padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
+      background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+    ← Back to Home
+  </a>
+</p>
   <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer"
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
   <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}#dashboard" 
