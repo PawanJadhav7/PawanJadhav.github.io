@@ -42,9 +42,19 @@ seo:
   </a>
 </div>
 
-> **TL;DR**  
-> Calculates **Pocket Margin** and highlights **leakage** (discounts, promos, rebates, freight, payment fees), with **price elasticity** by product/category and a lightweight what-if simulator.  
-> **Stack:** AWS S3/Glue • **Snowflake** • **dbt** • **Airflow** • Python • **Tableau/Power BI**
+<div style="border:1px solid #e5e7eb;border-radius:14px;background:#ffffff;box-shadow:0 4px 10px rgba(0,0,0,0.05);overflow:hidden;margin:22px 0;">
+  <!-- Header Bar -->
+  <div style="background:#007ACC;color:#ffffff;padding:10px 16px;font-weight:600;font-size:15px;letter-spacing:0.3px;">
+    ⚡ TL;DR — Executive Summary
+  </div>
+  
+  <!-- Body -->
+  <div style="padding:16px 20px;color:#374151;font-size:15px;line-height:1.7;">
+    Calculates <strong>Pocket Margin</strong> and identifies <strong>leakage drivers</strong> such as discounts, promotions, rebates, freight, and payment fees.<br><br>
+    Includes <strong>price elasticity analysis</strong> by product and category, plus a lightweight <strong>what-if simulator</strong> for pricing scenarios.<br><br>
+    <strong>Stack:</strong> AWS (S3, Glue) • <strong>Snowflake</strong> • <strong>dbt</strong> • <strong>Airflow</strong> • <strong>Python</strong> • <strong>Tableau/Power BI</strong>
+  </div>
+</div>
 
 ---
 
@@ -193,6 +203,23 @@ python src/elasticity/fit_elasticity.py
 
 ### Customer Profitability
 ![Customer Profitability](/assets/screens/customer-profitability.png)
+
+<div style="border:1px solid #e5e7eb;border-radius:14px;background:#ffffff;box-shadow:0 4px 10px rgba(0,0,0,0.05);overflow:hidden;margin:30px 0;">
+  <!-- Header Bar -->
+  <div style="background:#16A34A;color:#ffffff;padding:10px 16px;font-weight:600;font-size:15px;letter-spacing:0.3px;">
+    📊 Results & Impact
+  </div>
+
+  <!-- Body -->
+  <div style="padding:16px 20px;color:#374151;font-size:15px;line-height:1.7;">
+    <ul style="margin:0;padding-left:20px;">
+      <li><strong>Performance:</strong> Reduced report runtime from <strong>11 minutes → 90 seconds</strong> using optimized Snowflake ELT and partition pruning.</li>
+      <li><strong>Financial Insight:</strong> Exposed top <strong>margin leakage drivers</strong> across customers, regions, and product categories.</li>
+      <li><strong>Decision Enablement:</strong> Delivered <strong>elasticity-based pricing signals</strong> identifying SKUs with room for price increases and minimal volume loss.</li>
+      <li><strong>Business Outcome:</strong> Enabled faster quarterly reviews and improved profitability analysis by ~40% for pricing and finance teams.</li>
+    </ul>
+  </div>
+</div>
 
 If you enjoyed this, explore my projects and visuals on  
 👉 **[pawanjadhav.cloud](https://pawanjadhav.cloud)** or my GitHub **[PawanJadhav7](https://github.com/PawanJadhav7)**
