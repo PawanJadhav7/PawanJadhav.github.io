@@ -16,7 +16,7 @@ seo:
      style="display:inline-flex;align-items:center;justify-content:center;padding:8px 14px;border-radius:10px;border:1px solid #e5e7eb;background:#111827;color:#fff;text-decoration:none;font-size:14px;">
      💻 View Code
   </a>
-  <a class="btn" href="{{ '/pricingandmarginanalytics/#dashboard' | relative_url }}" 
+  <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}#dashboard" 
      style="display:inline-flex;align-items:center;justify-content:center;padding:8px 14px;border-radius:10px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
      📊 Dashboard (screens)
   </a>
