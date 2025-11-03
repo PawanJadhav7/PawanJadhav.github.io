@@ -45,11 +45,12 @@ seo:
 <div style="border:1px solid #e5e7eb;border-radius:14px;background:#ffffff;box-shadow:0 4px 10px rgba(0,0,0,0.05);overflow:hidden;margin:22px 0;">
   <!-- Header Bar -->
   <div style="background:#007ACC;color:#ffffff;padding:10px 16px;font-weight:600;font-size:15px;letter-spacing:0.3px;">
-    ⚡ TL;DR — Executive Summary: Pricing & Margin Analytics using data to make smarter pricing decisions and protect profit
+    ⚡ TL;DR — Executive Summary:
   </div>
   
   <!-- Body -->
-  <div style="padding:16px 20px;color:#374151;font-size:15px;line-height:1.7;">
+  <div style="padding:16px 20px;color:#374151;font-size:15px;line-height:1.2;">
+    <strong>Pricing & Margin Analytics using data to make smarter pricing decisions and protect profit</strong>
     Calculates <strong>Pocket Margin</strong> and identifies <strong>leakage drivers</strong> such as discounts, promotions, rebates, freight, and payment fees.<br><br>
     Includes <strong>price elasticity analysis</strong> by product and category, plus a lightweight <strong>what-if simulator</strong> for pricing scenarios.<br><br>
     <strong>Stack:</strong> AWS (S3, Glue) • <strong>Snowflake</strong> • <strong>dbt</strong> • <strong>Airflow</strong> • <strong>Python</strong> • <strong>Tableau/Power BI</strong>
