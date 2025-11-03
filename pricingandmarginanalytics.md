@@ -45,7 +45,7 @@ seo:
 <div style="border:1px solid #e5e7eb;border-radius:14px;background:#ffffff;box-shadow:0 4px 10px rgba(0,0,0,0.05);overflow:hidden;margin:22px 0;">
   <!-- Header Bar -->
   <div style="background:#007ACC;color:#ffffff;padding:10px 16px;font-weight:600;font-size:15px;letter-spacing:0.3px;">
-    ⚡ TL;DR — Executive Summary
+    ⚡ TL;DR — Executive Summary: Pricing & Margin Analytics using data to make smarter pricing decisions and protect profit
   </div>
   
   <!-- Body -->
