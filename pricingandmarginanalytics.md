@@ -50,7 +50,7 @@ seo:
   
   <!-- Body -->
   <div style="padding:16px 20px;color:#374151;font-size:15px;line-height:1.2;">
-    <strong>Pricing & Margin Analytics using data to make smarter pricing decisions and protect profit</strong>
+    <strong>Pricing & Margin Analytics using data to make smarter pricing decisions and protect profit</strong><br><br>
     Calculates <strong>Pocket Margin</strong> and identifies <strong>leakage drivers</strong> such as discounts, promotions, rebates, freight, and payment fees.<br><br>
     Includes <strong>price elasticity analysis</strong> by product and category, plus a lightweight <strong>what-if simulator</strong> for pricing scenarios.<br><br>
     <strong>Stack:</strong> AWS (S3, Glue) • <strong>Snowflake</strong> • <strong>dbt</strong> • <strong>Airflow</strong> • <strong>Python</strong> • <strong>Tableau/Power BI</strong>
