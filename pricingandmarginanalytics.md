@@ -120,7 +120,7 @@ Decision makers need a transparent view of **how price leaks** from **List** to 
   </div>
 
   <!-- RIGHT IMAGE -->
-  <div style="flex:1 1 360px;min-width:300px;display:flex;justify-content:center;">
+  <div style="flex:1 1 360px;min-width:300px;display:flex;justify-content:flex-start;">
     <img src="/assets/images/pricingandmarginarchidiagram.png" 
          alt="Pricing & Margin Analytics Architecture"
          style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
