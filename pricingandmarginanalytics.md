@@ -111,7 +111,7 @@ Decision makers need a transparent view of **how price leaks** from **List** to 
 **Analytics:** Python (elasticity, what-if)  
 **BI:** Tableau / Power BI
 
-![Architecture Diagram](/assets/diagrams/pricing-architecture.png)
+![Architecture Diagram](/assets/images/pricingandmarginarchidiagram.png)
 
 ---
 
