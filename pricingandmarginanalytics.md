@@ -110,12 +110,12 @@ Decision makers need a transparent view of **how price leaks** from **List** to 
   <!-- LEFT TEXT -->
   <div style="flex:1 1 320px;min-width:300px;max-width:520px;">
     <p style="margin:0 0 8px;color:#374151;line-height:1.6;">
-      <strong>Ingestion & Storage:</strong> AWS S3 (raw/curated), optional Glue for schema  
-      <br><strong>Warehouse/ELT:</strong> Snowflake (Bronze → Silver → <strong>Gold</strong>) with dbt models/tests  
-      <br><strong>Orchestration:</strong> Airflow (MWAA) + EventBridge triggers  
-      <br><strong>Quality/Lineage:</strong> Great Expectations, OpenLineage (optional)  
-      <br><strong>Analytics:</strong> Python (elasticity, what-if)  
-      <br><strong>BI:</strong> Tableau / Power BI
+      <strong>- Ingestion & Storage:</strong> AWS S3 (raw/curated), optional Glue for schema  
+      <br><strong>- Warehouse/ELT:</strong> Snowflake (Bronze → Silver → <strong>Gold</strong>) with dbt models/tests  
+      <br><strong>- Orchestration:</strong> Airflow (MWAA) + EventBridge triggers  
+      <br><strong>- Quality/Lineage:</strong> Great Expectations, OpenLineage (optional)  
+      <br><strong>- Analytics:</strong> Python (elasticity, what-if)  
+      <br><strong>- BI:</strong> Tableau / Power BI
     </p>
   </div>
 
