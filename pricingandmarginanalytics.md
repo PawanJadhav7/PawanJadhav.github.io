@@ -115,6 +115,33 @@ Decision makers need a transparent view of **how price leaks** from **List** to 
 
 ---
 
+## 4) Architecture
+
+<div style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:24px;margin-top:12px;">
+
+  <!-- LEFT TEXT -->
+  <div style="flex:1 1 320px;min-width:300px;max-width:520px;">
+    <p style="margin:0 0 8px;color:#374151;line-height:1.6;">
+      <strong>Ingestion & Storage:</strong> AWS S3 (raw/curated), optional Glue for schema  
+      <br><strong>Warehouse/ELT:</strong> Snowflake (Bronze → Silver → <strong>Gold</strong>) with dbt models/tests  
+      <br><strong>Orchestration:</strong> Airflow (MWAA) + EventBridge triggers  
+      <br><strong>Quality/Lineage:</strong> Great Expectations, OpenLineage (optional)  
+      <br><strong>Analytics:</strong> Python (elasticity, what-if)  
+      <br><strong>BI:</strong> Tableau / Power BI
+    </p>
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div style="flex:1 1 360px;min-width:300px;display:flex;justify-content:center;">
+    <img src="/assets/images/pricingandmarginarchidiagram.png" 
+         alt="Pricing & Margin Analytics Architecture"
+         style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+  </div>
+
+</div>
+
+---
+
 ## 5) Data Model
 **Silver layer**
 - `FACT_SALES_CLEAN` — invoice lines with qty, list_price, discounts, promo, rebate, freight_out, fees  
