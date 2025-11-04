@@ -104,18 +104,6 @@ Decision makers need a transparent view of **how price leaks** from **List** to 
 ---
 
 ## 4) Architecture
-**Ingestion & Storage:** AWS S3 (raw/curated), optional Glue for schema  
-**Warehouse/ELT:** Snowflake (Bronze → Silver → **Gold**) with dbt models/tests  
-**Orchestration:** Airflow (MWAA) + EventBridge triggers  
-**Quality/Lineage:** Great Expectations, OpenLineage (optional)  
-**Analytics:** Python (elasticity, what-if)  
-**BI:** Tableau / Power BI
-
-![Architecture Diagram](/assets/images/pricingandmarginarchidiagram.png)
-
----
-
-## 4) Architecture
 
 <div style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:24px;margin-top:12px;">
 
