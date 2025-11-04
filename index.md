@@ -15,8 +15,8 @@ layout: default
       <a href="#cloud" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Cloud</a>
       <a href="#healthcare" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Healthcare</a>
       <a href="#finance" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Finance</a>
-      <a href="#supplychain" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Supply Chain</a>
-      <a href="#insurance" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Insurance</a>
+      <a href="/supplychain.html" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Supply Chain</a>
+      <a href="/insurance.html" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Insurance</a>
       <a href="#projectmanagement" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Project Management</a>
     </div>
   </div>
