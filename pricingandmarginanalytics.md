@@ -106,7 +106,6 @@ Decision makers need a transparent view of **how price leaks** from **List** to 
 ## 4) Architecture
 
 <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;margin-top:12px;">
-
   <!-- LEFT TEXT -->
   <div style="flex:1 1 320px;min-width:300px;max-width:520px;">
     <p style="margin:0 0 8px;color:#374151;line-height:1.6;">
