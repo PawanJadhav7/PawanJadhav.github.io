@@ -23,7 +23,7 @@ seo:
     ← Back to Home
   </a>
 
-  <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer"
+  <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics/blob/main/README.md" target="_blank" rel="noopener noreferrer"
      style="flex:1 1 200px;max-width:240px;
             display:inline-flex;align-items:center;justify-content:center;gap:6px;
             padding:8px 14px;border-radius:8px;border:1px solid #e5e7eb;
