@@ -12,12 +12,11 @@ layout: default
     <!-- Navigation Links -->
     <div id="nav-links" style="display:flex;gap:20px;flex-wrap:wrap;">
       <a href="#home" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Home</a>
-      <a href="#cloud" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Cloud</a>
       <a href="#healthcare" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Healthcare</a>
       <a href="#finance" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Finance</a>
       <a href="/supplychain.html" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Supply Chain</a>
       <a href="/insurance.html" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Insurance</a>
-      <a href="#projectmanagement" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Project Management</a>
+      <a href="/ecommerce.html" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">E-commerce</a>
     </div>
   </div>
 </nav>
