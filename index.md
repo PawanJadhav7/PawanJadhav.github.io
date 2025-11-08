@@ -224,7 +224,7 @@ layout: default
       <p>Airflow + Snowflake ELT; time-series KPIs & margin forecasts; exec dashboards for decision speed.</p>
       <p class="fp-impact"><strong>Impact:</strong> p95 report time 11m → 90s.</p>
      <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-  <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer"
+  <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics" target="_blank" rel="noopener noreferrer"
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
 
   <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}" 
@@ -654,7 +654,7 @@ layout: default
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Report runtime improved from 11m → 90s; 40% faster KPI analysis.</p>
 
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-      <a class="btn" href="https://github.com/PawanJadhav/Finance-Analytics" target="_blank" rel="noopener noreferrer"
+      <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics" target="_blank" rel="noopener noreferrer"
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;"> 💻Code</a>
      <a class="btn" href="/pricingandmarginanalytics/" 
    target="_self"
