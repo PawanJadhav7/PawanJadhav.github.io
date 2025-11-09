@@ -1,0 +1,28 @@
+Project
+GitHub Repo
+Evidence Type
+Domain
+Healthcare Claims Integrity Pipeline
+github.com/PawanJadhav7/healthcare-claims-integrity
+CDC, DMS→S3→Glue→Snowflake pipeline
+Healthcare
+FHIR Interoperability Lakehouse
+github.com/PawanJadhav7/fhir-snowflake-lakehouse
+HL7/FHIR, dbt, Great Expectations
+Healthcare
+Pricing & Margin Analytics
+github.com/PawanJadhav7/pricing-margin-analytics
+Power BI, Leakage detection
+Finance
+Supply Chain Forecast & Inventory Optimization
+github.com/PawanJadhav7/supplychain-analytics
+Azure Synapse, Python ML
+Supply Chain
+E-commerce Customer Segmentation Pipeline
+github.com/PawanJadhav7/ecommerce-analytics
+Kafka, Databricks, Snowflake
+E-commerce
+Insurance Claims Risk Scoring
+github.com/PawanJadhav7/insurance-analytics
+Fraud detection ML pipeline
+Insurance
