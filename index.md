@@ -483,6 +483,171 @@ layout: default
 
 
 
+<section id="supplychain" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Supply Chain Data Engineering & Analytics">
+
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
+    <img src="/assets/images/healthcare.jpg" alt="" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
+    Supply Chain Data Engineering & Analytics
+  </h2>
+
+  <p style="color:#374151;margin:6px 0 18px;">
+    Data pipelines and analytics designed for clinical, claims, and regulatory ecosystems — ensuring interoperability, integrity, and actionable intelligence.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+
+    <!-- Project 1 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">FHIR ETL — Spark to Snowflake</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Built an automated ETL framework for ingesting <strong>FHIR-compliant JSON</strong> data using PySpark and Snowflake Streams/Tasks.  
+        Implemented SCD2 for Member/Provider tables, dbt tests, and lineage tracking.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, improved auditability, and 30% cost optimization.</p>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+        <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📊 Architecture</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Claims Anomaly Detection</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Developed an anomaly detection pipeline using <strong>ICD-10 CM</strong> data to detect potential fraud, waste, and abuse in claims.  
+        Integrated PySpark feature engineering, statistical modeling, and BI dashboards.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by 18%; enabled near real-time integrity review.</p>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline/blob/main/README.md" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+        <a class="btn" href="/projects/healthcare-claims/" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Case Study</a>
+      </div>
+    </article>
+
+  </div>
+
+  <p style="text-align:right;margin-top:16px;display:flex;justify-content:flex-end;">
+    <a class="btn" href="/healthcare.html" rel="noopener noreferrer"
+       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 View More Supply Chain Projects</a>
+  </p>
+
+</section>
+
+
+<section id="Insurance" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Insurance Data Engineering & Analytics">
+
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
+    <img src="/assets/images/healthcare.jpg" alt="" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
+    Healthcare Data Engineering & Analytics
+  </h2>
+
+  <p style="color:#374151;margin:6px 0 18px;">
+    Data pipelines and analytics designed for clinical, claims, and regulatory ecosystems — ensuring interoperability, integrity, and actionable intelligence.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+
+    <!-- Project 1 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">FHIR ETL — Spark to Snowflake</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Built an automated ETL framework for ingesting <strong>FHIR-compliant JSON</strong> data using PySpark and Snowflake Streams/Tasks.  
+        Implemented SCD2 for Member/Provider tables, dbt tests, and lineage tracking.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, improved auditability, and 30% cost optimization.</p>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+        <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📊 Architecture</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Claims Anomaly Detection</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Developed an anomaly detection pipeline using <strong>ICD-10 CM</strong> data to detect potential fraud, waste, and abuse in claims.  
+        Integrated PySpark feature engineering, statistical modeling, and BI dashboards.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by 18%; enabled near real-time integrity review.</p>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline/blob/main/README.md" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+        <a class="btn" href="/projects/healthcare-claims/" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Case Study</a>
+      </div>
+    </article>
+
+    </div>
+
+  <p style="text-align:right;margin-top:16px;display:flex;justify-content:flex-end;">
+    <a class="btn" href="/healthcare.html" rel="noopener noreferrer"
+       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 View More Insurance Projects</a>
+  </p>
+
+</section>
+
+
+<section id="ecommerce" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="E-commerce Data Engineering & Analytics">
+
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
+    <img src="/assets/images/healthcare.jpg" alt="" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
+    E-commerce Data Engineering & Analytics
+  </h2>
+
+  <p style="color:#374151;margin:6px 0 18px;">
+    Data pipelines and analytics designed for clinical, claims, and regulatory ecosystems — ensuring interoperability, integrity, and actionable intelligence.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+
+    <!-- Project 1 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">FHIR ETL — Spark to Snowflake</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Built an automated ETL framework for ingesting <strong>FHIR-compliant JSON</strong> data using PySpark and Snowflake Streams/Tasks.  
+        Implemented SCD2 for Member/Provider tables, dbt tests, and lineage tracking.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, improved auditability, and 30% cost optimization.</p>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+        <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📊 Architecture</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Claims Anomaly Detection</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Developed an anomaly detection pipeline using <strong>ICD-10 CM</strong> data to detect potential fraud, waste, and abuse in claims.  
+        Integrated PySpark feature engineering, statistical modeling, and BI dashboards.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by 18%; enabled near real-time integrity review.</p>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline/blob/main/README.md" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+        <a class="btn" href="/projects/healthcare-claims/" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Case Study</a>
+      </div>
+    </article>
+
+ </div>
+
+  <p style="text-align:right;margin-top:16px;display:flex;justify-content:flex-end;">
+    <a class="btn" href="/healthcare.html" rel="noopener noreferrer"
+       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 View More E-commerce Projects</a>
+  </p>
+
+</section>
+
+
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Publications & Dashboards">
 
  <h2 style="color:#007ACC;margin-top:0;">
