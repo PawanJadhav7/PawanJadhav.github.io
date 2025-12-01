@@ -542,7 +542,7 @@ layout: default
 
   <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
     <img src="/assets/images/healthcare.jpg" alt="" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
-    Healthcare Data Engineering & Analytics
+    Insurance Data Engineering & Analytics
   </h2>
 
   <p style="color:#374151;margin:6px 0 18px;">
