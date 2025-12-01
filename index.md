@@ -270,6 +270,71 @@ layout: default
   </script>
 </section>
 
+<section id="cloud" style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Cloud Technologies">
+
+  <h2 style="color:#007ACC;margin-top:0;display:flex;align-items:center;gap:10px;">
+    <img src="/assets/images/cloud.gif" alt="Cloud Computing" width="36" height="36" style="vertical-align:middle;border-radius:6px;">
+    Cloud Technologies
+  </h2>
+
+  <p style="color:#374151;margin:6px 0 18px;">
+    Platforms and tooling used to build secure, scalable, and cloud-native data platforms — integrating Azure and AWS services for healthcare and finance analytics.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+
+    <!-- Azure -->
+    <article id="azure" style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="margin:0 0 10px;color:#007ACC;">Azure</h3>
+      <p style="margin:0 0 10px;color:#374151;line-height:1.6;">
+        ADLS • ADF • Databricks • Synapse • Azure SQL • Functions • Key Vault • DevOps Pipelines
+      </p>
+      <ul style="margin:10px 0 14px;padding-left:18px;color:#374151;line-height:1.6;">
+        <li>FHIR → Bronze/Silver/Gold on Databricks (PySpark) with Delta + Medallion.</li>
+        <li>ADF-based ELT to Synapse/Snowflake with dynamic, parameterized datasets.</li>
+        <li>Serverless Functions for micro-batch ingestion and DQ execution.</li>
+      </ul>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="#featured-azure" 
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">🔎 Featured</a>
+        <a class="btn" href="/cloud.html#azure" target="_blank" rel="noopener noreferrer" 
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 View More</a>
+      </div>
+    </article>
+
+    <!-- AWS -->
+    <article id="aws" style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="margin:0 0 10px;color:#007ACC;">AWS</h3>
+      <p style="margin:0 0 10px;color:#374151;line-height:1.6;">
+        S3 • Glue • DMS • Lambda • Step Functions • Athena • EMR • IAM
+      </p>
+      <ul style="margin:10px 0 14px;padding-left:18px;color:#374151;line-height:1.6;">
+        <li>CDC via DMS → S3 → Glue ETL with partitioning & compaction (Parquet).</li>
+        <li>Lambda + Step Functions orchestrating serverless workflows.</li>
+        <li>Athena views for ad-hoc analytics; cost-optimized lifecycle policies.</li>
+      </ul>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="#featured-aws" 
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">🔎 Featured</a>
+        <a class="btn" href="/cloud.html#aws" target="_blank" rel="noopener noreferrer" 
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 View More</a>
+      </div>
+    </article>
+
+  </div>
+
+  <p style="text-align:right;margin-top:16px;display:flex;justify-content:flex-end;">
+    <a class="btn" href="/cloud.html" target="_blank" rel="noopener noreferrer"
+       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 View All Cloud Projects</a>
+  </p>
+
+</section>
+
+
+
+
+
+
 <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:32px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05);" aria-label="Publications & Dashboards">
 
  <h2 style="color:#007ACC;margin-top:0;">
