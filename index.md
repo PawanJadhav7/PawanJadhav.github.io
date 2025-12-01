@@ -14,9 +14,9 @@ layout: default
       <a href="#home" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Home</a>
       <a href="#healthcare" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Healthcare</a>
       <a href="#finance" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Finance</a>
-      <a href="/supplychain.html" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Supply Chain</a>
-      <a href="/insurance.html" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Insurance</a>
-      <a href="/ecommerce.html" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">E-commerce</a>
+      <a href="#supplychain" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Supply Chain</a>
+      <a href="#insurance" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">Insurance</a>
+      <a href="#ecommerce" class="nav-link" style="color:#374151;text-decoration:none;font-weight:500;">E-commerce</a>
     </div>
   </div>
 </nav>
