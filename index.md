@@ -769,8 +769,7 @@ layout: default
   <div id="certViewport" tabindex="0"
        style="max-height:520px;overflow-y:auto;padding-right:4px;scroll-snap-type:y mandatory;scroll-behavior:smooth;">
     
-    <div style="display:flex;flex-direction:column;gap:16px;">
-
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(330px, 1fr));gap:16px;">
       <!-- 1. PMP -->
       <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
         <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">PMP® — Project Management Professional</h3>
