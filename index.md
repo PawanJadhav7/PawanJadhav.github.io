@@ -859,6 +859,17 @@ layout: default
         </p>
       </article>
 
+      <!-- 9. DCF Valuation -->
+      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+        <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">Discounted Cash Flow Valuation</h3>
+        <p style="margin:0;color:#374151;font-size:15px;">356 Financial Analyst</p>
+        <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: 3787028<br>Issued: Dec 2025</p>
+        <p style="margin-top:8px;">
+          <a href="assets/DCFValuation.pdf" target="_blank" rel="noopener noreferrer"
+             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
+        </p>
+      </article>
+
     </div>
   </div>
 </section>
