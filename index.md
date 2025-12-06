@@ -542,29 +542,6 @@ layout: default
       </div>
     </article>
 
-    <!-- Project 3: Order Fulfillment SLA & OTIF Monitoring -->
-    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
-      <h3 style="color:#007ACC;margin-top:0;">Order Fulfillment SLA & OTIF Monitoring</h3>
-      <p style="color:#374151;line-height:1.6;font-size:15px;">
-        Builds a near real-time <strong>Order → Pick → Pack → Ship → Deliver</strong> monitoring mart with
-        <strong>OTIF (On-Time-In-Full)</strong> metrics at customer, DC, and carrier level. Uses CDC/event ingestion and
-        Snowflake Tasks to refresh SLA views frequently.
-      </p>
-      <p style="font-size:14px;color:#6b7280;">
-        <strong>Impact:</strong> Surfaces SLA breaches early and supports continuous improvement in service levels.
-      </p>
-      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
-          💻 Code
-        </a>
-        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
-          📄 Case Study
-        </a>
-      </div>
-    </article>
-
   </div>
 
   <p style="text-align:right;margin-top:16px;display:flex;justify-content:flex-end;">
