@@ -2,8 +2,9 @@
 title: "E-commerce — Data Engineering & Analytics"
 layout: default
 permalink: /ecommerce.html
-description: "Portfolio projects in e-commerce data engineering, FHIR, and analytics."
+description: "Portfolio projects in e-commerce data engineering, clickstream, personalization, and growth analytics."
 ---
+
 <p style="margin:16px 0;">
   <a href="/" class="btn" style="display:inline-flex;align-items:center;gap:6px;
       padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
@@ -11,57 +12,127 @@ description: "Portfolio projects in e-commerce data engineering, FHIR, and analy
     ← Back to Home
   </a>
 </p>
-<section style="background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:24px 0;box-shadow:0 4px 10px rgba(0,0,0,.05);">
+
+<section style="background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;margin:24px 0;box-shadow:0 4px 10px rgba(0,0,0,.05);max-width:1100px;margin-left:auto;margin-right:auto;">
   <h1 style="color:#007ACC;margin:0 0 8px;">E-commerce — Data Engineering & Analytics</h1>
   <p style="color:#374151;margin:0;">
-    Selected projects across FHIR ETL, claims analytics, and e-commerce data quality — built with modern cloud platforms and best practices.
+    Projects focused on <strong>traffic, product, order, and marketing data</strong> — enabling better funnels, personalization,
+    and profitable unit economics.
   </p>
 </section>
 
 <style>
-  .grid{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:16px}
-  @media(max-width:800px){.grid{grid-template-columns:1fr}}
-  .card{border:1px solid #e5e7eb;border-radius:12px;background:#fff;padding:16px;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(260px,1fr));
+    gap:16px;
+    max-width:1100px;
+    margin:0 auto;
+  }
+  @media(max-width:800px){
+    .grid{grid-template-columns:1fr}
+  }
+  .card{
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    background:#fff;
+    padding:16px;
+    box-shadow:0 2px 6px rgba(0,0,0,.04)
+  }
   .card h3{margin:0 0 6px;color:#1f2937}
   .card p{margin:0 0 10px;color:#374151;line-height:1.6}
   .meta{font-size:12px;color:#6b7280;margin-bottom:6px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;margin-right:8px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
+    background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;
+    margin-right:8px;margin-bottom:6px;
+  }
   .btn:hover{background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-  .pill{display:inline-block;background:#eff6ff;color:#0f2e5e;border:1px solid #dbeafe;padding:2px 8px;border-radius:999px;font-size:12px;margin-right:6px}
+  .pill{
+    display:inline-block;background:#eff6ff;color:#0f2e5e;
+    border:1px solid #dbeafe;padding:2px 8px;
+    border-radius:999px;font-size:12px;margin-right:6px;margin-bottom:4px;
+  }
 </style>
 
 <section style="margin:24px 0;">
-  <h2 style="color:#007ACC;margin:0 0 12px;">Featured E-commerce Projects</h2>
+  <h2 style="color:#007ACC;margin:0 0 12px;max-width:1100px;margin-left:auto;margin-right:auto;">Featured E-commerce Projects</h2>
+
   <div class="grid">
 
-    <!-- Project 1: FHIR ETL -->
+    <!-- 1. Clickstream & Conversion Funnel Analytics (matches home) -->
     <article class="card">
-      <span class="pill">FHIR</span><span class="pill">ETL</span><span class="pill">Snowflake</span>
-      <h3>FHIR ETL on Spark → Snowflake</h3>
-      <div class="meta">Tech: Spark, PyArrow, Pandera, dbt (optional), Snowflake</div>
+      <span class="pill">Clickstream</span><span class="pill">Funnel</span>
+      <h3>Clickstream & Conversion Funnel Analytics</h3>
+      <div class="meta">Tech: event streams, Spark/SQL, BI dashboard</div>
       <p>
-        End-to-end ingestion of HL7 FHIR (Patient, Encounter, Observation) JSON into curated Snowflake models.
-        Includes flattening, DQ checks, ICD-10/LOINC enrichment, features (e.g., lactate flags), and star schema for analytics.
+        Normalizes raw web/app events into a <strong>session & funnel model</strong>, tagging steps like view, add-to-cart,
+        checkout, and purchase. Enables <strong>drop-off and conversion</strong> analysis by channel, device, and campaign.
       </p>
       <p>
-        <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline" target="_blank" rel="noopener">💻 Code</a>
-        <a class="btn" href="assets/images/fhir_enrichment_arch.png" target="_blank" rel="noopener">📊 Architecture</a>
-        <a class="btn" href="/projects/healthcare-fhir-etl/" target="_blank" rel="noopener">📄 Case Study</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">💻 Code</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">📊 Funnel Dashboard</a>
       </p>
     </article>
 
-    <!-- Project 2: Claims Anomaly Detection -->
+    <!-- 2. Product Recommendation & Personalization Mart (matches home) -->
     <article class="card">
-      <span class="pill">Claims</span><span class="pill">ICD-10</span><span class="pill">Anomaly</span>
-      <h3>Healthcare Claims — Anomaly Detection</h3>
-      <div class="meta">Tech: Python (pandas), feature engineering, dashboard</div>
+      <span class="pill">Recommendations</span><span class="pill">Features</span>
+      <h3>Product Recommendation & Personalization Mart</h3>
+      <div class="meta">Tech: Snowflake, dbt, Python, feature store</div>
       <p>
-        Profiling and anomaly signals across claim lines using ICD-10 and utilization patterns (cost outliers, frequency spikes).
-        Delivers prioritized review lists and a lightweight monitoring dashboard.
+        Builds a <strong>user–item interaction mart</strong> from orders, views, and wishlists. Exposes
+        <strong>recency, frequency, monetary, category affinity, and co-viewed</strong> features for recommendation models.
       </p>
       <p>
-        <a class="btn" href="https://github.com/PawanJadhav/Healthcare-Claims" target="_blank" rel="noopener">💻 Code</a>
-        <a class="btn" href="/projects/healthcare-claims/" target="_blank" rel="noopener">📄 Case Study</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">💻 Code</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">📄 Feature Schema</a>
+      </p>
+    </article>
+
+    <!-- 3. Returns & Refunds Analytics -->
+    <article class="card">
+      <span class="pill">Returns</span><span class="pill">Quality</span>
+      <h3>Returns & Refunds Analytics</h3>
+      <div class="meta">Tech: SQL, Snowflake, BI</div>
+      <p>
+        Integrates <strong>orders, returns, refund reasons, and product attributes</strong> to analyze return rates and margin impact
+        by SKU, vendor, and channel. Identifies <strong>high-defect and high-return items</strong> for catalog and quality actions.
+      </p>
+      <p>
+        <a class="btn" href="#" target="_blank" rel="noopener">💻 Code</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">📊 Returns Dashboard</a>
+      </p>
+    </article>
+
+    <!-- 4. Marketing Attribution & Unit Economics -->
+    <article class="card">
+      <span class="pill">Attribution</span><span class="pill">CAC/LTV</span>
+      <h3>Marketing Attribution & Unit Economics Analytics</h3>
+      <div class="meta">Tech: SQL, Python, BI</div>
+      <p>
+        Joins <strong>ad spend, sessions, and orders</strong> into a model for <strong>CAC, LTV, ROAS, and payback</strong> by channel and campaign.
+        Supports multi-touch attribution scenarios and channel optimization.
+      </p>
+      <p>
+        <a class="btn" href="#" target="_blank" rel="noopener">💻 Attribution Logic</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">📊 Unit Economics Dashboard</a>
+      </p>
+    </article>
+
+    <!-- 5. Dynamic Pricing & Inventory Health for E-commerce -->
+    <article class="card">
+      <span class="pill">Pricing</span><span class="pill">Inventory</span>
+      <h3>Dynamic Pricing & Inventory Health Analytics</h3>
+      <div class="meta">Tech: Snowflake, Python, scheduling</div>
+      <p>
+        Combines <strong>inventory, sales velocity, and competitor price feeds</strong> into a pricing analytics mart.
+        Computes <strong>price elasticity signals, days-of-stock, and markdown suggestions</strong> for merchandizing teams.
+      </p>
+      <p>
+        <a class="btn" href="#" target="_blank" rel="noopener">💻 Code</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">📄 Pricing Rules</a>
       </p>
     </article>
 
@@ -69,11 +140,11 @@ description: "Portfolio projects in e-commerce data engineering, FHIR, and analy
 </section>
 
 <section style="margin:24px 0;">
-  <h2 style="color:#007ACC;margin:0 0 12px;">What this demonstrates</h2>
-  <ul style="margin:0;color:#374151;line-height:1.8;">
-    <li>FHIR/HL7 interoperability, vocabulary enrichment (ICD-10, LOINC)</li>
-    <li>Cloud-ready pipelines with schema validation and curated models</li>
-    <li>Analytics delivery for clinical and operational decisions</li>
+  <h2 style="color:#007ACC;margin:0 0 12px;max-width:1100px;margin-left:auto;margin-right:auto;">What this demonstrates</h2>
+  <ul style="margin:0;color:#374151;line-height:1.8;max-width:1100px;margin-left:auto;margin-right:auto;">
+    <li>End-to-end <strong>e-commerce data modeling</strong> across traffic, product, and orders.</li>
+    <li>Building <strong>growth and profitability analytics</strong> for funnels, returns, and unit economics.</li>
+    <li>Preparing <strong>feature stores</strong> for recommendations, personalization, and pricing models.</li>
   </ul>
 </section>
 
