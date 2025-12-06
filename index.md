@@ -491,40 +491,77 @@ layout: default
   </h2>
 
   <p style="color:#374151;margin:6px 0 18px;">
-    Data pipelines and analytics designed for clinical, claims, and regulatory ecosystems — ensuring interoperability, integrity, and actionable intelligence.
+    Data platforms and analytics for <strong>warehousing, transportation, and fulfillment</strong> — integrating WMS, TMS, and ERP data to improve inventory health, logistics cost, and OTIF performance.
   </p>
 
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
 
-    <!-- Project 1 -->
+    <!-- Project 1: Warehouse Inventory & Replenishment ETL -->
     <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
-      <h3 style="color:#007ACC;margin-top:0;">FHIR ETL — Spark to Snowflake</h3>
+      <h3 style="color:#007ACC;margin-top:0;">Warehouse Inventory & Replenishment ETL</h3>
       <p style="color:#374151;line-height:1.6;font-size:15px;">
-        Built an automated ETL framework for ingesting <strong>FHIR-compliant JSON</strong> data using PySpark and Snowflake Streams/Tasks.  
-        Implemented SCD2 for Member/Provider tables, dbt tests, and lineage tracking.
+        End-to-end ETL pipeline integrating <strong>WMS, ERP, and POS</strong> data into curated inventory models on
+        Snowflake / Databricks. Calculates <strong>inventory positions, reorder points, and safety stock</strong> by
+        SKU–location with dbt tests and lineage.
       </p>
-      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, improved auditability, and 30% cost optimization.</p>
+      <p style="font-size:14px;color:#6b7280;">
+        <strong>Impact:</strong> Designed to reduce stockouts and excess inventory through data-driven replenishment.
+      </p>
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-        <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
-        <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📊 Architecture</a>
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+          💻 Code
+        </a>
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+          📄 Case Study
+        </a>
       </div>
     </article>
 
-    <!-- Project 2 -->
+    <!-- Project 2: Transportation Route & Cost Optimization -->
     <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
-      <h3 style="color:#007ACC;margin-top:0;">Claims Anomaly Detection</h3>
+      <h3 style="color:#007ACC;margin-top:0;">Transportation Route & Cost Optimization</h3>
       <p style="color:#374151;line-height:1.6;font-size:15px;">
-        Developed an anomaly detection pipeline using <strong>ICD-10 CM</strong> data to detect potential fraud, waste, and abuse in claims.  
-        Integrated PySpark feature engineering, statistical modeling, and BI dashboards.
+        Ingests <strong>shipment, carrier, and telematics (GPS)</strong> data to build lane-level KPIs such as
+        <strong>cost-per-mile, cost-per-drop, and transit reliability</strong>. Uses Spark & Snowflake to power interactive
+        dashboards for carrier and route benchmarking.
       </p>
-      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by 18%; enabled near real-time integrity review.</p>
+      <p style="font-size:14px;color:#6b7280;">
+        <strong>Impact:</strong> Enables optimization of freight spend and routing decisions across the network.
+      </p>
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-        <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline/blob/main/README.md" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
-        <a class="btn" href="/projects/healthcare-claims/" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Case Study</a>
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+          💻 Code
+        </a>
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+          📊 Dashboard
+        </a>
+      </div>
+    </article>
+
+    <!-- Project 3: Order Fulfillment SLA & OTIF Monitoring -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Order Fulfillment SLA & OTIF Monitoring</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Builds a near real-time <strong>Order → Pick → Pack → Ship → Deliver</strong> monitoring mart with
+        <strong>OTIF (On-Time-In-Full)</strong> metrics at customer, DC, and carrier level. Uses CDC/event ingestion and
+        Snowflake Tasks to refresh SLA views frequently.
+      </p>
+      <p style="font-size:14px;color:#6b7280;">
+        <strong>Impact:</strong> Surfaces SLA breaches early and supports continuous improvement in service levels.
+      </p>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+          💻 Code
+        </a>
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+          📄 Case Study
+        </a>
       </div>
     </article>
 
@@ -532,7 +569,9 @@ layout: default
 
   <p style="text-align:right;margin-top:16px;display:flex;justify-content:flex-end;">
     <a class="btn" href="/supplychain.html" rel="noopener noreferrer"
-       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 View More Supply Chain Projects</a>
+       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+      📄 View More Supply Chain Projects
+    </a>
   </p>
 
 </section>
