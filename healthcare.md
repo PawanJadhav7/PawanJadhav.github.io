@@ -1,7 +1,7 @@
 ---
 title: "Healthcare — Data Engineering & Analytics"
 layout: default
-permalink: /healthcare/
+permalink: /healthcare.html
 description: "Portfolio projects in healthcare data engineering — FHIR, claims, clinical analytics, and quality."
 ---
 
