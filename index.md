@@ -157,37 +157,65 @@ layout: default
 </h2>
 
   <style>
-    /* Carousel track */
-    .fp-track{
-      display:flex;
-      gap:20px;
-      overflow-x:auto;
-      scroll-snap-type:x mandatory;
-      scroll-behavior:smooth;
-      padding:4px 2px 10px;
-      -webkit-overflow-scrolling:touch;
-    }
-    /* Hide scrollbar (keeps accessible scrolling) */
-    .fp-track::-webkit-scrollbar{height:8px}
-    .fp-track::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:8px}
-    /* Cards */
-    .fp-card{
-      flex:0 0 350px;           /* card width */
-      scroll-snap-align:start;
-      border:1px solid #e5e7eb;
-      border-radius:12px;
-      padding:18px;
-      background:#fff;
-      box-shadow:0 4px 8px rgba(0,0,0,0.03);
-    }
-    .fp-card h3{ margin:0 0 8px; color:#007ACC; font-size:18px; }
-    .fp-card p{ margin:0 0 10px; color:#374151; line-height:1.6; font-size:15px; }
-    .fp-impact{ font-size:14px; color:#6b7280; margin:0 0 10px; }
-    .fp-btns{ display:flex; gap:10px; flex-wrap:wrap; }
-    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:10px 16px; border-radius:10px; border:1px solid #e5e7eb; background:#f8fafc; color:#111827; text-decoration:none; font-weight:500; transition:all .2s; }
-    .btn:hover{ background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.08); text-decoration:none; }
-    @media (max-width:420px){ .fp-card{flex-basis:280px} }
-  </style>
+  /* Carousel track */
+  .fp-track{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    padding:4px 2px 10px;
+    -webkit-overflow-scrolling:touch;
+  }
+  .fp-track::-webkit-scrollbar{height:8px}
+  .fp-track::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:8px}
+  .fp-track{ position: relative; z-index: 1; }
+
+  /* Cards */
+  .fp-card{
+    flex:0 0 350px;
+    scroll-snap-align:start;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:18px;
+    background:#fff;
+    box-shadow:0 4px 8px rgba(0,0,0,0.03);
+
+    /* ✅ ADD THIS */
+    position: relative;
+    z-index: 2;
+  }
+
+  .fp-card h3{ margin:0 0 8px; color:#007ACC; font-size:18px; }
+  .fp-card p{ margin:0 0 10px; color:#374151; line-height:1.6; font-size:15px; }
+  .fp-impact{ font-size:14px; color:#6b7280; margin:0 0 10px; }
+
+  .fp-btns{ display:flex; gap:10px; flex-wrap:wrap; }
+
+  /* ✅ ADD THIS (ensures links win click priority) */
+  .fp-btns a{
+    position: relative;
+    z-index: 5;
+    pointer-events: auto;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 16px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+    background:#f8fafc;
+    color:#111827;
+    text-decoration:none;
+    font-weight:500;
+    transition:all .2s;
+  }
+  .btn:hover{ background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.08); text-decoration:none; }
+
+  @media (max-width:420px){ .fp-card{flex-basis:280px} }
+</style>
 
   <div id="fpTrack" class="fp-track" tabindex="0">
     <!-- Project 1 -->
