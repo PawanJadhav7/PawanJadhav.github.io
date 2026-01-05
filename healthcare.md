@@ -70,7 +70,7 @@ description: "Portfolio projects in healthcare data engineering — FHIR, claims
         Includes flattening, schema validation, ICD-10 / LOINC enrichment, SCD2 dimensions, and dbt tests for data quality.
       </p>
       <p>
-        <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank" rel="noopener">💻 Code</a>
+        <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline/blob/main/README.md" target="_blank" rel="noopener">💻 Code</a>
         <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank" rel="noopener">📊 Architecture</a>
         <a class="btn" href="/projects/healthcare-fhir-etl/" target="_blank" rel="noopener">📄 Case Study</a>
       </p>
