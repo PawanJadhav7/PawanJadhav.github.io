@@ -831,25 +831,25 @@ layout: default
         </p>
       </article>
 
-      <!-- 6. ITIL 4 Foundation -->
-      <article style="display:none;scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
-        <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">ITIL® 4 Foundation</h3>
-        <p style="margin:0;color:#374151;font-size:15px;">AXELOS / PeopleCert</p>
-        <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2024</p>
+      <!-- 6. Corporate Financial Statement Analysis -->
+      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+        <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">Corporate Financial Statement Analysis</h3>
+        <p style="margin:0;color:#374151;font-size:15px;">LinkedIn</p>
+        <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID:739d865a57415cd74e1585551818c77d8aaa37398af46cbea15a0c93597af138<br>Issued: Dec 28 2025 </p>
         <p style="margin-top:8px;">
-          <a href="https://www.axelos.com/certifications/itil-4-foundation" target="_blank" rel="noopener noreferrer"
-             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">About</a>
+          <a href="assets/CertificateOfCompletion_Corporate_Financial_Statement_Analysis.pdf" target="_blank" rel="noopener noreferrer"
+             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
 
-      <!-- 7. PSM I -->
-      <article style="display:none;scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
-        <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">Professional Scrum Master™ I (PSM I)</h3>
-        <p style="margin:0;color:#374151;font-size:15px;">Scrum.org</p>
-        <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2024</p>
+      <!-- 7. Python Fundamental-->
+      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+        <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">Python Fundamentals</h3>
+        <p style="margin:0;color:#374151;font-size:15px;">PyFi Inc.</p>
+        <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID:-<br>Issued: Jan 2025</p>
         <p style="margin-top:8px;">
-          <a href="https://www.scrum.org/professional-scrum-certifications/psm-i-certification" target="_blank" rel="noopener noreferrer"
-             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">About</a>
+          <a href="assets/Python_Fundamentals.pdf" target="_blank" rel="noopener noreferrer"
+             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
 
