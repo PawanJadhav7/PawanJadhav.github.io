@@ -196,7 +196,7 @@ layout: default
       <p>End-to-end pipeline for FHIR JSON into curated Snowflake models. SCD2 for Member/Provider, DQ checks, lineage with dbt.</p>
       <p class="fp-impact"><strong>Impact:</strong> 2.5× faster loads; ~30% cost savings.</p>
      <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-  <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline/blob/main/README.md" target="_blank" rel="noopener noreferrer"
+  <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline/blob/main/README.md" target="_blank" rel="noopener"
      style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
 
   <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank" rel="noopener noreferrer"
