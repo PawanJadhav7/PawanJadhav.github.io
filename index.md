@@ -381,7 +381,7 @@ layout: default
       </p>
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> 2.5× faster loads, improved auditability, and ~30% cost optimization.</p>
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-        <a class="btn" href="https://github.com/PawanJadhav/FHIR-Snowflake" target="_blank" rel="noopener noreferrer"
+        <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline/blob/main/README.md" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
         <a class="btn" href="/assets/diagrams/fhir_snowflake.png" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📊 Architecture</a>
@@ -397,7 +397,7 @@ layout: default
       </p>
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by ~18%; faster case triage and review.</p>
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-        <a class="btn" href="https://github.com/PawanJadhav/Healthcare-Claims" target="_blank" rel="noopener noreferrer"
+        <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
         <a class="btn" href="/projects/healthcare-claims/" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Case Study</a>
