@@ -877,6 +877,16 @@ layout: default
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
+      <!-- 10. Copilot in Excel -->
+      <article style="scroll-snap-align:start;border:1px solid #e5e7eb;border-radius:12px;padding:14px 18px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+        <h3 style="margin:0 0 6px;color:#007ACC;font-size:17px;">Copilot in Excel</h3>
+        <p style="margin:0;color:#374151;font-size:15px;">356 Financial Analyst</p>
+        <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: CC-20905EEB4E<br>Issued: Jan 2026</p>
+        <p style="margin-top:8px;">
+          <a href="assets/Copilot_in_Excel.pdf" target="_blank" rel="noopener noreferrer"
+             style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
+        </p>
+      </article>
 
     </div>
   </div>
