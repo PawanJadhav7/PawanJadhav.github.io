@@ -175,3 +175,46 @@ Traditional rule-based systems:
 - Captures nonlinear interactions missed by rules
 
 **Composite Risk Score**
+---
+
+## 7) Explainability & Governance
+
+- Every anomaly includes:
+  - Peer deviation drivers
+  - Trend context (rolling baselines)
+  - Transparent flags (upcoding, weekend, rare ICD)
+- Supports audit review and appeal workflows
+- Avoids black-box risk scores
+
+---
+
+## 8) Results & Impact
+
+<div style="border:1px solid #e5e7eb;border-radius:14px;background:#ffffff;
+            box-shadow:0 4px 10px rgba(0,0,0,0.05);overflow:hidden;margin:30px 0;">
+  <div style="background:#0F766E;color:#ffffff;padding:10px 16px;font-weight:600;font-size:15px;">
+    📊 Results & Impact
+  </div>
+  <div style="padding:16px 20px;color:#374151;font-size:15px;line-height:1.7;">
+    <ul style="margin:0;padding-left:20px;">
+      <li><strong>Precision:</strong> Reduced false positives by ~18% vs naïve thresholds (synthetic benchmark).</li>
+      <li><strong>Efficiency:</strong> SIU teams can review top ~2% of provider-months first.</li>
+      <li><strong>Explainability:</strong> Each flagged case includes peer and trend drivers.</li>
+      <li><strong>Scalability:</strong> Feature-driven design supports batch or near-real-time extension.</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## 9) How to Run
+
+```bash
+# Generate synthetic claims
+python src/generate_synthetic_claims.py
+
+# Build features
+PYTHONPATH=. python scripts/run_02_feature_engineering.py
+
+# Run anomaly detection
+PYTHONPATH=. python scripts/run_03_anomaly_detection.py
