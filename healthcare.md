@@ -87,7 +87,7 @@ description: "Portfolio projects in healthcare data engineering — FHIR, claims
       </p>
       <p>
         <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener">💻 Code</a>
-        <a class="btn" href="/projects/healthcare-claims/" target="_blank" rel="noopener">📄 Case Study</a>
+        <a class="btn" href="{{ '/healthcare-claims-anomaly-detection/' | relative_url }}" target="_blank" rel="noopener">📄 Case Study</a>
       </p>
     </article>
 
