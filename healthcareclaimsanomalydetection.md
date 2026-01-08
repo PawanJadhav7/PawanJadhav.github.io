@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Healthcare Claims Anomaly Detection — Python • ML • BI"
-permalink: /healthcare-claims-anomaly-detection/
+permalink: /healthcareclaimsanomalydetection/
 date: 2025-11-10 10:00:00 -0500
 tags: [healthcare, claims, fraud, fwa, anomaly-detection, python, machine-learning, analytics]
 hero_image: /assets/headers/healthcare-claims-hero.jpg
