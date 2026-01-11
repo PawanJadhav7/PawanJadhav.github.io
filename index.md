@@ -221,27 +221,7 @@ layout: default
 </style>
 
   <div id="fpTrack" class="fp-track" tabindex="0">
-     <!-- Project 1 -->
-    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
-        <h3 style="color:#007ACC;margin-top:0;">Pricing & Margin Analytics</h3>
-        <p style="color:#374151;line-height:1.6;font-size:15px;">
-          Designed ELT pipelines that integrate product, sales, discount, and cost data to compute <strong>net price, margin, and KPIs</strong>.  
-          Snowflake marts power exec dashboards for segment, customer, and SKU-level profitability.
-        </p>
-        <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Report runtime improved from 11m → 90s; 40% faster KPI analysis.</p>
-  
-        <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-          <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics/blob/main/README.md" target="_blank" rel="noopener noreferrer"
-             style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-             size:14px;">💻 Code</a>
-          <a class="btn" href="/pricingandmarginanalytics/" target="_self"
-             style="display:inline-flex;align-items:center;justify-content:center;
-                    padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
-                    background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
-            📄 Case Study
-          </a>
-        </div>
-    </article>
+    
     
     <!-- Project 2 -->
     <article class="fp-card">
