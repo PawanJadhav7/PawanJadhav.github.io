@@ -786,6 +786,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: 3787028<br>Issued: Mar 2024 · Expires: Mar 2027</p>
         <p style="margin-top:8px;">
           <a href="assets/PMICertification.pdf" target="_blank" rel="noopener noreferrer"
+              data-umami-event="click_cert"
+              data-umami-event-cert="PMP"
+              data-umami-event-type="pdf"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
@@ -796,7 +799,9 @@ layout: default
         <p style="margin:0;color:#374151;font-size:15px;">Microsoft</p>
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: 2211773CB6CBA50F<br>Issued: Mar 2024 · Expires: Mar 2025</p>
         <p style="margin-top:8px;">
-          <a href="assets/MicrosoftAzure.pdf" target="_blank" rel="noopener noreferrer"
+          <a href="assets/MicrosoftAzure.pdf" target="_blank" rel="noopener noreferrer" data-umami-event="click_cert"
+             data-umami-event-cert="DP-203"
+             data-umami-event-type="pdf"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
@@ -808,6 +813,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2025</p>
         <p style="margin-top:8px;">
           <a href="https://www.snowflake.com/certifications/snowpro-core/" target="_blank" rel="noopener noreferrer"
+              data-umami-event="click_cert"
+              data-umami-event-cert="SnowPro_Core"
+              data-umami-event-type="about"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">About</a>
         </p>
       </article>
@@ -819,6 +827,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2025</p>
         <p style="margin-top:8px;">
           <a href="https://www.databricks.com/learn/certification/data-engineer-associate" target="_blank" rel="noopener noreferrer"
+              data-umami-event="click_cert"
+              data-umami-event-cert="Databricks_DEA"
+              data-umami-event-type="about"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">About</a>
         </p>
       </article>
@@ -830,6 +841,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: xxxxxxx<br>Issued: 2025</p>
         <p style="margin-top:8px;">
           <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target="_blank" rel="noopener noreferrer"
+              data-umami-event="click_cert"
+              data-umami-event-cert="AWS_CCP"
+              data-umami-event-type="about"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">About</a>
         </p>
       </article>
@@ -841,6 +855,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID:739d865a57415cd74e1585551818c77d8aaa37398af46cbea15a0c93597af138<br>Issued: Dec 28 2025 </p>
         <p style="margin-top:8px;">
           <a href="assets/CertificateOfCompletion_Corporate_Financial_Statement_Analysis.pdf" target="_blank" rel="noopener noreferrer"
+               data-umami-event="click_cert"
+               data-umami-event-cert="Corporate_Financial_Statement_Analysis"
+               data-umami-event-type="pdf"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
@@ -852,6 +869,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID:-<br>Issued: Jan 2025</p>
         <p style="margin-top:8px;">
           <a href="assets/Python_Fundamentals.pdf" target="_blank" rel="noopener noreferrer"
+               data-umami-event="click_cert"
+               data-umami-event-cert="Python_Fundamentals"
+               data-umami-event-type="pdf"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
@@ -863,6 +883,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Certificate #: 7a473b29-7fce-4813-a462-b7207e139c46<br>Valid: Aug 2025 – Aug 2026</p>
         <p style="margin-top:8px;">
           <a href="assets/HIPAA.pdf" target="_blank" rel="noopener noreferrer"
+              data-umami-event="click_cert"
+              data-umami-event-cert="HIPAA"
+              data-umami-event-type="pdf"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">View Certificate</a>
         </p>
       </article>
@@ -874,6 +897,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: 3787028<br>Issued: Dec 2025</p>
         <p style="margin-top:8px;">
           <a href="assets/DCFValuation.pdf" target="_blank" rel="noopener noreferrer"
+              data-umami-event="click_cert"
+              data-umami-event-cert="DCF_Valuation"
+              data-umami-event-type="pdf"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
@@ -884,6 +910,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: CC-20905EEB4E<br>Issued: Jan 2026</p>
         <p style="margin-top:8px;">
           <a href="assets/Copilot_in_Excel.pdf" target="_blank" rel="noopener noreferrer"
+              data-umami-event="click_cert"
+              data-umami-event-cert="Copilot_in_Excel"
+              data-umami-event-type="pdf"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
@@ -894,6 +923,9 @@ layout: default
         <p style="margin:6px 0 0;font-size:13px;color:#6b7280;">Credential ID: CC-20905EEB4E<br>Issued: Jan 2026</p>
         <p style="margin-top:8px;">
           <a href="assets/CertificateOfCompletion_Analytics_Engineering_Project.pdf" target="_blank" rel="noopener noreferrer"
+              data-umami-event="click_cert"
+              data-umami-event-cert="Analytics_Engineering_Project"
+              data-umami-event-type="pdf"
              style="color:#007ACC;text-decoration:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:8px;">📄 View Certificate</a>
         </p>
       </article>
