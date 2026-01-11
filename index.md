@@ -209,11 +209,11 @@ layout: default
         <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
           <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics/blob/main/README.md" target="_blank" rel="noopener noreferrer"
              style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-             size:14px;">💻 Code</a>
+             size:14px;" data-umami-event="click_project_code_pricing_margin">💻 Code</a>
           <a class="btn" href="/pricingandmarginanalytics/" target="_self"
              style="display:inline-flex;align-items:center;justify-content:center;
                     padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
-                    background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+                    background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;" data-umami-event="click_project_case_pricing_margin">
             📄 Case Study
           </a>
         </div>
@@ -230,10 +230,10 @@ layout: default
         <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
           <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener noreferrer"
              style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-             size:14px;">💻 Code</a>
+             size:14px;" data-umami-event="click_project_code_healthcare_claims">💻 Code</a>
           <a class="btn" href="{{ '/healthcare-claims-anomaly-detection/' | relative_url }}" target="_blank" rel="noopener noreferrer"
              style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-             size:14px;">📄 Case Study</a>
+             size:14px;" data-umami-event="click_project_case_healthcare_claims">📄 Case Study</a>
         </div>
      </article>
 
@@ -251,12 +251,12 @@ layout: default
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-           size:14px;">
+           size:14px;" data-umami-event="click_project_code_supplychain_inventory">
           💻 Code
         </a>
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-           size:14px;">
+           size:14px;" data-umami-event="click_project_case_supplychain_inventory">
           📄 Case Study
         </a>
       </div>
@@ -272,10 +272,10 @@ layout: default
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-           size:14px;">💻 Code</a>
+           size:14px;" data-umami-event="click_project_code_insurance_pricing_risk">💻 Code</a>
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-           size:14px;">📊 Dashboard</a>
+           size:14px;" data-umami-event="click_project_dashboard_insurance_pricing_risk">📊 Dashboard</a>
       </div>
     </article>
     <!-- Project 5 -->
@@ -289,10 +289,10 @@ layout: default
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-           size:14px;">💻 Code</a>
+           size:14px;" data-umami-event="click_project_code_ecommerce_funnel">💻 Code</a>
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
            style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-           size:14px;">📊 Funnel Dashboard</a>
+           size:14px;" data-umami-event="click_project_dashboard_ecommerce_funnel">📊 Funnel Dashboard</a>
       </div>
     </article>
     
