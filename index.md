@@ -246,18 +246,20 @@ layout: default
     </article>
 
      <!-- Project 2 -->
-    <article class="fp-card">
-      <h3>Healthcare Claims Anomaly Detection</h3>
-      <p>ICD-10 CM + provider signals with Python/Spark for real-time anomaly scoring across fraud, waste, abuse.</p>
-      <p class="fp-impact"><strong>Impact:</strong> ↓ false positives ~18%; faster integrity reviews.</p>
-       <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-        <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-           size:14px;">💻 Code</a>
-    
-        <a class="btn" href="{{ '/healthcare-claims-anomaly-detection/' | relative_url }}" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
-            size:14px;">📄 Case Study</a>
+     <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+        <h3 style="color:#007ACC;margin-top:0;">Healthcare Claims — Anomaly Detection</h3>
+        <p style="color:#374151;line-height:1.6;font-size:15px;">
+          Developed an anomaly detection pipeline using <strong>ICD-10 CM</strong> and utilization signals to flag potential fraud, waste, and abuse.  
+          Includes profiling, feature engineering, and BI dashboards for SIU/integrity teams.
+        </p>
+        <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by ~18%; faster case triage and review.</p>
+        <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+          <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener noreferrer"
+             style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+             size:14px;">💻 Code</a>
+          <a class="btn" href="{{ '/healthcare-claims-anomaly-detection/' | relative_url }}" target="_blank" rel="noopener noreferrer"
+             style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+             size:14px;">📄 Case Study</a>
         </div>
      </article>
 
@@ -274,13 +276,49 @@ layout: default
       </p>
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">
           💻 Code
         </a>
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">
           📄 Case Study
         </a>
+      </div>
+    </article>
+  <!-- Project 4 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Pricing & Underwriting Risk Analytics</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Built ELT pipelines to create <strong>exposure, premium, and loss triangles</strong> by segment, product, and geography.
+        Supports <strong>pricing adequacy, loss ratio, and retention</strong> analysis for underwriting and actuarial teams.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced manual spreadsheet work and accelerated pricing review cycles.</p>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">💻 Code</a>
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">📊 Dashboard</a>
+      </div>
+    </article>
+    <!-- Project 5 -->
+     <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+      <h3 style="color:#007ACC;margin-top:0;">Clickstream & Conversion Funnel Analytics</h3>
+      <p style="color:#374151;line-height:1.6;font-size:15px;">
+        Ingests <strong>web events, sessions, and cart actions</strong> into a curated funnel model (visit → view → add-to-cart → checkout → purchase).
+        Enables drop-off analysis by channel, device, and campaign.
+      </p>
+      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Exposed high-drop funnels and improved conversion experiments.</p>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">💻 Code</a>
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">📊 Funnel Dashboard</a>
       </div>
     </article>
     
@@ -419,9 +457,11 @@ layout: default
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced false positives by ~18%; faster case triage and review.</p>
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
         <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">💻 Code</a>
         <a class="btn" href="{{ '/healthcare-claims-anomaly-detection/' | relative_url }}" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Case Study</a>
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">📄 Case Study</a>
       </div>
     </article>
 
@@ -606,9 +646,11 @@ layout: default
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Reduced manual spreadsheet work and accelerated pricing review cycles.</p>
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">💻 Code</a>
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📊 Dashboard</a>
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">📊 Dashboard</a>
       </div>
     </article>
 
@@ -645,9 +687,11 @@ layout: default
       <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Exposed high-drop funnels and improved conversion experiments.</p>
       <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">💻 Code</a>
         <a class="btn" href="#" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📊 Funnel Dashboard</a>
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+           size:14px;">📊 Funnel Dashboard</a>
       </div>
     </article>
 
