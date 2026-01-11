@@ -241,31 +241,72 @@ layout: default
       <p>ICD-10 CM + provider signals with Python/Spark for real-time anomaly scoring across fraud, waste, abuse.</p>
       <p class="fp-impact"><strong>Impact:</strong> ↓ false positives ~18%; faster integrity reviews.</p>
      <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-  <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener noreferrer"
-     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+    <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener noreferrer"
+       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
 
-  <a class="btn" href="{{ '/healthcare-claims-anomaly-detection/' | relative_url }}" target="_blank" rel="noopener noreferrer"
-     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Case Study</a>
-</div>
-    </article>
+    <a class="btn" href="{{ '/healthcare-claims-anomaly-detection/' | relative_url }}" target="_blank" rel="noopener noreferrer"
+       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Case Study</a>
+  </div>
+     </article>
 
     <!-- Project 3 -->
     <article class="fp-card">
       <h3>Finance Pricing & Margin Analytics</h3>
       <p>Airflow + Snowflake ELT; time-series KPIs & margin forecasts; exec dashboards for decision speed.</p>
       <p class="fp-impact"><strong>Impact:</strong> p95 report time 11m → 90s.</p>
-     <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-  <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics" target="_blank" rel="noopener noreferrer"
-     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
+       <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-        
+           size:14px;">💻 Code</a>
+  
+        <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}" 
+         target="_self"
+         style="display:inline-flex;align-items:center;justify-content:center;
+                padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
+                background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+         📄 Case Study
+      </a>
+      </div>
+    </article>
 
-  <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}" 
-   target="_self"
-   style="display:inline-flex;align-items:center;justify-content:center;
-          padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
-          background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
-   📄 Case Study
-</a>
-</div>
+     <!-- Project 4 -->
+    <article class="fp-card">
+      <h3>Finance Pricing & Margin Analytics</h3>
+      <p>Airflow + Snowflake ELT; time-series KPIs & margin forecasts; exec dashboards for decision speed.</p>
+      <p class="fp-impact"><strong>Impact:</strong> p95 report time 11m → 90s.</p>
+       <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-        
+           size:14px;">💻 Code</a>
+  
+        <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}" 
+         target="_self"
+         style="display:inline-flex;align-items:center;justify-content:center;
+                padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
+                background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+         📄 Case Study
+      </a>
+      </div>
+    </article>
+
+     <!-- Project 5 -->
+    <article class="fp-card">
+      <h3>Finance Pricing & Margin Analytics</h3>
+      <p>Airflow + Snowflake ELT; time-series KPIs & margin forecasts; exec dashboards for decision speed.</p>
+      <p class="fp-impact"><strong>Impact:</strong> p95 report time 11m → 90s.</p>
+       <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-        
+           size:14px;">💻 Code</a>
+  
+        <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}" 
+         target="_self"
+         style="display:inline-flex;align-items:center;justify-content:center;
+                padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
+                background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+         📄 Case Study
+      </a>
+      </div>
     </article>
 
     <!-- Copy/paste more .fp-card blocks here for additional projects -->
