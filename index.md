@@ -157,7 +157,6 @@ layout: default
 </h2>
 
   <style>
-  /* Carousel track */
   .fp-track{
     display:flex;
     gap:20px;
@@ -169,9 +168,7 @@ layout: default
   }
   .fp-track::-webkit-scrollbar{height:8px}
   .fp-track::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:8px}
-  .fp-track{ position: relative; z-index: 1; }
 
-  /* Cards */
   .fp-card{
     flex:0 0 350px;
     scroll-snap-align:start;
@@ -180,10 +177,6 @@ layout: default
     padding:18px;
     background:#fff;
     box-shadow:0 4px 8px rgba(0,0,0,0.03);
-
-    /* ✅ ADD THIS */
-    position: relative;
-    z-index: 2;
   }
 
   .fp-card h3{ margin:0 0 8px; color:#007ACC; font-size:18px; }
@@ -191,40 +184,21 @@ layout: default
   .fp-impact{ font-size:14px; color:#6b7280; margin:0 0 10px; }
 
   .fp-btns{ display:flex; gap:10px; flex-wrap:wrap; }
-
-  /* ✅ ADD THIS (ensures links win click priority) */
-  .fp-btns a{
-    position: relative;
-    z-index: 5;
-    pointer-events: auto;
-  }
-
   .btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:10px 16px;
-    border-radius:10px;
-    border:1px solid #e5e7eb;
-    background:#f8fafc;
-    color:#111827;
-    text-decoration:none;
-    font-weight:500;
-    transition:all .2s;
-    position: relative;
-    z-index: 20;
-    pointer-events: auto;
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:6px 12px; border-radius:8px; border:1px solid #e5e7eb;
+    background:#f8fafc; color:#111827; text-decoration:none; font-size:14px;
   }
   .btn:hover{ background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.08); text-decoration:none; }
 
-  @media (max-width:420px){ .fp-card{flex-basis:280px} }
+  @media (max-width:420px){ .fp-card{ flex-basis:280px } }
 </style>
 
   <div id="fpTrack" class="fp-track" tabindex="0">
 
 
      <!-- Project 1 -->
-    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+    <article class="fp-card">
         <h3 style="color:#007ACC;margin-top:0;">Pricing & Margin Analytics</h3>
         <p style="color:#374151;line-height:1.6;font-size:15px;">
           Designed ELT pipelines that integrate product, sales, discount, and cost data to compute <strong>net price, margin, and KPIs</strong>.  
@@ -246,7 +220,7 @@ layout: default
     </article>
 
      <!-- Project 2 -->
-     <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+     <article class="fp-card">
         <h3 style="color:#007ACC;margin-top:0;">Healthcare Claims — Anomaly Detection</h3>
         <p style="color:#374151;line-height:1.6;font-size:15px;">
           Developed an anomaly detection pipeline using <strong>ICD-10 CM</strong> and utilization signals to flag potential fraud, waste, and abuse.  
@@ -264,7 +238,7 @@ layout: default
      </article>
 
      <!-- Project 3 -->
-    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+    <article class="fp-card">
       <h3 style="color:#007ACC;margin-top:0;">Warehouse Inventory & Replenishment ETL</h3>
       <p style="color:#374151;line-height:1.6;font-size:15px;">
         End-to-end ETL pipeline integrating <strong>WMS, ERP, and POS</strong> data into curated inventory models on
@@ -288,7 +262,7 @@ layout: default
       </div>
     </article>
   <!-- Project 4 -->
-    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+    <article class="fp-card">
       <h3 style="color:#007ACC;margin-top:0;">Pricing & Underwriting Risk Analytics</h3>
       <p style="color:#374151;line-height:1.6;font-size:15px;">
         Built ELT pipelines to create <strong>exposure, premium, and loss triangles</strong> by segment, product, and geography.
@@ -305,7 +279,7 @@ layout: default
       </div>
     </article>
     <!-- Project 5 -->
-     <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+     <article class="fp-card">
       <h3 style="color:#007ACC;margin-top:0;">Clickstream & Conversion Funnel Analytics</h3>
       <p style="color:#374151;line-height:1.6;font-size:15px;">
         Ingests <strong>web events, sessions, and cart actions</strong> into a curated funnel model (visit → view → add-to-cart → checkout → purchase).
