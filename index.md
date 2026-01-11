@@ -221,35 +221,46 @@ layout: default
 </style>
 
   <div id="fpTrack" class="fp-track" tabindex="0">
-    <!-- Project 1 -->
-    <article class="fp-card">
-      <h3>FHIR ETL on Spark → Snowflake</h3>
-      <p>End-to-end pipeline for FHIR JSON into curated Snowflake models. SCD2 for Member/Provider, DQ checks, lineage with dbt.</p>
-      <p class="fp-impact"><strong>Impact:</strong> 2.5× faster loads; ~30% cost savings.</p>
-     <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-  <a class="btn" href="https://github.com/PawanJadhav7/fhir-enrichment-pipeline/blob/main/README.md" target="_blank" el="noopener noreferrer"
-     style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
-
- <a class="btn" href="{{ '/assets/diagrams/fhir_snowflake.png' | relative_url }}"
-   target="_blank" rel="noopener noreferrer">📊 Architecture</a>
-</div>
+     <!-- Project 1 -->
+    <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
+        <h3 style="color:#007ACC;margin-top:0;">Pricing & Margin Analytics</h3>
+        <p style="color:#374151;line-height:1.6;font-size:15px;">
+          Designed ELT pipelines that integrate product, sales, discount, and cost data to compute <strong>net price, margin, and KPIs</strong>.  
+          Snowflake marts power exec dashboards for segment, customer, and SKU-level profitability.
+        </p>
+        <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Report runtime improved from 11m → 90s; 40% faster KPI analysis.</p>
+  
+        <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+          <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics/blob/main/README.md" target="_blank" rel="noopener noreferrer"
+             style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+             size:14px;">💻 Code</a>
+          <a class="btn" href="/pricingandmarginanalytics/" target="_self"
+             style="display:inline-flex;align-items:center;justify-content:center;
+                    padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
+                    background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+            📄 Case Study
+          </a>
+        </div>
     </article>
-
+    
     <!-- Project 2 -->
     <article class="fp-card">
       <h3>Healthcare Claims Anomaly Detection</h3>
       <p>ICD-10 CM + provider signals with Python/Spark for real-time anomaly scoring across fraud, waste, abuse.</p>
       <p class="fp-impact"><strong>Impact:</strong> ↓ false positives ~18%; faster integrity reviews.</p>
      <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-    <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener noreferrer"
-       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
-
-    <a class="btn" href="{{ '/healthcare-claims-anomaly-detection/' | relative_url }}" target="_blank" rel="noopener noreferrer"
-       style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">📄 Case Study</a>
-  </div>
+      <a class="btn" href="https://github.com/PawanJadhav7/healthcare-claims-anomaly-detection/blob/main/README.md" target="_blank" rel="noopener noreferrer"
+         style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+         size:14px;">💻 Code</a>
+  
+      <a class="btn" href="{{ '/healthcare-claims-anomaly-detection/' | relative_url }}" target="_blank" rel="noopener noreferrer"
+         style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+          size:14px;">📄 Case Study</a>
+      </div>
      </article>
 
-    <!-- Project 3 -->
+    
+     <!-- Project 3 -->
     <article class="fp-card">
       <h3>Finance Pricing & Margin Analytics</h3>
       <p>Airflow + Snowflake ELT; time-series KPIs & margin forecasts; exec dashboards for decision speed.</p>
@@ -270,26 +281,6 @@ layout: default
     </article>
 
      <!-- Project 4 -->
-    <article class="fp-card">
-      <h3>Finance Pricing & Margin Analytics</h3>
-      <p>Airflow + Snowflake ELT; time-series KPIs & margin forecasts; exec dashboards for decision speed.</p>
-      <p class="fp-impact"><strong>Impact:</strong> p95 report time 11m → 90s.</p>
-       <div class="fp-btns" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-        <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-        
-           size:14px;">💻 Code</a>
-  
-        <a class="btn" href="{{ '/pricingandmarginanalytics/' | relative_url }}" 
-         target="_self"
-         style="display:inline-flex;align-items:center;justify-content:center;
-                padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
-                background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
-         📄 Case Study
-      </a>
-      </div>
-    </article>
-
-     <!-- Project 5 -->
     <article class="fp-card">
       <h3>Finance Pricing & Margin Analytics</h3>
       <p>Airflow + Snowflake ELT; time-series KPIs & margin forecasts; exec dashboards for decision speed.</p>
@@ -471,23 +462,24 @@ layout: default
 
     <!-- Project 1: Pricing & Margin Analytics -->
     <article style="border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.03);">
-      <h3 style="color:#007ACC;margin-top:0;">Pricing & Margin Analytics</h3>
-      <p style="color:#374151;line-height:1.6;font-size:15px;">
-        Designed ELT pipelines that integrate product, sales, discount, and cost data to compute <strong>net price, margin, and KPIs</strong>.  
-        Snowflake marts power exec dashboards for segment, customer, and SKU-level profitability.
-      </p>
-      <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Report runtime improved from 11m → 90s; 40% faster KPI analysis.</p>
-
-      <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
-        <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics/blob/main/README.md" target="_blank" rel="noopener noreferrer"
-           style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">💻 Code</a>
-        <a class="btn" href="/pricingandmarginanalytics/" target="_self"
-           style="display:inline-flex;align-items:center;justify-content:center;
-                  padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
-                  background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
-          📄 Case Study
-        </a>
-      </div>
+        <h3 style="color:#007ACC;margin-top:0;">Pricing & Margin Analytics</h3>
+        <p style="color:#374151;line-height:1.6;font-size:15px;">
+          Designed ELT pipelines that integrate product, sales, discount, and cost data to compute <strong>net price, margin, and KPIs</strong>.  
+          Snowflake marts power exec dashboards for segment, customer, and SKU-level profitability.
+        </p>
+        <p style="font-size:14px;color:#6b7280;"><strong>Impact:</strong> Report runtime improved from 11m → 90s; 40% faster KPI analysis.</p>
+  
+        <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+          <a class="btn" href="https://github.com/PawanJadhav7/pricing-margin-analytics/blob/main/README.md" target="_blank" rel="noopener noreferrer"
+             style="display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#f8fafc;color:#111827;text-decoration:none;font-
+             size:14px;">💻 Code</a>
+          <a class="btn" href="/pricingandmarginanalytics/" target="_self"
+             style="display:inline-flex;align-items:center;justify-content:center;
+                    padding:6px 12px;border-radius:8px;border:1px solid #e5e7eb;
+                    background:#f8fafc;color:#111827;text-decoration:none;font-size:14px;">
+            📄 Case Study
+          </a>
+        </div>
     </article>
 
     <!-- Project 2: Transaction Fraud Analytics -->
