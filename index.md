@@ -1027,6 +1027,8 @@ layout: default
     <a href="mailto:pawan.jadhav7@gmail.com" class="contact-btn" data-umami-event="click_email">📧 Email</a>
     <a href="https://github.com/PawanJadhav7" target="_blank" rel="noopener noreferrer" class="contact-btn" data-umami-event="click_github_profile">💻 GitHub</a>
     <a href="https://www.linkedin.com/in/pawan-jadhav/" target="_blank" rel="noopener noreferrer" class="contact-btn"  data-umami-event="click_linkedin">🔗 LinkedIn</a>
+     <a href="/evidence/" target="_blank" rel="noopener noreferrer" class="contact-btn" data-umami-event="click_evidence_vault">
+🔐 Evidence Vault</a>
     <a href="tel:+19142675356" class="contact-btn">📞🇺🇸 +1&nbsp;914-267-5356</a>
     <a href="tel:+919969974429" class="contact-btn">📞🇮🇳 +91&nbsp;996-997-4429</a>
   </div>
