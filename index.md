@@ -1035,6 +1035,163 @@ layout: default
 </div>
 
 <style>
+  :root {
+    --contact-bar-h: 56px;
+  }
+
+  /* ================================
+     FIXED BOTTOM CONTACT BAR
+     ================================ */
+
+  #contact-bar {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: min(1100px, calc(100vw - 32px));
+    height: var(--contact-bar-h);
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    /* Prevent content from escaping the fixed shell */
+    overflow: hidden;
+  }
+
+  /* ================================
+     HORIZONTAL SCROLL VIEWPORT
+     ================================ */
+
+  #contact-bar .contact-inner {
+    width: 100%;
+    height: 100%;
+
+    min-width: 0;
+    max-width: none;
+
+    margin: 0;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 11px;
+    flex-wrap: nowrap;
+
+    /* THIS is the horizontal scrolling viewport */
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    box-sizing: border-box;
+
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+
+    /* Important: always start at the left */
+    scroll-behavior: smooth;
+  }
+
+  /* Chrome / Edge / Safari scrollbar */
+  #contact-bar .contact-inner::-webkit-scrollbar {
+    height: 7px;
+  }
+
+  #contact-bar .contact-inner::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  #contact-bar .contact-inner::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 8px;
+  }
+
+  /* ================================
+     CONTACT BUTTONS
+     ================================ */
+
+  #contact-bar .contact-btn {
+    flex: 0 0 auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+
+    padding: 8px 12px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    background: #f8fafc;
+    color: #111827;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+
+    box-sizing: border-box;
+
+    transition:
+      background 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  #contact-bar .contact-btn:hover {
+    background: #ffffff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+
+  /* ================================
+     PAGE SPACE FOR FIXED BAR
+     ================================ */
+
+  html,
+  body {
+    margin: 0;
+  }
+
+  body {
+    padding-bottom: calc(var(--contact-bar-h) + 16px);
+  }
+
+  /* Keep anchored sections clear of sticky/fixed UI */
+  section[id] {
+    scroll-margin-top: 90px;
+    scroll-margin-bottom: calc(var(--contact-bar-h) + 16px);
+  }
+
+  /* ================================
+     MOBILE
+     ================================ */
+
+  @media (max-width: 960px) {
+    #contact-bar {
+      width: 100%;
+      left: 0;
+      transform: none;
+      border-radius: 0;
+    }
+
+    #contact-bar .contact-inner {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+</style>
+
+<!-- <style>
   :root { --contact-bar-h: 56px; } /* same height as header */
 
   /* Fixed bottom bar, same width feel as top nav */
@@ -1056,21 +1213,26 @@ layout: default
   box-sizing: border-box;
 }
 
-#contact-bar .contact-btn{
-  display:inline-flex;
+#contact-bar .contact-inner{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0 16px;
+
+  display:flex;
   align-items:center;
-  justify-content:center;
-  flex: 0 0 auto;              /* IMPORTANT: don't shrink */
-  padding:8px 12px;
-  border-radius:10px;
-  border:1px solid #e5e7eb;
-  background:#f8fafc;
-  color:#111827;
-  text-decoration:none;
-  font-weight:500;
-  font-size:14px;
-  white-space:nowrap;           /* keep each button on one line */
-  transition:all .2s;
+  justify-content:flex-start;
+
+  gap:11px;
+  flex-wrap:nowrap;
+
+  overflow-x:auto;
+  overflow-y:hidden;
+
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+
+  box-sizing:border-box;
 }
 
   /* /* Inner container matches header container exactly */
@@ -1139,4 +1301,4 @@ section[id]{
     border-radius: 0;
  }
 }
- </style>
+ </style> -->
