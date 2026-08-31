@@ -1056,22 +1056,21 @@ layout: default
   box-sizing: border-box;
 }
 
-#contact-bar .contact-inner{
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 16px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 11px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  box-sizing: border-box;
+#contact-bar .contact-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex: 0 0 auto;              /* IMPORTANT: don't shrink */
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid #e5e7eb;
+  background:#f8fafc;
+  color:#111827;
+  text-decoration:none;
+  font-weight:500;
+  font-size:14px;
+  white-space:nowrap;           /* keep each button on one line */
+  transition:all .2s;
 }
 
   /* /* Inner container matches header container exactly */
