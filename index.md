@@ -1056,7 +1056,25 @@ layout: default
   box-sizing: border-box;
 }
 
-  /* Inner container matches header container exactly */
+#contact-bar .contact-inner{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  box-sizing: border-box;
+}
+
+  /* /* Inner container matches header container exactly */
   #contact-bar .contact-inner{
     max-width: 1100px;              /* same as header */
     margin: 0 auto;
@@ -1070,9 +1088,9 @@ layout: default
     overflow-x: auto;               /* scroll if tight */
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-  }
+  } */
   /* Inner content (links) */
-#contact-bar .contact-inner{
+/* #contact-bar .contact-inner{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1081,7 +1099,7 @@ layout: default
   width: 100%;
   padding: 0 16px;
   box-sizing: border-box;
-}
+} */
 
 /* Buttons */
 #contact-bar .contact-btn{
